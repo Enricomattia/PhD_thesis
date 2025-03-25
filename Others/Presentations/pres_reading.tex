@@ -1,0 +1,249 @@
+
+\documentclass[usenames,dvipsnames,aspectratio=169,11pt, envcountsect]{beamer}
+%handout,
+%aspectratio=43
+
+\usepackage{Others/prespreamble}
+
+\title {\textsc{Fairness and limited information: Are people Bayesian meritocrats?}}
+\author{\textsc{Cappellen, de Haan, Tungodden}}
+%\institute{\textsc{Toulouse School of Economics}} 
+\date{October 8, 2024}
+%\subject{\textsc{Toulouse School of Economics}}
+
+
+\usepackage{natbib}
+\usepackage{colortbl, xcolor}
+\definecolor{blue}{rgb}{0.19, 0.55, 0.91}
+\linespread{1}
+\usepackage{mathrsfs}
+
+% small bibliography
+\let\oldthebibliography=\thebibliography
+\renewcommand{\thebibliography}[1]{
+    \oldthebibliography{#1}
+    \setlength{\itemsep}{2pt}
+    \tiny
+}
+
+\begin{document}
+
+\section{Introduction}
+
+\begin{frame}[noframenumbering,plain]
+	\maketitle
+	%\begin{figure}[H]
+	%\centering
+	%\includegraphics[scale=0.4]{Other/Figures/erc.png}
+	%\end{figure}
+
+	%\footnotesize{Funding from the European Research Council (ERC) under the European Unions Horizon 2020 research and innovation programme (grant agreement No. 789111 - ERC EvolvingEconomics) is gratefully acknowledged}
+\end{frame}
+%\frame{\titlepage}
+
+\begin{frame}\frametitle{Introduction}
+
+	\textbf{Q:} Do individuals distort relevant information when allocating resources?
+
+	\vfill
+
+	Two individuals have a performance \( p_i \) and a random factor \( \varepsilon_i \).
+
+	\vfill
+
+	Their earnings are \( x_i = p_i + \varepsilon_i \).
+
+	\vfill
+
+	An impartial spectator has to allocate \( X = x_i + x_j \) between the two individuals:
+
+	\vfill
+
+	\begin{wideitemize}
+		\item he might have full information \( p_i, p_j, \varepsilon_i, \varepsilon_j \);
+		\item or limited information \( x_i, x_j \).
+	\end{wideitemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Spectator preferences}
+	Denote with \( m_i \) what the spectator deems the moral allocation of \( i \).
+
+	\vfill
+
+	He chooses transfer \( y_i \) to maximise
+
+	\[
+		U_{\text {spectator }}=- \left(y_i-m_i \right)^2
+	\]
+
+	\vfill
+
+	Implemented inequality is
+
+	\[
+		I = \frac{ \mid y_i - y_j \mid}{y_i + y_j}
+	\]
+
+\end{frame}
+
+\begin{frame}\frametitle{Fairness views}
+
+	\[
+		U_{\text {spectator }}=- \left(y_i-m_i \right)^2
+	\]
+
+	\vfill
+
+	\textbf{Egalitarian}: the total earnings are divided equally between the two individuals, \( m_i=\frac{1}{2} \cdot X \).
+
+	\vfill
+
+	\textbf{Meritocratic}: the total earnings are divided proportional to performance, \( m_i=\frac{p_i}{p_i+p_j} \cdot X \).
+
+	\vfill
+
+	\textbf{Libertarian}: the individuals receive their earnings, \( m_i=x_i \).
+\end{frame}
+
+
+\begin{frame}\frametitle{Uncertainty}
+
+	Under limited information, the spectator has to form beliefs:
+
+	\vfill
+
+	\[
+		E U_{\text {spectator }}=-E\left(y_i-m_i\right)^2
+	\]
+
+	\vfill
+
+	His optimal choice is \( E\left( m_i \right) \).
+
+	\vfill
+
+	\textbf{Performance-ranking uncertainty}: Given a signal \( x_i, x_j \), the spectator's posterior beliefs reflect performance-ranking uncertainty if and only if both \( p_i > p_j \) and \( p_j > p_i \) are in their support.
+\end{frame}
+
+\begin{frame}\frametitle{Result: Theory}
+
+	\textbf{Egalitarians}: they always divide equally.
+
+	\vfill
+
+	\textbf{Libertarians}: they always give the earnings to the individuals.
+
+	\vfill
+
+	\textbf{Meritocrats}:
+
+	\vfill
+
+	\begin{prop}
+		A Bayesian meritocratic spectator implements in expectation
+		the same level of inequality with limited information and full information
+		if limited information does not cause \textbf{performance-ranking uncertainty}, and strictly less inequality with limited information than with full information if limited information causes performance-ranking uncertainty.
+	\end{prop}
+
+\end{frame}
+
+\begin{frame}\frametitle{Non-Bayesian updating}
+
+	\textbf{Signal-neglecter}: posterior beliefs are equal to the prior.
+
+	\vfill
+
+	The same result on performance ranking uncertainty holds.
+
+	\vfill
+
+	\textbf{Base-rate neglecter}: disregard the prior and use the likelihood of the signal.
+
+	\begin{prop}
+		A base-rate-neglecting meritocratic spectator implements in
+		expectation strictly more inequality with limited information than with full
+		information under some assumptions.
+	\end{prop}
+
+\end{frame}
+
+\begin{frame}\frametitle{Experiment}
+
+	Under the assumptions, posterior can be written as follows:
+
+	\[ E \left( p_i \mid x_i \right)= \left( 1-\rho_B \right) \cdot \mu_p+\rho_B \cdot x_i
+	\]
+
+	\vfill
+
+	Bayesian updating: \(\rho_B = 0.56\)
+
+	\vfill
+
+	Signal neglecting: \(\rho_B = 0\)
+
+	\vfill
+
+	Base-rate neglecting: \(\rho_B = 1\)
+\end{frame}
+
+\begin{frame}\frametitle{Experiment: meritocrats prediction}
+	\begin{figure}
+		\includegraphics[scale=0.65]{Others/Figures/cap1.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}\frametitle{Experiment: implemented inequality}
+	\begin{figure}
+		\includegraphics[scale=0.58]{Others/Figures/cap.png}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}\frametitle{Experiment: elicited and estimated beliefs}
+	\begin{figure}
+		\includegraphics[scale=0.65]{Others/Figures/cap2.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}\frametitle{Experiment: structural model vs data}
+	\begin{figure}
+		\includegraphics[scale=0.6]{Others/Figures/cap3.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}\frametitle{Experiment: structural analysis}
+	\begin{figure}
+		\includegraphics[scale=0.85]{Others/Figures/cap4.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}\frametitle{Discussion}
+	\textbf{Language}: Luck egalitarianism vs Meritocracy.
+
+	\vfill
+
+	\textbf{Underlying motivation}: Why individuals distort information as they do?
+
+	\vfill
+
+	\textbf{Method}: Impartial spectator.
+\end{frame}
+
+\begin{comment}
+
+\begin{frame}[noframenumbering,plain]
+
+	\frametitle{References}
+
+	%\nocite{*}
+	\bibliography{Others/bib}
+	\bibliographystyle{apacite}
+
+
+\end{frame}
+
+\end{comment}
+
+\end{document}

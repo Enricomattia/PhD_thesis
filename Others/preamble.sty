@@ -1,0 +1,123 @@
+\linespread{1.2}\selectfont
+\usepackage{amsfonts}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[hang,flushmargin, bottom]{footmisc}
+\usepackage[colorlinks=true,backref=page]{hyperref}
+\hypersetup{linkcolor=gray, citecolor=gray, urlcolor=gray}
+\usepackage{caption}
+\usepackage{pgfplots}
+\usepackage{multirow, array}
+\usepackage{mathtools}
+\usetikzlibrary{calc}
+\usepackage{pstricks-add}
+\usepackage{float}
+\usepackage{textgreek}
+\usepackage{epigraph}
+\usepackage{amsmath}
+\DeclareMathOperator{\E}{\mathbb{E}}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{bbm}
+\usepackage{titling}
+\usepackage{apacite}
+\usepackage{authblk}
+\usepackage{multirow}
+\pgfplotsset{compat=1.15}
+\usepackage[top=2.54cm, bottom=2.54cm, outer=2.54cm, inner=2.54cm, heightrounded, headsep=0.7cm, headheight=15pt]{geometry}
+
+%\usepackage[top=1.8cm, bottom=1.8cm, outer=1.8cm, inner=1.8cm, heightrounded, headsep=0.2cm, headheight=5pt]{geometry}
+
+%\usepackage[sc,osf]{mathpazo}
+\usepackage{times}
+%\usepackage{newpxtext}
+\usepackage[title]{appendix}
+\usepackage{comment}
+\usepackage{graphicx}
+\usepackage{bigints}
+\usepackage{mathrsfs}
+\usepackage{nicefrac}
+\usepackage{verbatim}
+%\usepackage{txfonts}
+%\usepackage{bookman}
+\usepackage{etoolbox}
+\usepackage{titlesec}
+\usepackage{csquotes}
+\usepackage{caption}
+\apptocmd{\sloppy}{\vbadness 10000\relax}{}{}
+
+\definecolor{bleudefrance}{rgb}{0.19, 0.55, 0.91}
+
+\usetikzlibrary{external}
+\tikzexternalize[prefix=tikz/]
+
+\AtBeginDocument{%
+    \renewcommand*{\PrintBackRefs}[1]{}%
+}
+
+\makeatletter
+\newcommand\footnoteref[1]{\protected@xdef\@thefnmark{\ref{#1}}\@footnotemark}
+\makeatother
+
+\DeclareMathOperator{\one}{\mathbbm{1}}
+
+\usepackage{subfig}
+\usepackage{amsthm}
+
+\newtheorem{remark}{Remark}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{theorem}{\textsc{Theorem}}
+\newtheorem{prop}{\textsc{Proposition}}
+\newtheorem{definition}{\textsc{Definition}}
+\newtheorem*{result*}{Result}
+\newtheorem{corollary}{\textsc{Corollary}}
+\newtheorem{lemma}{\textsc{Lemma}}
+\newtheorem{assumption}{Assumption}
+\newtheorem{axiom}{\textsc{Axiom}}
+
+\theoremstyle{definition}
+\newtheorem{example}{\textsc{Example}}
+
+\usepackage{natbib}
+%\setlength{\bibsep}{0.0pt}
+%\def\bibfont{\small}
+
+\newenvironment{thmproof}{%
+  \renewcommand{\proofname}{Proof of Theorem \ref{thm:rep}}\proof}{\endproof}
+
+\newenvironment{corproof}{%
+  \renewcommand{\proofname}{Proof of Corollary \ref{cor:uniq}}\proof}{\endproof}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[LE,RO]{\thepage}
+%\fancyhead[RE,LO]{\leftmark}
+\renewcommand{\headrulewidth}{0pt}
+%\renewcommand{\footrulewidth}{0.4pt}
+
+\newcommand{\notimplies}{%
+  \mathrel{{\ooalign{\hidewidth$\not\phantom{=}$\hidewidth\cr$\implies$}}}}
+
+\usepackage[underscores = false, codeSpans = false,fencedCode,inlineFootnotes,citations,definitionLists,hashEnumerators,smartEllipses,pipeTables,tableCaptions,hybrid]{markdown}
+
+\DeclareRobustCommand{\bbone}{\text{\usefont{U}{bbold}{m}{n}1}}
+\DeclareMathOperator{\p}{\mathbb{P}}
+
+\setlength\epigraphwidth{0.9\textwidth}
+\setlength\epigraphrule{0pt}
+
+\let\rfb\reflectbox
+\newcommand{\uglyfrac}[2]{\rfb{\nicefrac{\rfb{#1}}{\rfb{#2}}}}
+
+\titleformat{\section}[block]{\large\scshape\bfseries\filcenter}{\thesection}{1em}{}
+\titleformat{\subsection}[block]{\large\scshape\bfseries\filcenter}{\thesubsection}{1em}{}
+
+%\setlength{\droptitle}{-2cm}
+
+\title{\textsc{Introduction}}
+\author{\textsc{Enrico Mattia Salonia}}
+\date{\today}

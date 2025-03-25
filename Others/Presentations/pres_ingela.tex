@@ -1,0 +1,836 @@
+
+\documentclass[usenames,dvipsnames,aspectratio=169,11pt, envcountsect]{beamer}
+%handout,
+%aspectratio=43
+
+\usepackage{Others/prespreamble}
+\usepackage{natbib}
+\definecolor{bleudefrance}{rgb}{0.19, 0.55, 0.91}
+\linespread{1}
+\usepackage{mathrsfs}
+
+% small bibliography
+\let\oldthebibliography=\thebibliography
+\renewcommand{\thebibliography}[1]{
+    \oldthebibliography{#1}
+    \setlength{\itemsep}{2pt}
+    \tiny
+}
+
+\begin{document}
+
+\section{Introduction}
+
+\begin{frame}[noframenumbering,plain]
+	\maketitle
+	%\begin{figure}[H]
+	%\centering
+	%\includegraphics[scale=0.4]{Other/Figures/erc.png}
+	%\end{figure}
+
+	%\footnotesize{Funding from the European Research Council (ERC) under the European Unions Horizon 2020 research and innovation programme (grant agreement No. 789111 - ERC EvolvingEconomics) is gratefully acknowledged}
+\end{frame}
+%\frame{\titlepage}
+
+\begin{frame}\frametitle{Motivation}
+
+	Investors overreact to information, consumers refrain from learning about firms' unethical practices, and patients at health risk do not learn about their condition.
+
+	\vfill
+
+	These observations are at odds with expected utility theory.
+
+	\vfill
+
+	Theories of belief-dependent motivations (BDM) explain these phenomena.
+
+	\vfill \pause
+
+	It is unclear whether Bayesian updating and BDM are consistent assumptions.
+
+	\vfill
+
+	\textbf{Question}: how do BDM affect belief updating?
+
+\end{frame}
+
+\begin{frame}\frametitle{This Paper}
+
+	I develop a theory of BDM in a dynamic setting encompassing previous models.
+
+	\vfill
+
+	An individual receives information and takes action under uncertainty.
+
+	\vfill
+
+	She distorts her Bayesian update to satisfy her belief-dependent preferences.
+
+	\vfill
+
+	Maximises a combination of true and distorted belief-dependent expected utility.
+
+	\vfill \pause
+
+	Key observation: Choices over menus allow identyfing the model components.
+
+	\vfill
+
+	\textbf{Main result}: axiomatic representation of BDM preferences and updating rules.
+
+\end{frame}
+
+\begin{frame}{Example: overinvestment and information avoidance}
+
+	A financial investor likes believing the market is in good state.
+
+	\vfill
+
+	She might receive a neutral or bad message about the market state.
+
+	\vfill
+
+	The neutral message does not rule out the good state, the bad is conclusive evidence.
+
+	\vfill
+
+	After the neutral message, she overweights the evidence and overinvests.
+
+	\vfill
+
+	After the bad message, she suffers from the news.
+
+	\vfill
+
+	When choosing whether to receive information, she weighs these two outcomes.
+
+\end{frame}
+
+\begin{frame}\frametitle{Literature}
+
+	\begin{wideitemize}
+
+		\item \textit{Belief-Dependent Motivations.} \cite{eliazCanAnticipatoryFeelings2006}, \cite{benabou2016mindful}, \cite{golmanInformationAvoidance2017}, \cite{battigalliBeliefdependentMotivationsPsychological2022}.
+
+		\vspace{0.3cm}
+		\underline{Contribution}: \textbf{Interaction between preferences and belief revision}.
+
+		\item \textit{Decision Theory.} \cite{liangInformationdependentExpectedUtility2017}, \cite{dillenbergerAdditivebeliefbasedPreferences2020} \cite{rommeswinkelPreferenceKnowledge2023}.
+
+		\vspace{0.3cm}
+		\underline{Contribution}: \textbf{Belief revision rule}.
+
+		\item \textit{Menu Choice.} \cite{gulTemptationSelfControl2001}, \cite{ozdenorenCompletingStateSpace2002}, \cite{epsteinAxiomaticModelNonBayesian2006}, \cite{epsteinColdFeet2007}.
+
+		\vspace{0.3cm}
+		\underline{Contribution}: \textbf{Novel primitive object of choice}.
+	\end{wideitemize}
+
+\end{frame}
+
+\section{Body}
+
+\begin{frame}\frametitle{Model}
+
+	Primitives:
+
+	\vfill
+
+	\begin{wideitemize}
+		\item
+		compact metric outcome set \(X\); \pause
+		\item
+		finite state spaces \(S\) with prior \( p \in \Delta \left( S \right) \); \pause
+		\item
+		acts map states to outcomes \(f: S \longrightarrow X \); \pause
+		\item experiments map states to finite distribution of messages \( F : S \rightarrow \Delta \left( M \right) \); \pause
+		\item Bayesian posterior after observing message \( m \) from experiment \( F \) is \( p_{F,m} \).
+	\end{wideitemize}
+\end{frame}
+
+\begin{frame}{Utility}
+
+	The individual:
+
+	\vfill
+
+	\begin{wideenumerate}
+		\item observes message \( m \) from experiment \( F \) and computes Bayesian posterior \( p_{F,m} \);
+		\item distorts the data generating process of \( m \) and develops distorted posterior \( p^{*}_{F,m} \); \pause
+		\item chooses act \( f \) to maximise:
+	\end{wideenumerate}
+
+	\vfill
+
+	\[
+		U \left( f, p_{F,m} \right) = \sum_{s} u \left( f_s, p_{F,m} \right) p_{F,m} \left( s \right) + \pause \alpha_{p_{F,m}} \sum_{s} u \left( f_s, p^{*}_{F,m} \right) p^{*}_{F,m} \left( s \right) .
+	\]
+
+\end{frame}
+
+
+\begin{frame}{Comments}
+
+	\[
+		U \left( f, p_{F,m} \right) = \sum_{s} u \left( f_s, p_{F,m} \right) p_{F,m} \left( s \right) + \alpha_{p_{F,m}} \sum_{s} u \left( f_s, p^{*}_{F,m} \right) p^{*}_{F,m} \left( s \right) .
+	\]
+
+	\vfill
+
+	The distorted posterior \( p^{*} \) is the Bayesian update under a different experiment.
+
+	\vfill
+
+	It depends on preferences, it is the preferred posterior according to the utility \( u \).
+
+	\vfill
+
+	The probability of states wich are ruled out by the message remains zero.
+
+	\vfill \pause
+
+	If the message induces the preferred \( p^{*} \), then the model collapses to:
+
+	\[
+		U \left( f, p^{*}_{F,m} \right) = \sum_{s} u \left( f_s, p^{*}_{F,m} \right) p^{*}_{F,m} \left( s \right) .
+	\]
+
+	If \( u \) does not depend on beliefs, it collapses to expected utility.
+
+\end{frame}
+
+\begin{frame}{Interpretation}
+	The individual's might:
+
+	\vfill
+
+	\begin{wideitemize}
+		\item forget she received a message \citep{benabou2016mindful}; \pause
+		\item choose her beliefs \citep{brunnermeierOptimalExpectations2005}; \pause
+		\item exhibit motivated inattention \citep{caplinRevealedPreferenceRational2015}; \pause
+		\item be optimistic \citep{sharotOptimismBias2011}.
+	\end{wideitemize}
+
+	\vfill
+
+	All these interpretations are consistent with the model.
+
+	\vfill
+
+	Distorsion is with respect to the individual's \textbf{subjective beliefs}.
+
+\end{frame}
+
+\begin{frame}{Example: overinvestment and information avoidance}
+
+	The market might be in a high or low state.
+
+	\vfill
+
+	Experiment delivers a neutral \( n \) or bad \( b \) message.
+
+	\vfill
+
+	Preferences are increasing in the posterior on the good state.
+
+	\vfill
+
+	\[ u \left( \cdot , p^{*}_{F,m } \right) = v \left( \cdot, p^{*}_{F, m} \right) - d \left( p^{*}_{F, m} , p_{F, m} \right)
+	\] \pause
+
+	\[
+		U \left( f, p_{F,n} \right) = \sum_{s} v \left( f_s, p_{F,n} \right) p_{F, n} \left( s \right) + \alpha_{F, n} \left[ \sum_{s} v \left( f_s, p^{*}_{F, m_n} \right) p^{*}_{F,n} \left( s \right) - d(p^{*}_{F,n}, p_{F,n}) \right].
+	\] \pause
+
+	\[
+		U \left( f, p_{F,b} \right) = \sum_{s} v \left( f_s, p_{F,b} \right) p_{F,b} \left( s \right) .
+	\]
+
+\end{frame}
+
+\begin{frame}{Example: Contingent Menus}
+	Say the investor can choose wheter to check the status of her portfolio.
+
+	\vfill
+
+	By checking, she gets a signal on the state of the market and can invest or withdraw.
+
+	\vfill
+
+	If she does not check, she gets no information and can do nothing.
+
+	\vfill
+
+	Checking delivers information and induces a \textbf{state contingent menu of choices}.
+\end{frame}
+
+\begin{frame}{Example: Temptation}
+	When choosing to check, the investor anticipates she will overweight the evidence.
+
+	\vfill
+
+	She knows she will be tempted to act following her distorted beliefs and overinvest.
+
+	\vfill
+
+	She wants to receive information but prefers to commit not to face temptation.
+
+	\vfill \pause
+
+	If the Bayesian posterior coincides with the preferred one, there is no distortion.
+
+	\vfill
+
+	If beliefs are not distorted, there is no temptation.
+\end{frame}
+
+\begin{frame}{Model: Contingent Menus}
+	\begin{wideitemize}
+		\item
+		compact metric outcome set \(X\), set of lotteries \(\Delta^{0} \left( X \right)\); \pause
+		\item
+		finite state spaces \(S\); \pause
+		\item
+		acts map states to outcomes \(f: S \longrightarrow X \); \pause
+		\item
+		a closed subset \(m\) of acts is a menu; \pause
+		\item
+		compact metric set of menus is \(M\), set of lotteries with finite support \(\Delta \left( M \right)\); \pause
+		\item
+		contingent menus map states to distribution of menus \(F: S \rightarrow \Delta \left( M \right) \); \pause
+		\item
+		time \(0\) preference on contingent menus.
+	\end{wideitemize}
+\end{frame}
+
+\begin{frame}{Main Result}
+
+	If the individual does not exhibit temptation at her preferred posterior, then her behaviour is represented by equation \ref{eq:contmenu1} and \ref{eq:menu1}:
+
+	\vfill
+
+	\begin{equation}\label{eq:contmenu1}
+		\mathscr{U}(F)= \sum_{m} \left( \sum_{s} F_{s} \left( m \right) \right) \mathcal{U} \left(m ; p_{F,m} \right) \: ;
+	\end{equation} \pause
+
+	\begin{equation}\label{eq:menu1}
+		\begin{aligned}
+			\mathcal{U} \left(m ; p_{F,m} \right) = & \max _{f \in m}\left\{\sum_{s} u \left( f_{s} ; p_{F,m} \right) p_{F,m} \left( s \right) \pause + \alpha _{p_{F,m}} \sum_{s} u \left( f_{s} ; p^{*}_{F,m} \right) p^{*}_{F,m} \left( s \right) \right\} \\ \pause
+			                                        & -\max _{f^{\prime} \in m} \alpha _{p_{F,m}} \sum_{s} u\left(f^{\prime}_{s} ; p^{*}_{F,m} \right) p^{*}_{F,m} \left( s \right) \: .
+		\end{aligned}
+	\end{equation}
+
+	Utility \( u \), beliefs \( p \), distorted beliefs \( p^{*} \) and cost of self-control \( \alpha \) are identified.
+
+\end{frame}
+
+\begin{frame}{Interpretation}
+
+	Choice at period \( 2 \) is described by the following
+
+	\vfill
+
+
+	\[
+		\max _{f \in m} \left[\sum_{s} u \left( f_{s} ; p_{F,m} \right) p_{F,m} \left( s \right) \pause + \alpha _{p_{F,m}} \sum_{s} u \left( f_{s} ; p^{*}_{F,m} \right) p^{*}_{F,m} \left( s \right)  \right].
+	\]
+
+	\vfill \pause
+
+
+	When choosing act \( f \) from menu \( m \) at posterior \( p_{F,m} \), the cost of temptation is
+
+	\vfill
+
+	\[
+		\alpha_{p_{F,m}} \left[ \max _{f^{\prime} \in m} \sum_{s} u\left(f^{\prime}_{s} ; p^{*}_{F,m} \right) p^{*}_{F,m} \left( s \right) - \sum_{s} u \left( f_{s} ; p^{*}_{F,m} \right) p^{*}_{F,m} \left( s \right) \right] .
+	\]
+
+\end{frame}
+
+\begin{frame}{Conclusion and future directions}
+	Theory of BDM and belief updating tested via choices of contingent menus.
+
+	\vfill
+
+	BDM and non Bayesian updating should be considered together.
+
+	\vfill
+
+	The model predicts same beliefs for same preferences, thus assortativity of beliefs.
+
+	\vfill
+
+	Value of information for individuals with BDM preferences.
+
+\end{frame}
+
+\begin{comment}
+
+\begin{frame}\frametitle{Model}
+
+	Primitives:
+
+	\vfill
+
+	\begin{itemize}
+		\item
+		      compact outcome set \(X\);
+		      \pause
+		\item
+		      finite state spaces \(S\) and prior \( p \in \Delta \left( S \right) \);
+		\item Blackwell experiment \( F : S \longrightarrow \Delta \left( M \right) \) where \( m \in M \) is a message;
+		\item individual chooses action \(f: S \longrightarrow X \).
+	\end{itemize}
+
+	\vfill
+
+	Message \( m \) from experiment \( F \) induces a posterior \( p_{F, m} \).
+
+	\vfill
+
+	Choosing action \( f \) at posterior \( p_{F, m} \) induces utility
+
+	\[
+		U \left( f, p_{F, m} \right) = \sum_{s} u \left( f_{s} ; p_{F, m} \right) p_{F, m} \left( s \right) +\alpha _{F, m} \sum_{s} u \left( f_{s} ; p^{*}_{F, m} \right) p^{*}_{F, m} \left( s \right) .
+	\]
+
+\end{frame}
+
+\end{comment}
+
+\begin{frame}[noframenumbering,plain]
+
+	\frametitle{References}
+
+	%\nocite{*}
+	\bibliography{Others/bib}
+	\bibliographystyle{apacite}
+
+
+\end{frame}
+
+\appendix
+
+\begin{frame}[noframenumbering,plain]{Cost of self-control}
+
+	Identification of \( \alpha_{\ell} \) allows elaboratig on its behavioral meaning
+
+	\vfill
+
+	\[
+		\alpha_{\ell} = \frac{\mathcal{U} \left( \left\{f, x \right\}, \ell \right) - \mathcal{U} \left( \left\{f, x^{\prime} \right\}, \ell \right) }{u \left( x , \ell \right) - u \left( x^{\prime} , \ell \right)} .
+	\]
+
+	\vfill
+
+	It is the marginal cost of self-control at likelihood \( \ell \).
+
+\end{frame}
+
+\begin{frame}[noframenumbering,plain]{Example: Moral Wiggle Room \citep{danaExploitingMoralWiggle2007}}
+
+	A dictator in a laboratory experiment is endowed with 10 euros.
+
+	\vfill
+
+	She decides how much to transfer to a recipient she is coupled with.
+
+	\vfill
+
+	The transfer is subject to an unknown multiplier, which could be high, medium, or low.
+
+	\vfill
+
+	The experimenter allows the dictator to choose the transfer from various menus conditional on the multiplier's value.
+
+\end{frame}
+
+\begin{frame}[noframenumbering,plain]{Example}
+	\begin{table}[H]
+		\centering
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\begin{tabular}{c | c}
+				State                          & Actions                                                                                       \\
+				\hline
+				{\color{bleudefrance} High}    & {\color{bleudefrance}\( h \left\{ 5 \right\} \) } \(+ \left(1-h \right) \left[5,10 \right] \) \\
+				{\color{bleudefrance} Medium } & {\color{bleudefrance}\( m \left\{ 5 \right\} \) } \(+ \left(1-m \right) \left[0,5 \right] \)  \\
+				Low                            & \( \left[0,3 \right] \)                                                                       \\
+			\end{tabular}
+			\vspace{0.5cm} % Adjust vertical space between tables and caption
+		\end{minipage}\hspace{0.25cm} \pause % Adjust the horizontal space between the tables and the symbol
+		\( \succsim \) % Symbol goes here
+		\hspace{0.25cm}
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\begin{tabular}{c | c}
+				State                          & Actions                                                                                       \\
+				\hline
+				{\color{bleudefrance} High}    & {\color{bleudefrance}\( h \left\{ 3 \right\} \) } \(+ \left(1-h \right) \left[5,10 \right] \) \\
+				{\color{bleudefrance} Medium } & {\color{bleudefrance}\( m \left\{ 3 \right\} \) } \(+ \left(1-m \right) \left[0,5 \right] \)  \\
+				Low                            & \( \left[0,3 \right] \)                                                                       \\
+			\end{tabular}
+			\vspace{0.5cm} % Adjust vertical space between tables and caption
+		\end{minipage}
+		%\caption{Set-Betweenness} % Add your caption here
+		%\label{tab:sbetweenness}
+	\end{table} \pause
+
+	\begin{center}
+		\( \Downarrow \)
+	\end{center}
+
+	\begin{table}[H]
+		\centering
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\begin{tabular}{c | c}
+				State                          & Actions                                                                                       \\
+				\hline
+				{\color{bleudefrance} High}    & {\color{bleudefrance}\( h \left\{ 5 \right\} \) } \(+ \left(1-h \right) \left[5,10 \right] \) \\
+				{\color{bleudefrance} Medium } & {\color{bleudefrance}\( m \left\{ 5 \right\} \) } \(+ \left(1-m \right) \left[0,5 \right] \)  \\
+				Low                            & \( \left[0,3 \right] \)                                                                       \\
+			\end{tabular}
+			\vspace{0.5cm} % Adjust vertical space between tables and caption
+		\end{minipage}\hspace{0.25cm} % Adjust the horizontal space between the tables and the symbol
+		\( \succsim \) % Symbol goes here
+		\hspace{0.25cm}
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\begin{tabular}{c | c}
+				State                          & Actions                                                                                         \\
+				\hline
+				{\color{bleudefrance} High}    & {\color{bleudefrance}\( h \left\{ 3,5 \right\} \) } \(+ \left(1-h \right) \left[5,10 \right] \) \\
+				{\color{bleudefrance} Medium } & {\color{bleudefrance}\( m \left\{ 3,5 \right\} \) } \(+ \left(1-m \right) \left[0,5 \right] \)  \\
+				Low                            & \( \left[0,3 \right] \)                                                                         \\
+			\end{tabular}
+			\vspace{0.5cm} % Adjust vertical space between tables and caption
+		\end{minipage}
+		\caption{Set-Betweenness} % Add your caption here
+		\label{tab:sbetweenness}
+	\end{table}
+\end{frame}
+
+\begin{frame}[noframenumbering, plain]{Example}
+	\begin{table}[H]
+		\centering
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\begin{tabular}{c | c}
+				State                          & Actions                                                                                       \\
+				\hline
+				{\color{bleudefrance} High}    & {\color{bleudefrance}\( h \left\{ 5 \right\} \) } \(+ \left(1-h \right) \left[5,10 \right] \) \\
+				{\color{bleudefrance} Medium } & {\color{bleudefrance}\( m \left\{ 5 \right\} \) } \(+ \left(1-m \right) \left[0,5 \right] \)  \\
+				Low                            & \( \left[0,3 \right] \)                                                                       \\
+			\end{tabular}
+		\end{minipage}\hspace{0.25cm} % Adjust the horizontal space between the tables and the symbol
+		\( \succ \) % Symbol goes here
+		\hspace{0.25cm}
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\begin{tabular}{c | c}
+				State                          & Actions                                                                                       \\
+				\hline
+				{\color{bleudefrance} High}    & {\color{bleudefrance}\( h \left\{ 7 \right\} \) } \(+ \left(1-h \right) \left[5,10 \right] \) \\
+				{\color{bleudefrance} Medium } & {\color{bleudefrance}\( m \left\{ 7 \right\} \) } \(+ \left(1-m \right) \left[0,5 \right] \)  \\
+				Low                            & \( \left[0,3 \right] \)                                                                       \\
+			\end{tabular}
+		\end{minipage}
+		%\caption{Set-Betweenness} % Add your caption here
+		%\label{tab:srbl}
+	\end{table} \pause
+
+	\begin{center}
+		\( \Downarrow \)
+	\end{center}
+
+	\begin{table}[H]
+		\centering
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\begin{tabular}{c | c}
+				State                          & Actions                                                                                       \\
+				\hline
+				{\color{bleudefrance} High}    & {\color{bleudefrance}\( h \left\{ 5 \right\} \) } \(+ \left(1-h \right) \left[5,10 \right] \) \\
+				{\color{bleudefrance} Medium } & {\color{bleudefrance}\( m \left\{ 5 \right\} \) } \(+ \left(1-m \right) \left[0,5 \right] \)  \\
+				Low                            & \( \left[0,3 \right] \)                                                                       \\
+			\end{tabular}
+			\vspace{0.5cm} % Adjust vertical space between tables and caption
+		\end{minipage}\hspace{0.25cm} % Adjust the horizontal space between the tables and the symbol
+		\( \sim \) % Symbol goes here
+		\hspace{0.25cm}
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\begin{tabular}{c | c}
+				State                          & Actions                                                                                         \\
+				\hline
+				{\color{bleudefrance} High}    & {\color{bleudefrance}\( h \left\{ 5,7 \right\} \) } \(+ \left(1-h \right) \left[5,10 \right] \) \\
+				{\color{bleudefrance} Medium } & {\color{bleudefrance}\( m \left\{ 5,7 \right\} \) } \(+ \left(1-m \right) \left[0,5 \right] \)  \\
+				Low                            & \( \left[0,3 \right] \)                                                                         \\
+			\end{tabular}
+			\vspace{0.5cm} % Adjust vertical space between tables and caption
+		\end{minipage}
+		\caption{Strategic Rationality for Best Likelihood} % Add your caption here
+		\label{tab:srbl}
+	\end{table}
+\end{frame}
+
+
+\begin{frame}[noframenumbering, plain]{Illustrative Example}
+
+	An investor decides whether to check the state of her portfolio.
+
+	\vfill
+
+	After checking, she decides whether to invest more \( \left( i \right) \) or withdraw any feasible amount of money, which could be high \( \left( \overline{w} \right) \) or low \( \left( w \right) \).
+
+	\vfill
+
+	\begin{table}[H]
+		\centering
+		\begin{minipage}{0.29\textwidth}
+
+		\end{minipage}\hspace{0.3cm} % Adjust the horizontal space between the tables and the symbol
+		% Symbol goes here
+		\begin{minipage}{0.29\textwidth}
+			\centering
+			\begin{tabular}{c | c}
+				\multicolumn{2}{c}{\textbf{Check}}                                                                            \\
+				State                        & Actions                                                                        \\
+				\hline
+				{\color{bleudefrance}Good}   & \multirow{2}{*}{{\color{bleudefrance}\( i, \left[ 0, \overline{w} \right] \)}} \\
+				{\color{bleudefrance}Normal} &                                                                                \\
+				Bad                          & \(  i, \left[0, w \right] \)                                                   \\
+			\end{tabular}
+			\vspace{0.5cm} % Adjust vertical space between tables and caption
+		\end{minipage}\hspace{0.3cm} % Adjust the horizontal space between the tables and the symbol
+		% Symbol goes here
+		\begin{minipage}{0.29\textwidth}
+
+		\end{minipage}
+		%\caption{Commitment under positive prior belief to avoid excessive investment.} % Add your caption here
+		%\label{tab:commitment}
+	\end{table} \pause
+
+	\vfill
+
+	Upon observing a high amount in it she infers the state of the market is not bad.
+
+	\vfill
+
+	When she sees a low amount, she knows the state of the market is bad.
+
+\end{frame}
+
+\begin{frame}[noframenumbering, plain]{Illustrative Example}
+
+	She can't make any inferences or do anything if she does not check.
+
+	\vfill
+
+	\begin{table}[H]
+		\centering
+		\begin{minipage}{0.29\textwidth}
+
+		\end{minipage}\hspace{0.3cm} % Adjust the horizontal space between the tables and the symbol
+		% Symbol goes here
+		\begin{minipage}{0.29\textwidth}
+			\centering
+			\begin{tabular}{c | c}
+				\multicolumn{2}{c}{\textbf{Check}}                                                                            \\
+				State                        & Actions                                                                        \\
+				\hline
+				{\color{bleudefrance}Good}   & \multirow{2}{*}{{\color{bleudefrance}\( i, \left[ 0, \overline{w} \right] \)}} \\
+				{\color{bleudefrance}Normal} &                                                                                \\
+				Bad                          & \(  i, \left[0, w \right] \)                                                   \\
+			\end{tabular}
+			\vspace{0.5cm} % Adjust vertical space between tables and caption
+		\end{minipage}\hspace{0.7cm} % Adjust the horizontal space between the tables and the symbol
+		% Symbol goes here
+		\begin{minipage}{0.29\textwidth}
+			\centering
+			\begin{tabular}{c | c}
+				\multicolumn{2}{c}{\textbf{Not Check}} \\
+				State  & Actions                       \\
+				\hline
+				Good   & \multirow{3}{*}{ \( 0 \)}     \\
+				Normal &                               \\
+				Bad    &                               \\
+			\end{tabular}
+			\vspace{0.5cm} % Adjust vertical space between tables and caption
+		\end{minipage}
+		%\caption{Commitment under positive prior belief to avoid excessive investment.} % Add your caption here
+		%\label{tab:commitment}
+	\end{table}
+
+\end{frame}
+
+\begin{frame}[noframenumbering, plain]{Illustrative Example}
+
+	She could also check and committ not to invest, by delegating to a financial advisor.
+
+	\vfill
+
+	\begin{table}[H]
+		\centering
+		\begin{minipage}{0.29\textwidth}
+			\centering
+			\begin{tabular}{c | c}
+				\multicolumn{2}{c}{\textbf{Delegate}}                                                                     \\
+				State                        & Actions                                                                    \\
+				\hline
+				{\color{bleudefrance}Good}   & \multirow{2}{*}{{\color{bleudefrance}\( \left[0, \overline{w} \right] \)}} \\
+				{\color{bleudefrance}Normal} &                                                                            \\
+				Bad                          & \( \left[0, w \right]\)                                                    \\
+			\end{tabular}
+			\vspace{0.5cm} % Adjust vertical space between tables and caption
+		\end{minipage}\hspace{0.5cm} % Adjust the horizontal space between the tables and the symbol
+		% Symbol goes here
+		\begin{minipage}{0.29\textwidth}
+			\centering
+			\begin{tabular}{c | c}
+				\multicolumn{2}{c}{\textbf{Check}}                                                                            \\
+				State                        & Actions                                                                        \\
+				\hline
+				{\color{bleudefrance}Good}   & \multirow{2}{*}{{\color{bleudefrance}\( i, \left[ 0, \overline{w} \right] \)}} \\
+				{\color{bleudefrance}Normal} &                                                                                \\
+				Bad                          & \(  i, \left[0, w \right] \)                                                   \\
+			\end{tabular}
+			\vspace{0.5cm} % Adjust vertical space between tables and caption
+		\end{minipage}\hspace{0.5cm} % Adjust the horizontal space between the tables and the symbol
+		% Symbol goes here
+		\begin{minipage}{0.29\textwidth}
+			\centering
+			\begin{tabular}{c | c}
+				\multicolumn{2}{c}{\textbf{Not Check}} \\
+				State  & Actions                       \\
+				\hline
+				Good   & \multirow{3}{*}{ \( 0 \)}     \\
+				Normal &                               \\
+				Bad    &                               \\
+			\end{tabular}
+			\vspace{0.5cm} % Adjust vertical space between tables and caption
+		\end{minipage}
+		%\caption{Commitment under positive prior belief to avoid excessive investment.} % Add your caption here
+		%\label{tab:commitment}
+	\end{table}
+
+\end{frame}
+
+\begin{frame}[noframenumbering, plain]{Illustrative Example}
+
+	She anticipates to overweight evidence and invest too much.
+
+	\vfill
+
+	Therefore, she prefers to commit, but also wants to obtain information.
+
+	\vfill
+
+	\begin{table}[H]
+		\centering
+		\begin{minipage}{0.29\textwidth}
+			\centering
+			\begin{tabular}{c | c}
+				\multicolumn{2}{c}{\textbf{Delegate}}                                                                     \\
+				State                        & Actions                                                                    \\
+				\hline
+				{\color{bleudefrance}Good}   & \multirow{2}{*}{{\color{bleudefrance}\( \left[0, \overline{w} \right] \)}} \\
+				{\color{bleudefrance}Normal} &                                                                            \\
+				Bad                          & \( \left[0, w \right]\)                                                    \\
+			\end{tabular}
+			\vspace{0.5cm} % Adjust vertical space between tables and caption
+		\end{minipage}\hspace{0.3cm} % Adjust the horizontal space between the tables and the symbol
+		\( \succ \) % Symbol goes here
+		\begin{minipage}{0.29\textwidth}
+			\centering
+			\begin{tabular}{c | c}
+				\multicolumn{2}{c}{\textbf{Check}}                                                                            \\
+				State                        & Actions                                                                        \\
+				\hline
+				{\color{bleudefrance}Good}   & \multirow{2}{*}{{\color{bleudefrance}\( i, \left[ 0, \overline{w} \right] \)}} \\
+				{\color{bleudefrance}Normal} &                                                                                \\
+				Bad                          & \(  i, \left[0, w \right] \)                                                   \\
+			\end{tabular}
+			\vspace{0.5cm} % Adjust vertical space between tables and caption
+		\end{minipage}\hspace{0.3cm} % Adjust the horizontal space between the tables and the symbol
+		\( \succ \) % Symbol goes here
+		\begin{minipage}{0.29\textwidth}
+			\centering
+			\begin{tabular}{c | c}
+				\multicolumn{2}{c}{\textbf{Not Check}} \\
+				State  & Actions                       \\
+				\hline
+				Good   & \multirow{3}{*}{ \( 0 \)}     \\
+				Normal &                               \\
+				Bad    &                               \\
+			\end{tabular}
+			\vspace{0.5cm} % Adjust vertical space between tables and caption
+		\end{minipage}
+		\caption{Commitment under positive prior belief to avoid excessive investment.} % Add your caption here
+		\label{tab:commitment}
+	\end{table}
+
+	\vfill
+
+	"Cognitive" non-Bayesian updating \citep{epsteinAxiomaticModelNonBayesian2006} cannot rationalise this behaviour.
+
+\end{frame}
+
+\begin{frame}[noframenumbering, plain]{Illustrative Example}
+
+	If the investor expects the state of the market to be bad, she prefers not to check the portfolio at all to avoid receiving unpleasant information.
+
+	\vfill
+
+	\begin{table}[H]
+		\centering
+		\begin{minipage}{0.29\textwidth}
+			\centering
+			\begin{tabular}{c | c}
+				\multicolumn{2}{c}{\textbf{Not Check}} \\
+				State  & Actions                       \\
+				\hline
+				Good   & \multirow{3}{*}{ \( 0 \)}     \\
+				Normal &                               \\
+				Bad    &                               \\
+			\end{tabular}
+			\vspace{0.5cm} % Adjust vertical space between tables and caption
+		\end{minipage}\hspace{0.3cm} % Adjust the horizontal space between the tables and the symbol
+		\( \succ \) % Symbol goes here
+		\begin{minipage}{0.29\textwidth}
+			\centering
+			\begin{tabular}{c | c}
+				\multicolumn{2}{c}{\textbf{Delegate}}                                                                     \\
+				State                        & Actions                                                                    \\
+				\hline
+				{\color{bleudefrance}Good}   & \multirow{2}{*}{{\color{bleudefrance}\( \left[0, \overline{w} \right] \)}} \\
+				{\color{bleudefrance}Normal} &                                                                            \\
+				Bad                          & \( \left[0, w \right]\)                                                    \\
+			\end{tabular}
+			\vspace{0.5cm} % Adjust vertical space between tables and caption
+		\end{minipage}\hspace{0.3cm} % Adjust the horizontal space between the tables and the symbol
+		\( \succ \) % Symbol goes here
+		\begin{minipage}{0.29\textwidth}
+			\centering
+			\begin{tabular}{c | c}
+				\multicolumn{2}{c}{\textbf{Check}}                                                                            \\
+				State                        & Actions                                                                        \\
+				\hline
+				{\color{bleudefrance}Good}   & \multirow{2}{*}{{\color{bleudefrance}\( i, \left[ 0, \overline{w} \right] \)}} \\
+				{\color{bleudefrance}Normal} &                                                                                \\
+				Bad                          & \(  i, \left[0, w \right] \)                                                   \\
+			\end{tabular}
+			\vspace{0.5cm} % Adjust vertical space between tables and caption
+		\end{minipage}
+		\caption{Information avoidance under negative prior beliefs, "ostrich effect".} % Add your caption here
+		\label{tab:oistrich}
+	\end{table}
+
+	Both excessive trading and the ostrich effect constitutes empirical puzzles in finance \citep{danielOverconfidentInvestorsPredictable2015,golmanInformationAvoidance2017}.
+
+\end{frame}
+
+
+\end{document}
