@@ -1,0 +1,692 @@
+\chapter{Identifying Belief-Dependent Preferences}\label{ch:bdp}
+
+\begin{chapterabstract}
+	Why are investors overconfident and trade excessively? Why do patients at health risk avoid testing? Why are voters polarised? Possibly because their beliefs directly influence their well-being, i.e., they have belief-dependent preferences. However, existing theories of belief-dependent preferences struggle to generate testable predictions or to identify simultaneously beliefs and preferences. This paper addresses these issues by providing an axiomatic characterization of a class of preferences and belief-updating rules that deviate from Bayesian updating. Preferences, beliefs, and updating rules are identified from choices over contingent menus, each entailing a menu of acts available at a later time contingent on an uncertain state of the world. The results provide a theory-based approach to experimental designs to test information avoidance, distortion, and other behaviours consistent with belief-dependent preferences.
+\end{chapterabstract}
+
+%\epigraph{\begin{minipage}{\epigraphwidth}\textit{Fanshawe's praise, therefore, left me with mixed feelings. On the one hand, I knew that he was wrong. On the other hand (and this is where it gets murky), I wanted to believe that he was right. I thought: is it possible that I've been too hard on myself? And once I began to think that, I was lost. But who wouldn't jump at the chance to redeem himself—what man is strong enough to reject the possibility of hope? The thought flickered through me that I could one day be resurrected in my own eyes.}\end{minipage}}{\cite{austerNewYorkTrilogy2006}}
+
+%\epigraph{\begin{minipage}{\epigraphwidth}\textit{Fanshawe's praise, therefore, left me with mixed feelings. On the one hand, I knew that he was wrong. On the other hand, I wanted to believe that he was right. I thought: is it possible that I've been too hard on myself? But who wouldn't jump at the chance to redeem himself—what man is strong enough to reject the possibility of hope? The thought flickered through me that I could one day be resurrected in my own eyes.}\end{minipage}}{\cite{austerNewYorkTrilogy2006}}
+
+\section{Introduction}\label{sec:intro}
+
+People often hold some beliefs dear, even when faced with evidence against them. Do they change their views, or do they continue believing what they want? Indeed, research documents two common attitudes towards new information: avoidance and distortion. Investors avoid obtaining information when they expect the market to be in a bad state \citep{karlssonOstrichEffectSelective2009,sichermanFinancialAttention2016}. Donors do not learn about the impact of their donation \citep{andreoniAvoidingAskField2017,chanAvoidingPeerInformation2024}. Voters shun evidence that undermines their view \citep{gentzkowWhatDrivesMedia2010,bakshyExposureIdeologicallyDiverse2015}. Despite being at risk, patients refrain from getting tested. \citep{thorntonDemandImpactLearning2008,osterOptimalExpectationsLimited2013}. If information is obtained, it is distorted when unwelcome but correctly processed if welcomed. Negotiators interpret favourably information that supports their case and dismiss the quality of contrary evidence \citep{babcockBiasedJudgmentsFairness1995}. Individuals are less likely to accept bad news about their attractiveness or intelligence but correctly process good news \citep{eilGoodNewsbadNews2011}. They also exaggerate good news about their ability or IQ \citep{mobiusManagingSelfConfidenceTheory2022,drobnerMotivatedBeliefUpdating2024}. Those with differing opinions on climate change consider scientists experts only when they support their views \citep{kahanPolarizingImpactScience2012}.\footnote{For additional examples of information avoidance and distortion, see the surveys by \cite{danielOverconfidentInvestorsPredictable2015}, \cite{benabou2016mindful}, and \cite{golmanInformationAvoidance2017}.}
+
+These observations conflict with expected utility theory, where more information is always desirable, and information should be processed via Bayes rule. However, if an individual derives pleasure or pain from specific beliefs, she might avoid information or process it differently. Theories of belief-dependent preferences (hereafter BDP) assume that individuals hold beliefs to enhance their well-being, which explains why they might avoid or distort information. Examples include psychological expected utility \citep{caplinPsychologicalExpectedUtility2001}, optimal expectations \citep{brunnermeierOptimalExpectations2005}, ego concerns \citep{koszegiEgoUtilityOverconfidence2006}, preferences for anticipation \citep{koszegiUtilityAnticipationPersonal2010}, and motivated reasoning \citep{benabouEconomicsMotivatedBeliefs2015,benabou2016mindful}. These theories share a common feature: they do not provide observable data to separately identify the individual’s tastes over outcomes and beliefs. This lack of identification complicates the interpretation of empirical findings, renders distinguishing between different theories difficult, and limits policy recommendations. For accurate predictions and effective policy, economists need models that are identifiable and refutable. In this paper, I offer such a model. My model implies conditions on observed choices that exhaustively characterise BDP. If choices abide by these conditions, then tastes and beliefs can be identified separately. If they do not, the theory is rejected. Such "if and only if" characterisation is absent in previous theories.
+
+In theories of BDP, how an outcome is evaluated depends on the individual's beliefs. The lack of separation between these two concepts complicates their interpretation and identification because the way beliefs are formed may depend on tastes. Inferring tastes and beliefs from choices thus becomes a challenging task. The implication is that it is harder to obtain clear predictions. In addition to the lack of identification, current approaches make different assumptions about information processing, ranging from using Bayes rule \citep{koszegiEgoUtilityOverconfidence2006} to assuming that individuals forget information \citep{benabouEconomicsMotivatedBeliefs2015} or even choose their beliefs at will \citep{brunnermeierOptimalExpectations2005}. These assumptions are difficult to test. Therefore, the extant theories of BDP have two related limitations. They fail to make explicit the link between tastes and belief revision and tastes and beliefs are not uniquely identified.
+
+In this paper, I propose a model of BDP that addresses these limitations. I introduce axioms on choices that characterise individuals as having tastes over their beliefs and belief revision rules related to their tastes. The theory identifies prior beliefs, tastes, and their related belief updating rules from observable choices.
+
+I study the preferences over contingent menus. Contingent menus are collections of acts available at a later time that are conditional on the realisation of an uncertain state of the world. Consider the following illustrative example. An investor can access her banking app to receive information about the market. If she accesses the app, she observes information such as prices or the available balance. She then chooses how much to invest or withdraw. Accessing the app or not represent two \textit{contingent menus}, each associated to a probability distribution over menus of available acts. The realisation of the menu of acts that is finally available to the individual is conditional on an uncertain state of the world. Thus, observing an available menu of acts is informative for the investor. For example, if the investor opens the app and observes a high value of her portfolio, she receives information not only about the amount of money she can withdraw but also about the state of the market. If she chooses not to access the app, she receives no information about the market and her only available act is to do nothing.
+
+The choice between contingent menus thus reflects intertemporal preferences over acts and information. As suggested by this illustrative example, in the general model of an individual's decision problem, there are three time periods. The individual first chooses one of the available \textit{contingent menus}, each of which delivers a distribution of menus of acts conditional on the state of the world. Then, a menu of acts available to the individual realises, and the individual updates her beliefs on the basis of the observation of the realised menu. Finally, the individual chooses an act from the realised menu.
+
+The reason why contingent menus allow for identification is as follows. Consider an individual who has to choose between Blackwell experiments. A Bayesian individual always prefers the most informative experiment. Instead, intuitively, individuals with different preferences over beliefs should prefer different experiments. When an individual with BDP chooses between experiments, she takes expectations over her belief-dependent expected utility, particularly over the posteriors that the experiments can induce. Under Bayesian updating, the mean of the posteriors induced by any experiment is equal to the prior. Therefore, if the individual maximises her belief-dependent expected utility under Bayesian updating, her choices over experiments cannot reveal preferences over distinct posteriors, as their expectations are the same. The intuition that different belief-dependent preferences correspond to different choices of experiments fails, as shown by \cite{eliazCanAnticipatoryFeelings2006} and \cite{liangInformationdependentExpectedUtility2017}. An immediate implication is that non-Bayesian updating overcomes this problem, as the mean of posteriors that are not the Bayesian update of a prior is not necessarily equal to the prior. However, non-Bayesian updating induces dynamic inconsistency. Choices over contingent menus allow me to identify how the individual manages such dynamic inconsistency, that is, how she deviates from Bayesian updating. In turn, non-Bayesian updating allows for the identification of preferences over beliefs.
+
+Two crucial axioms characterise BDP preferences over contingent menus. First, I need an axiom similar to the independence of \cite{vonneumannTheoryGamesEconomic2007}, but weakened to obtain BDP. Here individuals are sensitive to the informational content of a realised menu of acts. Therefore, I formulate a weak version of independence that is satisfied only among contingent menus inducing the same inference about the uncertain state \citep{liangInformationdependentExpectedUtility2017,rommeswinkelPreferenceKnowledge2023}. This weak version of independence induces dynamic inconsistency. After receiving information, the individual is tempted to deviate from her plan. This is because, since individual tastes depend on beliefs, the individual might distort them after receiving information. The second axiom states that the individual faces no temptation when the realised menu of acts comprises her preferred choice under both the Bayesian posterior and according to her preferred posterior. This axiom, which I call \textit{strategic rationality for best likelihood}, ascribes the source of temptation to distorted belief updating due to BDP, and constitutes the main departure from the literature. The axiom is intuitive: it implies that the individual is not tempted when the information she receives is the one she prefers.
+
+The main result is Theorem \ref{thm:rep}, which provides a functional representation of preferences over contingent menus. The choices that are consistent with the representation can be interpreted as follows. The individual chooses a contingent menu according to her preferences over acts in menu realisations and over the information it provides. She anticipates that once a menu of acts realises, she will distort her posterior beliefs away from the Bayesian update to satisfy her BDP.\footnote{This interpretation relies on the sophistication of the individual at the ex ante stage. \cite{cobb-clarkPredictivePowerSelfcontrol2022} provide evidence that a majority of time-inconsistent individuals exhibit at least partial sophistication.} She would like to choose according to the Bayesian posterior but is tempted to choose according to the distorted one. She solves the conflict by maximising a weighted average of two expected utilities, one under the Bayesian posterior and the other with the distorted one. The second result, Corollary \ref{cor:uniq}, is an identification one. The choices over contingent menus allow me to uniquely pin down the individual's prior beliefs, tastes over outcomes and beliefs, distorted posterior beliefs, and the weight on the distorted utility. I illustrate the use of the representation with an application in Section \ref{sec:application}, where I show how BDP can lead to belief polarisation.
+
+Resorting to contingent menus as a primitive makes it possible to infer tastes over both beliefs and acts. This, in turn, overcomes the two issues that plague BDP highlighted above. First, it allows to test BDP by observing choices alone, in contrast to other extant theories. Second, BDP typically lead to dynamic inconsistency of behaviour in risky settings \citep[p. 863]{battigalliBeliefdependentMotivationsPsychological2022}. Dynamic inconsistency means that the choice the individual plans to take before receiving information is different from the one she wants to take after receiving information when she is tempted to act differently. Previous theories have relied on multiple-selves models. However, these models do not provide clear recommendations for welfare analysis, as a choice must be made regarding which of the selves' preferences are relevant. The current setting instead identifies the individual as the unit of choice, and her preferences can be subject to welfare analysis.
+
+In sum, my model has two distinctive features compared with previous theories: it details the link between tastes over beliefs and belief updating, rather than assuming specific revision rules, and it relies only on observable choices to identify preferences, prior beliefs and revision rules, moving one step towards the empirical testing of BDP and non-Bayesian updating.
+
+I compare the paper with the literature in the following paragraphs. Section \ref{sec:example} illustrates the primitives of the theory with two examples and provides instances of preferences satisfying the axioms. Section \ref{sec:model} details the general model and axioms. Section \ref{sec:result} presents the results, a functional representation of preferences satisfying the axioms and the uniqueness of the components of the functional form. Section \ref{sec:discuss} discusses the relationships with previous models. Section \ref{sec:application} presents a simple application showing how non-Bayesian updating arising from BDP can lead to polarisation. Section \ref{sec:conclusion} concludes by discussing how the analysis sheds light on the interpretation of BDP.
+
+\textit{Related literature.} Unlike previous papers in decision theory, I allow tastes over beliefs to interact with tastes over outcomes and identify both prior beliefs and departures from Bayes rule. To the best of my knowledge, there have been three attempts to provide an axiomatic revealed preference foundation for BDP. \cite{dillenbergerAdditivebeliefbasedPreferences2020} propose a model in which an individual has preferences over the probability of realisation of compound objective lotteries. In \cite{liangInformationdependentExpectedUtility2017}, the individual has preferences over the inference her choices induce in \cite{anscombeDefinitionSubjectiveProbability1963}'s setting. \cite{rommeswinkelPreferenceKnowledge2023} is similar to \cite{liangInformationdependentExpectedUtility2017}, except that the setting is that of \cite{savageFoundationsStatistics1972}. Given that it is an objective probability framework, \cite{dillenbergerAdditivebeliefbasedPreferences2020} do not cover belief identification and updating. Moreover, despite working in a dynamic setting, they do not address inconsistency. \cite{liangInformationdependentExpectedUtility2017} identifies beliefs when tastes over these are independent of tastes over outcomes. However, his setting is static and thus silent about belief revision. \cite{rommeswinkelPreferenceKnowledge2023}'s model is instead dynamically consistent and identifies prior beliefs under the same separability assumption of \cite{liangInformationdependentExpectedUtility2017}, but belief updating is not addressed.
+
+A novelty of the present paper is the study of contingent menus delivering different inferences about the state. Variation in the inference provided by contingent menus is the key to identifying preferences and belief revision rules. Therefore, the paper is related to the literature that studies menu choice to identify departures from subjective expected utility. \cite{ozdenorenCompletingStateSpace2002} considers contingent menus of objective lotteries as primitives. \cite{epsteinAxiomaticModelNonBayesian2006} and \cite{epsteinColdFeet2007} instead study contingent menus of Anscombe-Aumann acts. In all these papers, the state giving rise to the menu realisation is revealed; thus, preferences for information cannot be identified. The closest paper is \cite{epsteinAxiomaticModelNonBayesian2006}, who provides a model of non-Bayesian updating without considering BDP but does not study choice of information.
+
+This paper is also related to the literature explaining empirical observations with BDP. \cite{benabou2016mindful}, \cite{golmanInformationAvoidance2017} and \cite{battigalliBeliefdependentMotivationsPsychological2022} are three surveys on motivated beliefs, information avoidance and psychological game theory, which are related to BDP. The distinction between the previous applied work and the present paper is testability. I follow the axiomatic approach and characterise behaviourally a class of preferences and revision rules. Previous papers have "if" results that can rationalise evidence but do not allow to distinguish between different theories. Moreover, I do not tailor the model to an application, and I do not commit to a specific psychological mechanism, taste or belief revision rule. Unlike psychological games, I consider a single individual and focus on identification rather than equilibrium in games. Finally, I address dynamic inconsistency via temptation and self-control, dispensing from previously employed multiple-selves or intrapersonal equilibrium approaches \citep{brunnermeierOptimalExpectations2005,koszegiUtilityAnticipationPersonal2010}, which lead to problematic welfare analyses \citep[p. 404]{siniscalchiDynamicChoiceAmbiguity2011} and are difficult to test, limiting policy recommendations.
+
+\section{Illustrative Examples}\label{sec:example}
+
+In this section, I develop two examples. The aim is both to illustrate the primitives of the model and to show how the theory explains some empirical observations.
+
+\paragraph{Information distortion to reduce donations.} A dictator game is an interaction between two individuals. One of them, the dictator, decides how much of a given amount to keep for herself and how much to transfer to the other individual, the recipient. It has been observed in the laboratory that dictators avoid receiving free information about how much of their transfer will arrive at the recipient to justify acting in a self-interested manner \citep{danaExploitingMoralWiggle2007}. Moreover, conditional on receiving favourable information, they transfer more \citep{grossmanSelfimageStrategicIgnorance2013,vanderweeleInconvenientTruthsDeterminants2014}. Similar instances of information avoidance are common.\footnote{See Section 3 in \cite{golmanInformationAvoidance2017} for multiple references.} I show how such attitudes towards information can be explained by non-Bayesian updating induced by BDP, and introduce a sketch of an experimental design to test the theory.
+
+I consider a stochastic version of a dictator game. The dictator chooses how much to transfer to a recipient with whom she is coupled. The transfer is inefficient, and the receiver only receives a stochastic proportion of it. The dictator chooses whether to observe a signal on the efficiency of the transfer or not. If she observes the signal, she learns the likelihood \( \ell \left( e \right) \) of the efficiency level having value \( e \).
+
+The dictator derives warm-glow from her expectation of the receiver outcome.\footnote{\cite{niehausTheoryGoodIntentions2014} proposed a similar preference in the context of charitable giving.} She would like to believe that the efficiency of the transfer is high to increase her warm-glow feelings. However, the higher the expected efficiency is, the higher the optimal transfer, which is a cost for the dictator. The dictator's tastes over transfers \( x \in \left[0, 10 \right) \) at likelihood \( \ell \) are
+
+\begin{equation}\label{eq:example1}
+	u \left( x ; \ell \right) = log \left( 10 - x \right) + \sum_{e} p_{\ell} \left( e \right) e x ,
+\end{equation}
+
+where \( p_{\ell} \) is the posterior belief over efficiency \( e \) after observing likelihood \( \ell \).\footnote{The Bayesian posterior of the prior \( p \) after observing likelihood \( \ell \) is \( p_{\ell} \left( s \right) = \frac{\ell \left( s \right) p \left( s \right)}{\sum_{s^{\prime}} \ell \left( s^{\prime} \right) p \left( s^{\prime} \right)} \).} If the dictator chooses not to observe the signal, she chooses according to her prior beliefs, i.e., under the uninformative likelihood. The dictator maximises the sum of her material payoff, logarithmic in money, and her expectation of what the receiver receives. This expression deviates from expected utility because the information received in the form of the likelihood \( \ell \) affects the taste over outcomes, not only the beliefs about their realisation. The optimal transfer at likelihood \( \ell \) is
+
+\[
+	x^{*} \left( \ell \right) = 10 - \frac{1}{\sum_{e} p_{\ell} \left( e \right) e } ,
+\]
+
+which is increasing in the expected efficiency. The function \( u \left( x^{*} \left( \ell \right), \ell \right) \) is convex; therefore, its expectation over signal realisation is always greater than the prior. An individual computing expected utility with her Bayesian posterior and tastes in Equation \eqref{eq:example1} would always prefer to observe the signal and not avoid information.
+
+Now consider a case in which the dictator distorts her beliefs after receiving the signal to maximise \( u \). The likelihood \( \ell^{*} \) of inducing the preferred beliefs satisfies the following
+
+\[
+	\ell^{*} \in \arg \max_{\ell} \max_{x} u \left( x ; \ell \right) .
+\]
+
+In this case, the preferred beliefs give probability one to the highest level of efficiency and therefore induce a high transfer. If the dictator expects to distort her beliefs, she will avoid information, contrary to what she would do if she was Bayesian, to justify transferring less. Such extreme distortion is a particular case of the general model in the body of the paper.
+
+The experimenter can allow the dictator to choose whether to observe the signal and to commit to a transfer conditional on the signal realisation before receiving it. If the dictator prefers to receive the signal and commit to a transfer conditional on it, it means that she wants to be informed but anticipates that she will distort the signal and act according to distorted beliefs if she has the chance.
+
+\paragraph{Ostrich effect and excessive trading.} This example examines how an investor’s decision to seek information about the market is influenced by her tastes over the beliefs she holds. An investor chooses whether to check her financial portfolio. If she checks, she observes a signal about the state of the market and can invest or withdraw money. If she does not check, she receives no information and cannot invest or withdraw.
+
+The investor enjoys believing that the market is in a good state and suffers when she does not. If she receives a bad signal, she suffers from negative news. Instead, if she receives a good signal, she overweights the evidence and develops overly optimistic beliefs. These distorted beliefs lead her to invest more than she would do on the basis of the Bayesian update of her prior beliefs. When choosing whether to check the portfolio, she weights the following factors: receiving bad news and suffering from it or receiving good news and acting on distorted beliefs.
+
+If the investor has a low prior belief that the market is in a good state, she prefers not to check the portfolio to avoid unpleasant information. Instead, if she expects the market to be in good state, she may choose to check the portfolio to update her beliefs in a favourable direction rather than remaining uninformed. These behavioural patterns are well-documented \citep{danielOverconfidentInvestorsPredictable2015,golmanInformationAvoidance2017}. The first pattern, known as the \textquote{ostrich effect} in finance, involves avoiding unpleasant information. The second pattern involves excessive motivation from overconfidence in belief formation, in this case leading to excessive trading.
+
+\begin{comment}
+
+\begin{table}[H]
+	\centering
+	\begin{minipage}{0.29\textwidth}
+		\centering
+		\begin{tabular}{c | c}
+			\multicolumn{2}{c}{\textbf{Delegate}}                                             \\
+			State                     & Actions                                               \\
+			\hline
+			{\color{blue}Outstanding} & \multirow{2}{*}{{\color{blue}\( n , \overline{w} \)}} \\
+			{\color{blue}Good}        &                                                       \\
+			Bad                       & \( n, w \)                                            \\
+		\end{tabular}
+		%\vspace{0.5cm} % Adjust vertical space between tables and caption
+	\end{minipage}\hspace{0.3cm} % Adjust the horizontal space between the tables and the symbol
+	% Symbol goes here
+	\begin{minipage}{0.29\textwidth}
+		\centering
+		\begin{tabular}{c | c}
+			\multicolumn{2}{c}{\textbf{Check}}                                                  \\
+			State                     & Actions                                                 \\
+			\hline
+			{\color{blue}Outstanding} & \multirow{2}{*}{{\color{blue}\( i, n, \overline{w} \)}} \\
+			{\color{blue}Good}        &                                                         \\
+			Bad                       & \(  i, n, w \)                                          \\
+		\end{tabular}
+		%\vspace{0.5cm} % Adjust vertical space between tables and caption
+	\end{minipage}\hspace{0.3cm} % Adjust the horizontal space between the tables and the symbol
+	% Symbol goes here
+	\begin{minipage}{0.29\textwidth}
+		\centering
+		\begin{tabular}{c | c}
+			\multicolumn{2}{c}{\textbf{Not Check}}  \\
+			State       & Actions                   \\
+			\hline
+			Outstanding & \multirow{3}{*}{ \( n \)} \\
+			Good        &                           \\
+			Bad         &                           \\
+		\end{tabular}
+		%\vspace{0.5cm} % Adjust vertical space between tables and caption
+	\end{minipage}
+	\caption{Three contingent menus.} % Add your caption here
+	\label{tab:menusexample}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{minipage}{0.29\textwidth}
+		\centering
+		\begin{tabular}{c | c}
+			\multicolumn{2}{c}{\textbf{Delegate}}                                             \\
+			State                     & Actions                                               \\
+			\hline
+			{\color{blue}Outstanding} & \multirow{2}{*}{{\color{blue}\( n , \overline{w} \)}} \\
+			{\color{blue}Good}        &                                                       \\
+			Bad                       & \( n, w \)                                            \\
+		\end{tabular}
+		%\vspace{0.5cm} % Adjust vertical space between tables and caption
+	\end{minipage}\hspace{0.3cm} % Adjust the horizontal space between the tables and the symbol
+	\( \succ \) % Symbol goes here
+	\begin{minipage}{0.29\textwidth}
+		\centering
+		\begin{tabular}{c | c}
+			\multicolumn{2}{c}{\textbf{Check}}                                                  \\
+			State                     & Actions                                                 \\
+			\hline
+			{\color{blue}Outstanding} & \multirow{2}{*}{{\color{blue}\( i, n, \overline{w} \)}} \\
+			{\color{blue}Good}        &                                                         \\
+			Bad                       & \(  i, n, w \)                                          \\
+		\end{tabular}
+		%\vspace{0.5cm} % Adjust vertical space between tables and caption
+	\end{minipage}\hspace{0.3cm} % Adjust the horizontal space between the tables and the symbol
+	\( \succ \) % Symbol goes here
+	\begin{minipage}{0.29\textwidth}
+		\centering
+		\begin{tabular}{c | c}
+			\multicolumn{2}{c}{\textbf{Not Check}}  \\
+			State       & Actions                   \\
+			\hline
+			Outstanding & \multirow{3}{*}{ \( n \)} \\
+			Good        &                           \\
+			Bad         &                           \\
+		\end{tabular}
+		%\vspace{0.5cm} % Adjust vertical space between tables and caption
+	\end{minipage}
+	\caption{Commitment under positive prior belief to avoid excessive investment.} % Add your caption here
+	\label{tab:commitment}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{minipage}{0.29\textwidth}
+		\centering
+		\begin{tabular}{c | c}
+			\multicolumn{2}{c}{\textbf{Not Check}}  \\
+			State       & Actions                   \\
+			\hline
+			Outstanding & \multirow{3}{*}{ \( n \)} \\
+			Good        &                           \\
+			Bad         &                           \\
+		\end{tabular}
+		%\vspace{0.5cm} % Adjust vertical space between tables and caption
+	\end{minipage}\hspace{0.3cm} % Adjust the horizontal space between the tables and the symbol
+	\( \succ \) % Symbol goes here
+	\begin{minipage}{0.29\textwidth}
+		\centering
+		\begin{tabular}{c | c}
+			\multicolumn{2}{c}{\textbf{Delegate}}                                             \\
+			State                     & Actions                                               \\
+			\hline
+			{\color{blue}Outstanding} & \multirow{2}{*}{{\color{blue}\( n , \overline{w} \)}} \\
+			{\color{blue}Good}        &                                                       \\
+			Bad                       & \( n, w \)                                            \\
+		\end{tabular}
+		%\vspace{0.5cm} % Adjust vertical space between tables and caption
+	\end{minipage}\hspace{0.3cm} % Adjust the horizontal space between the tables and the symbol
+	\( \succ \) % Symbol goes here
+	\begin{minipage}{0.29\textwidth}
+		\centering
+		\begin{tabular}{c | c}
+			\multicolumn{2}{c}{\textbf{Check}}                                                   \\
+			State                     & Actions                                                  \\
+			\hline
+			{\color{blue}Outstanding} & \multirow{2}{*}{{\color{blue}\( i, n , \overline{w} \)}} \\
+			{\color{blue}Good}        &                                                          \\
+			Bad                       & \(  i, n, w \)                                           \\
+		\end{tabular}
+		%\vspace{0.5cm} % Adjust vertical space between tables and caption
+	\end{minipage}
+	\caption{Information avoidance under negative prior beliefs, "ostrich effect".} % Add your caption here
+	\label{tab:ostrich}
+\end{table}
+
+\end{comment}
+
+I now introduce a utility function that consistent with the investor's choices and constitutes a particular case of the theory developed in this paper. The individual values both the monetary outcome of her decision and the information she receives, with these factors being separable. She values each unit of net monetary gain independently of her beliefs. She makes a choice at two time periods: first, she chooses whether to check the portfolio; and second, conditional on her previous choice and the signal she receives, she chooses how much to invest or withdraw.
+
+The feasible distributions of net financial gains depend on the signal received. As an example, the investor can implement various investment strategies on the basis of the prices and available balance she observes. Therefore, a signal corresponds to a menu of feasible acts the individual can choose from, denoted by \( M \). After observing the menu of feasible acts \( M \) as a signal, the individual updates her beliefs by combining her prior \( p \left( s \right) \) with the likelihood \( \ell_{M} \left( s \right) \) of state \( s \) being true given the observed menu \( M \). The Bayesian posterior is \( p_{\ell_M} \left( s \right) \). The individual then chooses an act \( f \), an investment strategy, from the feasible set \( M \), whose outcome \( f_s \) depends on the realisation of the state. Assume that there are three possible states: good \( \left( g \right) \), normal \( \left( n \right) \), and bad \( \left( b \right) \). The individual's tastes over monetary outcomes are \( v \left( f_s \right) \). Her tastes over outcomes and information are represented by the following
+
+\[
+	u \left( f_s; \ell_{M} \right) = v \left( f_s \right) + \omega_{g} \ell_{M} \left( g \right) + \omega_{n} \ell_{M} \left( n \right) ,
+\]
+
+where \( \omega_{g} > \omega_{n} > 0 \) are numbers representing how much the individual values observing greater likelihoods that the state is good and normal. The investor values a greater likelihood of the state being good than normal, which in turn is more valuable than observing a greater likelihood of the state being bad. A Bayesian individual with these tastes maximises the expectation of \( u \) computed via the Bayesian update
+
+\[
+	\sum_{s} p_{\ell_M} \left( s \right) u \left( f_s; \ell_M \right) .
+\]
+
+The most desirable information for the investor is a likelihood vector \( \ell \) satisfying
+
+\[
+	\ell^{*} \in \arg \max_{\ell} \max_{x} \left[ v \left( x \right) + \omega_{g} \ell \left( g \right) + \omega_{n} \ell \left( n \right) \right] .
+\]
+
+which is \( \ell^{*} \left( g \right) = 1 \) and \(\ell^{*} \left( n \right) = \ell^{*} \left( n \right) = 0 \).
+
+If the investor checks her portfolio, she can receive one of two signals: a precise signal indicating conclusively that the market is in a bad state or an imprecise signal that rules out the bad state but does not allow her to distinguish between the good and normal states. The investor anticipates that upon receiving the imprecise signal, she will distort the likelihood to \( \ell_M^{*} \left( g \right) = 1 \), her preferred one according to her tastes \( u \). Instead, the likelihood induced by the precise signal cannot be distorted, as there is strong conclusive evidence.
+
+The optimal acts under the true and distorted likelihood are different because the second one is more optimistic and leads to greater investment. Theorem \ref{thm:rep} from the general model establishes that, under some assumptions, the investor maximises a weighted sum of her expected utility under the true likelihood and under the distorted likelihood. Additionally, she incurs a cost depending on the utility difference between her choice and the optimal choice under the distorted posterior. The utility of choosing from the menu \( M \) at likelihood \( \ell_M \) can be represented as follows:
+
+\begin{equation}\label{eq:example}
+	\max _{f \in M} \left[ \sum_{s} p_{\ell_M} \left( s \right) u \left( f_s; \ell_M \right) + \alpha_{\ell_{M}} \sum_{s} p_{\ell^{*}} \left( s \right) u \left( f_s;  \ell^{*}_M \right) \right] - \max _{f^{\prime} \in M} \alpha _{\ell_{M}} \sum_{s} p_{\ell^{*}_{M}} \left( s \right) u\left(f^{\prime}_{s} ; \ell^{*}_{M} \right) ,
+\end{equation}
+
+where \( \ell^{*}_M \) denotes the distorted vector of likelihoods after observing menu \( M \) as a signal, with \( \ell^{*}_M \left( g \right) = 1 \). The number \( \alpha_{\ell_M} \geq 0 \) represents the rate at which the cost of resisting temptation increases when the optimal choices under the Bayesian and distorted posteriors differ. The better an option is according to the distorted posterior, the higher the cost. It is uniquely identified in the model. When choosing whether to check her portfolio, the investor considers the probability of receiving each menu of feasible acts \( M \) as a signal and the corresponding indirect utility of choosing from it, given by the utility function above.
+
+Consider the scenario where the investor can check her portfolio and commit to an investment strategy, for example by delegating to a financial advisor or an investment algorithm. In this case, she can receive information without the temptation to act on distorted beliefs. If the menu \( M \) observed as a signal is a singleton, the second and third terms in the indirect utility function in Equation \eqref{eq:example} cancel out. As a result, preferences are represented by the expectation of tastes over outcomes and information computed with Bayes rule. Observing such preferences for commitment is a crucial test of the theory presented in the paper.\footnote{Relatedly, \cite{derksenHealthcareAppointmentsCommitment2024} show that medical appointments are effective commitment devices that significantly increase the probability of individuals at health risk getting tested.}
+
+These examples suggest how the model components are identified. Choosing from singleton menus does not give rise to temptation to distort beliefs. Therefore, choosing from singleton menus is a standard choice problem, and the results of \cite{anscombeDefinitionSubjectiveProbability1963} helps to identify tastes over outcomes and beliefs after each signal. Observing choices over information and menus of acts feasible at a later time, transfers in the first example and investment strategies in the second, allow identifying a demand for commitment due to distortion of beliefs in a specific direction. Therefore, the data needed to test the model are choices over information and sets of available acts conditional on the information received. I refer to such an object of choice as a contingent menu, introduced in the next section.
+
+\section{Model}\label{sec:model}
+
+An individual faces a dynamic decision problem in which she makes two choices. First, she chooses an act that maps states to menus of acts from which she can later select. Then, she chooses an act from the realised menu, which maps states to outcomes. Upon observing the menu from which she can choose, the individual infers information about the state. This information is relevant for her choice of an act from the realised menu.
+
+The decision problem involves three time periods \( t = 0,1,2 \). There is a finite set of uncertain states \( \mathcal{S} \). At time \( 0 \), the individual chooses a contingent menu, a mapping from uncertain states to finite probability distributions over menus of acts she will choose from at a later time. A generic menu realisation is \( M \in \mathcal{M} \). A contingent menu is \( F: \mathcal{S} \rightarrow \Delta^{\circ} \left( \mathcal{M} \right) \), where \( \Delta^{\circ} \left( \mathcal{M} \right) \) is the set of probability distributions over \( \mathcal{M} \) with finite support. At time \( 1 \), a menu \( M \) realises. At time \( 2 \), the individual chooses an act from the menu \( M \). An act is a mapping between states and outcomes \( f : \mathcal{S} \rightarrow \Delta \left( X \right) \), where \( X \) is a compact metric set, and \( \Delta \left( X \right) \) is the set of probability distributions over \( X \).\footnote{The set of lotteries \(\Delta \left( X \right)\) is compact metric under the weak convergence topology.} A menu \( M \) is therefore a closed nonempty set of acts.\footnote{The set of menus \(\mathcal{M}\) is compact metric under the Hausdorff metric \citep[Theorem 3.85]{aliprantisInfiniteDimensionalAnalysis2006}.} The outcome induced by act \( f \) when state \( s \) realises is \( f_s \in \Delta \left( X \right) \).
+
+Observing the menu realisation \( M \) from the contingent menu \( F \) at time \( 1 \) is informative for the individual. In fact, a contingent menu is a Blackwell experiment with menus as signals. Denote the probability that menu \( M \) is realised from contingent menu \( F \) in state \( s \) with \( F_s \left( M \right) \). To capture the informational content of a contingent menu \( F \), I define the normalised likelihood (henceforth likelihood) of state \(s\) after realisation of menu \(M\)
+
+\begin{equation}\label{eq:likelihood}
+	\ell_{M, F} \left( s \right) : = \frac{F_{s} \left( M \right)}{ \sum_{s^{\prime}} F_{s^{\prime}} \left( M \right)} .
+\end{equation}
+
+After having observed likelihood \( \ell \), the individual knows that the state is in the event
+
+\[
+	S_{\ell} := \left\{ s \in \mathcal{S} \: \middle\vert  \: \ell \left( s \right) > 0 \right\} .
+\]
+
+Throughout, I assume that only choices of contingent menus are observable. The main result of this paper identifies all the components of the following model relying on these choices. In particular, I introduce the likelihood because I assume that the beliefs of the individual are not observable and will therefore be inferred from her choices. I denote preferences over contingent menus with \( \succsim \). Theorem \ref{thm:rep} in Section \ref{sec:result} provides the conditions on choices over contingent menus that yield the following representation of preferences.\footnote{Notation is collected in a table in Appendix \ref{app:notation}.}
+
+\paragraph{Representation.} The main result of the paper, Theorem \ref{thm:rep}, is a characterisation of the following functional form. The individual has belief-dependent tastes over outcomes and likelihoods represented by a utility function \( u \left( x ; \ell \right) \), linear in mixtures of outcomes \( x \in \Delta \left( X \right) \), jointly continuous, bounded, and nonconstant for each \( \ell \). The dependency of \( u \) on the likelihood \( \ell \) is the main departure from expected utility. The individual evaluates outcomes differently depending on the information she receives.
+
+The individual acts as if she has a full support prior over states \( p \). The Bayesian posterior of the prior \( p \) after observing the likelihood \( \ell \) is \( p_{\ell} \), where for each state \( s \)
+
+\[
+	p_{\ell} \left( s \right) := \frac{\ell \left( s \right) p \left( s \right)}{\sum_{s^{\prime}} \ell \left( s^{\prime} \right)  p \left( s^{\prime} \right)}.
+\]
+
+The time \( 2 \) expected utility of act \( f \) computed with the Bayesian posterior at likelihood \( \ell \) is
+
+\begin{equation}\label{eq:eu}
+	\sum_{s} p_{\ell} \left( s \right) u \left( f_{s} ; \ell \right).
+\end{equation}
+
+The individual is tempted to act according to a distorted posterior. This posterior is the one obtained under the preferred likelihood consistent with the event \( S_{\ell} \). For any event \( S \subseteq \mathcal{S} \), define\footnote{Such likelihoods always exist since \( u \) is continuous and both \( \Delta \left( X \right) \) and \( \Delta \left( S \right) \) for each event \( S \) are compact.}
+
+\begin{equation}\label{eq:argmax}
+	\ell^{*}_{S} \in \underset{\ell \in \Delta \left( S \right)}{\arg \max} \: \max_{x \in \Delta \left( X \right)} \: u \left( x ; \ell \right) .
+\end{equation}
+
+The distorted likelihood \( \ell^{*}_{S} \) only assigns positive probability to states in event \( S \). Once a state has probability \( 0 \), its probability cannot be distorted. Moreover, the distortion only depends on the event, not on the true likelihood. There is no guarantee that there is a unique likelihood satisfying Equation \eqref{eq:argmax}. However, the model allows the identification of one likelihood among those satisfying Equation \eqref{eq:argmax} from choices over contingent menus.
+
+The time \( 2 \) expected utility of act \( f \) computed with the distorted posterior at event \( S \) is
+
+\[
+	\sum_{s} p_{\ell^{*}_{S}} \left( s \right) u \left( f_{s} ; \ell^{*}_{S} \right) .
+\]
+
+The distorted likelihood influences expected utility through two channels. It affects tastes over outcomes \( u \left( x ; \ell^{*}_{S} \right) \) and posterior beliefs, which are the Bayesian update of the prior \( p \) under the distorted likelihood \( \ell^{*}_{S} \).
+
+At time \( 2 \), after having observed the menu realisation \( M \) from contingent menu \( F \), the individual chooses an act \( f \) from \( M \) to maximise a weighted combination of the expected utilities under the true and distorted likelihood. Moreover, she suffers a cost proportional to the utility difference between the chosen act and the optimal act under the distorted likelihood. For each event \( S \), the utility representation over menus at each likelihood \( \ell \) is as follows:
+
+\begin{equation}\label{eq:menu1}
+	\begin{aligned}
+		\mathcal{U} \left(M ; \ell \right) = & \max_{f \in M}\left[ \sum_{s} p_{\ell} \left( s \right) u \left( f_{s} ; \ell \right) +\alpha _{\ell} \sum_{s} p_{\ell^{*}_{S_{\ell}}} \left( s \right) u \left( f_{s} ; \ell^{*}_{S_{\ell}} \right) \right] \\
+		                                     & - \alpha_{\ell} \max_{f^{\prime} \in M} \sum_{s} p_{\ell^{*}_{S_{\ell}}} \left( s \right) u\left(f^{\prime}_{s} ; \ell^{*}_{S_{\ell}} \right) ,
+	\end{aligned}
+\end{equation}
+
+where the positive number \( \alpha_{\ell} \geq 0 \) represents the weight assigned to the distorted expected utility. When choosing act \( f \) from menu \( M \) after realisation of the likelihood \( \ell \), the utility cost of temptation over menus is the difference between the second and the third terms in Equation \eqref{eq:menu1}. Specifically, it is the utility difference between the chosen act and the optimal act under the distorted likelihood. The representation implies that, for each event \( S \), when the true likelihood coincides with \( \ell^{*}_{S} \), the preferred likelihood, there is no temptation. When the individual receives the information she prefers, there is no reason to distort it.
+
+I can now describe preferences over contingent menus. The individual chooses the contingent menu \( F \) anticipating the indirect utility \( \mathcal{U} \left(M ; \ell_{M, F} \right) \) from each possible menu realisation \( M \), so that each contingent menu \(F\) is evaluated by the expected utility
+
+\begin{equation}\label{eq:contmenu1}
+	\mathscr{U}(F)= \sum_{M} \sum_{s} p \left( s \right) F_{s} \left( M \right) \mathcal{U} \left(M ; \ell_{M, F} \right).
+\end{equation}
+
+To summarise, the model is as follows. When choosing the contingent menu \( F \), the individual anticipates that her BDP will lead her to update prior beliefs \( p \) deviating from Bayes rule after observing the menu realisation \( M \). This deviation is represented by the distortion of the true likelihood \( \ell \) to \( \ell^{*} \), which leads to updating the prior beliefs with Bayes rule via \( \ell^{*} \). The interpretation is that, ex ante, she would like to choose from any menu to maximise her expected utility under the Bayesian update. However, she is tempted to maximise her expected utility under the Bayesian update of the prior given the distorted likelihood. She is sophisticated and foresees the temptation of choosing according to the distorted posterior, influencing both preferences and beliefs. Thus, there is a trade-off between acting according to the Bayesian and distorted posterior beliefs.
+
+\subsection{Axioms}\label{sec:axioms}
+
+In this section, I list the axioms on the preference relation \(\succsim\) over contingent menus yielding the representation in Section \ref{sec:model}. I begin with the standard axioms that allow a continuous utility representation of preferences over contingent menus to be obtained.
+
+\begin{axiom}\label{ax:order}
+	\labelname{axn:order}{Order} (\textbf{Order}). The ranking \(\succsim\) is complete and transitive.
+
+\end{axiom}
+
+\begin{axiom}\label{ax:continuity}
+	\labelname{axn:continuity}{Continuity}
+
+	(\textbf{Continuity}). For each contingent menu \( F \) the sets
+
+	\[
+		\left\{ F^{\prime} \: \middle\vert  \:  F^{\prime} \succsim F \right\} \: and \: \left\{ F^{\prime} \: \middle\vert  \:  F^{\prime} \precsim F \right\}
+	\]
+
+	are closed.
+
+\end{axiom}
+
+I now introduce an axiom structuring the attitude to information. Since in this model the individual has preferences for the information she receives, contingent menus with the same informativeness play a special role. First, I define the support of a contingent menu \( F \)
+
+\[
+	\mathcal{M}_{F} := \left\{ M \in \mathcal{M} \: \middle\vert \: F_{s} \left( M \right) > 0 \: \text{for some} \: s \in \mathcal{S} \right\} .
+\]
+
+Recall that a likelihood is a probability distribution over states defined in Equation \eqref{eq:likelihood}
+
+\begin{equation}
+	\ell_{M, F} \left( s \right) : = \frac{F_{s} \left( M \right)}{ \sum_{s^{\prime}} F_{s^{\prime}} \left( M \right)} . \tag{\ref{eq:likelihood}}
+\end{equation}
+
+\begin{definition}\label{def:ii}
+	\labelname{def:ii}{II}
+
+	(\textbf{Identical Inference (II)})
+	Two contingent menus \(F\) and \(F^{\prime}\) satisfy \textbf{identical inference} if, for each menu \(M \in \mathcal{M}_{F} \cap \mathcal{M}_{F^{\prime}}\), their likelihood is the same \(\ell_{M, F} = \ell_{M, F^{\prime}} \).
+
+\end{definition}
+
+Two contingent menus \( F, F^{\prime} \) satisfying \usename{def:ii} have the property that, when a menu \( M \) is realised from a probabilistic mixture of them, inference about the state is the same regardless of whether it comes from \( F \) or \( F^{\prime} \). To state independence, I first define the relevant mixture operations. As usual, a mixture of two acts delivers in each state a probability distribution that is the mixture of the one induced by the two acts. For any two acts \( f,f^{\prime} \), state \( s \) and outcome \( x \)
+
+\[ \left( \lambda f + \left( 1 - \lambda \right) f^{\prime} \right)_s \left( x \right) = \lambda f_s \left( x \right) + \left( 1 - \lambda \right) f^{\prime}_s \left( x \right) . \]
+
+As is standard in the menu choice literature, a mixture of two menus is a menu of mixed acts, one of which is in the first menu and the other in the second menu. For any two menus \( M \) and \( M^{\prime} \) and \( 0 \leq \lambda \leq 1 \),
+
+\[
+	\lambda M + \left( 1 - \lambda \right) M^{\prime} = \left\{ \lambda f + \left( 1 - \lambda \right) f^{\prime} \: \middle\vert  \: f \in M, f^{\prime} \in M^{\prime} \right\} .
+\]
+
+I now define mixtures of contingent menus. The contingent menu \( \lambda F + \left( 1- \lambda \right) F^{\prime} \) delivers a distribution of menus conditional on each state \( s \), which is a mixture of \( F_{s} \) and \( F^{\prime}_{s} \). For any two contingent menus \( F, F^{\prime} \), state \( s \) and menu \( M \)
+
+\[
+	\left( \lambda F + \left( 1- \lambda \right) F^{\prime} \right)_{s} \left( M \right) = \lambda F_{s} \left( M \right) + \left( 1- \lambda \right) F^{\prime}_{s} \left( M \right) .
+\]
+
+I now impose a weak version of independence that holds only among \usename{def:ii} contingent menus.
+
+\begin{axiom}\label{ax:independence}
+	\labelname{axn:independence}{II Independence}
+
+	(\textbf{II Independence}). For all \(0<\lambda \leq 1\) and contingent menus \(F, F^{\prime}, F^{\prime \prime} \) such that \(F\) and \(F^{\prime \prime}\) satisfy \usename{def:ii} and \(F^{\prime}\) and \(F^{\prime \prime}\) satisfy \usename{def:ii}, \(F \succsim F^{\prime}\) if and only if \(\lambda F+ \left( 1-\lambda \right) F^{\prime \prime} \succsim \lambda F^{\prime} + \left( 1-\lambda \right) F^{\prime \prime}\).
+
+\end{axiom}
+
+This axiom constrains preferences to depend on the realised likelihood. The intuition for the axioms is as follows. Under expected utility, independence holds to induce preferences that are linear in probabilities. However, if preferences depend on the information received, the standard independence axiom is not appropriate. This is because mixing two contingent menus affects the likelihoods that they induce for each of their menu realisation. Preferences over information should not be linear in such mixtures of likelihoods. \usename{axn:independence} imposes indifference only for mixtures of contingent menus inducing the same likelihood from menus in their common support.
+
+Restricted to \usename{def:ii} contingent menus, the intuition for independence is the standard one in the menu choice literature. Adapted to the present setting, it is as follows. Consider a lottery over contingent menus delivering \( F \) with probability \( \lambda \) and \( F^{\prime} \) with probability \( 1 - \lambda \). The intuition for independence suggests that \( F \sim F^{\prime} \) iff such a mixture is indifferent to both \( F \) and \( F^{\prime} \). Once justification for indifference between probabilistic mixtures and \( \lambda F_{s} + \left( 1- \lambda \right) F^{\prime}_{s} \) is provided, the intuition for independence is complete. Under the latter, first, the state is realised, and the individual updates her beliefs and then chooses from the available menu of mixed acts. Under probabilistic mixtures, randomisation among contingent menus is performed before the individual's choice. Hence, indifference between the two amounts to indifference to the timing of resolution of these sources of uncertainty. I briefly comment on such indifference in the conclusion.
+
+Identify with \( y \) the contingent menu delivering in every state the singleton menu containing the act yielding the outcome \( y \) with probability \( 1 \). To avoid trivial cases, I assume the following.
+
+\begin{axiom}\label{ax:degeneracy}
+	\labelname{axn:degeneracy}{Nondegeneracy}
+
+	(\textbf{Nondegeneracy}). There exist outcomes \(y, y^{\prime}\) in \(X\) for which \(y \succ y^{\prime}\).
+
+\end{axiom}
+
+Next, I adapt to the present setting the Set-Betweenness axiom of the menu choice literature. The intuition behind the axiom is that the individual prefers not to expand the available menu with ex-ante suboptimal acts, as these create temptation. A new notation is needed. For any contingent menu \( F \), menu \( M \) in its support and menu \( M^{\prime} \) outside its support, I denote with \( F_{M \rightarrow M^{\prime}} \) a contingent menu equivalent to \( F \) except that any realisation of \( M \) is substituted with \( M^{\prime} \). The menu \( M^{\prime} \) should not be in the support of \( F \); otherwise, \( \ell_{M^{\prime}, F_{M \rightarrow M^{\prime}}} \) would not be identical to \( \ell_{M,F} \).
+
+\begin{axiom}\label{ax:betweenness}
+	\labelname{axn:betweenness}{Set-Betweenness}
+
+	(\textbf{Set-Betweenness}). For all contingent menus \( F \) and menus \( M, M^{\prime} \)
+
+	\[
+		F  \succsim F_{M \rightarrow M^{\prime}} \Rightarrow F  \succsim F_{M \rightarrow M \cup M^{\prime}} \succsim F_{M \rightarrow M^{\prime}} .
+	\]
+
+\end{axiom}
+
+The rationale for this assumption is the same as in the menu choice literature \citep{gulTemptationSelfControl2001}, except it holds conditional on observing a menu realisation. The preference \( F \succsim F_{M \rightarrow M^{\prime}} \) indicates that the individual would rather choose from \( M \) than from \( M^{\prime} \), all else equal. Temptation cannot increase utility; hence, the individual prefers not to expand \( M \) with \( M^{\prime} \), which contains ex-ante dominated options. Since the two contingent menus are otherwise equivalent at the ex ante stage, the ranking in the axiom follows.
+
+The next axiom is the main departure from the literature. Its role is to ascribe the source of temptation to belief distortion due to BDP. The idea is that the individual should not distort her beliefs when observing a likelihood that satisfies her BDP preferences. To state the axiom, I must define such a best likelihood. For this purpose, a few definitions are needed.
+
+The following is the set of all contingent menus that induce likelihood \( \ell \) whenever menu \( M \) realises
+
+\[
+	\mathcal{C}^{M}_{\ell} : = \left\{ F \: \middle\vert \: \ell_{M,F} = \ell \right\} .
+\]
+
+Then, I define the set of preferred outcomes at likelihood \( \ell \)\footnote{Since \( \succsim \) is continuous and \( \Delta \left( X \right) \) is compact, each \( X_{\ell} \) is nonempty.}
+
+\[
+	X_{\ell} : = \left\{ x \in \Delta \left( X \right) \: \middle\vert  \: F \succsim F_{ \left\{ x  \right\} \rightarrow \left\{ x^{\prime} \right\} }  \: \text{for all} \: x^{\prime} \in \Delta \left( X \right) \: \text{and some} \: F \in \mathcal{C}^{\left\{ x \right\} }_{\ell} \right\} .
+\]
+
+Owing to \usename{axn:independence}, the ranking between any two menus \( M \) and \( M^{\prime} \) does not depend on the specific contingent menu \( F \), as long as \( \ell_{M, F} = \ell \). Therefore, \usename{axn:independence} implies that \textquote{for some} in the definition of \( X_{\ell} \) is equivalent to \textquote{for all}. A generic element of \( X_{\ell} \) is \( x_{\ell} \). For illustration, I will show that in terms of the representation in Section \ref{sec:model} each \( x_{\ell} \) satisfies the following:
+
+\[
+	x_{\ell} \in \arg \max_{x \in \Delta \left( x \right)} u \left( x ; \ell \right) .
+\]
+
+Fix a collection of outcomes \( \left( x_s \right)_{s \in \mathcal{S}} \). For each \( \ell \), construct the contingent menu \( F^{\ell} \) such that \( F_s^{\ell} \left( \left\{ x_{\ell} \right\} \right) = \ell \left( s \right) \) and \( F^{\ell}_s \left( \left\{ x_{s} \right\} \right) = 1 - F^{\ell}_s \left( \left\{ x_{\ell} \right\} \right) \) for all \( s \).\footnote{An example of the construction of such a contingent menu is shown in Appendix \ref{app:bestl}.} For each \( S \), define the likelihoods
+
+\begin{equation}\label{eq:bestlset}
+	\ell^{*}_S \in \left\{ \ell \in \Delta \left( S \right) \: \middle\vert \: F^{\ell} \succsim F^{\ell^{\prime}} \: \text{for all} \: \ell^{\prime} \in \Delta \left( S \right) \right\} .
+\end{equation}
+
+I show in Theorem \ref{thm:rep} that any \( \ell^{*}_S \) satisfies Equation \eqref{eq:argmax} for each \( S \):
+
+\begin{equation}
+	\ell^{*}_S \in \underset{\ell \in \Delta \left( S \right)}{\arg \max} \: \max_{x \in \Delta \left( X \right)} \: u \left( x ; \ell \right) . \tag{\ref{eq:argmax}}
+\end{equation}
+
+These likelihoods can be interpreted as follows. Say the individual can choose an outcome in \( \Delta \left( X \right) \), whose realisation does not depend on the state. For each event \( S \), the likelihood \( \ell^{*}_{S} \) is the likelihood that the individual would prefer to observe at that event. The likelihood determined via this procedure reflects the individual's preferences over information when it is not instrumental for choice.
+
+One more piece of notation is necessary to state the axiom. Define for each menu \( M \) and likelihood \( \ell \) the set of acts
+
+\[
+	\mathcal{F}_{M, \ell} := \left\{ f \in M \: \middle\vert \: F \succsim F_{\left\{ f \right\} \rightarrow \left\{ f^{\prime} \right\}} \: \text{for all} \: f^{\prime} \in M \: \text{and some} \: F \in \mathcal{C}^{\left\{ f \right\} }_{\ell} \right\} .
+\]
+
+Fix a menu \( M \) and a likelihood \( \ell \) induced by it. Then, \( \mathcal{F}_{M, \ell} \) is interpreted as the set of ex ante best acts in \( M \) at that likelihood. If the individual could commit, she would always choose acts from this set.\footnote{Each menu \( M \) is a subset of the set of acts \( \Delta \left( X \right)^\mathcal{S} \). Since \( \mathcal{S} \) is finite, \( \Delta \left( X \right)^\mathcal{S} \) is the cartesian product of compact spaces. By Theorem 2.61 in \citet[p. 52]{aliprantisInfiniteDimensionalAnalysis2006}, the cartesian product of compact spaces is compact. A menu \( M \) is thus a closed subset of a compact space, and is therefore compact. By compactness of \( M \) and continuity of preferences \( \succsim \), each \( \mathcal{F}_{M, \ell} \) is nonempty.} To illustrate, I will show that, in terms of the representation, acts in \( \mathcal{F}_{M, \ell} \) are those maximising Equation \eqref{eq:eu} and therefore satisfying for each \( \ell \) and \( M \) the following
+
+\begin{equation*}
+	f \in \underset{f^{\prime} \in M}{\arg \max} \sum_{s} p_{\ell} \left( s \right) u \left( f^{\prime}_{s} ; \ell \right) .
+\end{equation*}
+
+I now state the axiom.
+
+\begin{axiom}\label{ax:srbl}
+	\labelname{axn:srbl}{SRBL}
+
+	(\textbf{Strategic Rationality for Best Likelihood} (\textbf{SRBL})). For each:
+	\begin{itemize}
+		\item couple of menus \( M, M^{\prime} \);
+		\item contingent menu \( F \) such that \( \ell_{M,F} = \ell \);
+	\end{itemize}
+	if \( \mathcal{F}_{M \cup M^{\prime}, \ell} \cap \mathcal{F}_{M \cup M^{\prime}, \ell^{*}_{S_{\ell}}} \neq \emptyset \) for at least one \( \ell_{S_{\ell}}^{*} \), then
+
+	\[
+		F \succsim F_{M \rightarrow M^{\prime}} \Rightarrow F \sim F_{M \rightarrow M \cup M^{\prime}} .
+	\]
+
+\end{axiom}
+
+The intuition for the axiom is as follows. First, notice that the axiom implies that at the preferred likelihoods \( \ell^{*}_{S} \) there is never temptation, as the antecedent is always satisfied. There is no reason to distort beliefs if they are the desired ones. However, the axiom imposes more. There is no temptation whenever the optimal choice under the true and preferred likelihoods coincides. The intuition is that, in this case, there is no trade-off between acting according to the true or distorted likelihood, and therefore no demand for commitment.
+
+It is instructive to consider what would happen if \usename{axn:independence} is strengthened to hold among all contingent menus. In fact, the interaction between \usename{axn:independence} and \usename{axn:srbl} allows interpretation of the distorted belief updating in the functional form as coming from BDP and not from other cognitive phenomena. Assume that the individual observes likelihood \( \ell \), which is different from one of her preferred likelihoods \( \ell^{*}_{S_{\ell}}\) at that event. Say the same act in the menu \( M \) at her disposal is optimal under both likelihoods. Then, she faces no temptation and picks this act. When \usename{axn:independence} is strengthened to hold for all contingent menus, regardless of their informational content, the individual has no BDP. In terms of the representation, this means that \( u \) only depends on outcomes, not on likelihoods. Preferences over likelihoods are flat, and \usename{axn:srbl} implies that there is never temptation. The classical version of independence and \usename{axn:srbl} together imply that the individual is always strategically rational and the model collapses to expected utility with Bayesian updating. \usename{axn:srbl} traces the source of temptation to having an optimal choice that is different under the true and preferred information, and its antecedent holds for all likelihoods when there are no BDP.
+
+The next axiom is an adaptation of state independence to the current setting. The notation \( f s f^{\prime} \) indicates an act equivalent to \( f \) in state \( s \) and to \( f^{\prime} \) in all states \( s^{\prime} \neq s \). For each state \( s \) and menus \( M, M^{\prime} \), define the menu \( M s M^{\prime} := \left\{ f s f^{\prime} \: \middle\vert  \: f \in M, f^{\prime} \in M^{\prime} \right\} \). The menus of outcomes are denoted with \( L \subseteq \Delta \left( X \right) \).
+
+\begin{axiom}\label{ax:sindependence}
+	\labelname{axn:sindependence}{State Independence}
+
+	(\textbf{\textbf{State Independence}}). For all contingent menus \( F \), menus \( L, L^{\prime}, M \) and states \( s, s^{\prime} \)
+
+	\[
+		F \succsim F_{L s M \rightarrow L^{\prime} s M} \: \Rightarrow \: F \succsim F_{L s^{\prime} M \rightarrow L^{\prime} s^{\prime} M} .
+	\]
+
+\end{axiom}
+
+The contingent menus \( F \) and \( F_{L s M \rightarrow L^{\prime} s M} \) are equivalent except in one realisation. The first offers a choice of outcomes from \( L \) in state \( s \), whereas the second from \( L^{\prime} \) in the same state. The axiom requires that the ranking of the two contingent menus is preserved when the state is changed. The intuition is that the individual's preferences over menus of outcomes are independent of the state in which the lottery realises.
+
+Finally, I assume full support.
+
+\begin{axiom}\label{ax:support}
+	\labelname{axn:support}{Full Support}
+
+	(\textbf{\textbf{Full Support}}). For each state \(s\), there exist contingent menus \(F \) and \(F^{\prime}\) such that for all menus \( M \) it holds that \(F_{s^{\prime}} \left( M \right) =F^{\prime}_{s^{\prime}} \left( M \right)\) for each \(s^{\prime} \neq s \) and \(F \nsim F^{\prime}\).
+
+\end{axiom}
+
+If two contingent menus are always indifferent whenever they are equivalent in each state except one, then that state can be omitted without loss of generality.
+
+\section{Results}\label{sec:result}
+
+\paragraph{Representation.} The main result of this paper links axioms to the utility representation in Equations \eqref{eq:menu1} and \eqref{eq:contmenu1}. The proofs are in Appendix \ref{app:proofsbdp}. I report the utility representation and its properties.
+
+\begin{definition}\label{def:bdp}
+	A ranking \( \succsim \) over contingent menus is a BDP if it is represented by
+
+	\begin{equation}
+		\mathscr{U}(F)= \sum_{M} \sum_{s} p \left( s \right) F_{s} \left( M \right) \mathcal{U} \left(M ; \ell_{M, F} \right),
+	\end{equation}
+
+	\begin{equation}
+		\begin{aligned}
+			\mathcal{U} \left(M ; \ell \right) = & \max_{f \in M}\left[ \sum_{s} p_{\ell} \left( s \right) u \left( f_{s} ; \ell \right) +\alpha _{\ell} \sum_{s} p_{\ell^{*}_{S_{\ell}}} \left( s \right) u \left( f_{s} ; \ell^{*}_{S_{\ell}} \right) \right] \\
+			                                     & - \alpha_{\ell} \max_{f^{\prime} \in M} \sum_{s} p_{\ell^{*}_{S_{\ell}}} \left( s \right) u\left(f^{\prime}_{s} ; \ell^{*}_{S_{\ell}} \right) ,
+		\end{aligned}
+	\end{equation}
+
+	where:
+
+	\begin{enumerate}
+		\item \( u : \Delta \left( X \right) \times \Delta \left( \mathcal{S} \right) \rightarrow \mathbb{R} \) is linear in mixtures in \( \Delta \left( X \right) \), jointly continuous, bounded and nonconstant for each \( \ell \);
+		\item \( p \) is a full-support probability distribution over \( \mathcal{S} \);
+		\item \( \alpha_{\ell} \geq 0 \) for each likelihood \( \ell \);
+		\item \( p_{\ell} \) is the Bayesian posterior of \( p \) under likelihood \( \ell \);
+		\item \( \ell^{*}_{S} \) satisfies Equation \eqref{eq:newargmax} for each \( S \)
+		      \begin{equation}\label{eq:newargmax}
+			      \ell^{*}_{S} \in \underset{\ell \in \Delta \left( S \right)}{\arg \max} \: \max_{x \in \Delta \left( X \right)} \: u \left( x ; \ell \right) .
+		      \end{equation}
+	\end{enumerate}
+
+\end{definition}
+
+I can now state the main result.
+
+\begin{theorem}\label{thm:rep}
+	The ranking \( \succsim \) over contingent menus satisfies the axioms \usename{axn:order}, \usename{axn:continuity}, \usename{axn:independence}, \usename{axn:degeneracy}, \usename{axn:betweenness}, \usename{axn:srbl}, \usename{axn:sindependence} and \usename{axn:support} if and only if it is a BDP.
+\end{theorem}
+
+If an individual's preferences over contingent menus satisfy the axioms in the statement of Theorem \ref{thm:rep}, she behaves as if she anticipates distorting her beliefs to satisfy her BDP and act according to such distorted beliefs.
+
+\paragraph{Uniqueness.} I describe the uniqueness properties of the representation. Denote with \( \ell^{*} = \left( \ell^{*}_{S} \right)_{S \in 2^\mathcal{S}} \) a collection of preferred likelihoods satisfying condition \eqref{eq:bestlset}, one for each event. Denote with \( p_{\ell} \) the vector of posterior beliefs induced by observing likelihood \( \ell \), one for each \( s\). Finally, \( \alpha = \left( \alpha_{\ell} \right)_{\ell \in \Delta \left( S \right)} \).
+
+\begin{corollary}\label{cor:uniq}
+	Let \( \left( u, p, \alpha, \ell^{*} \right) \) represents \( \succsim \), then \( \left( u^{\prime}, p^{\prime}, \alpha^{\prime}, \ell^{\prime *} \right) \) also represents \( \succsim \) if and only if:
+
+	\begin{enumerate}
+		\item there exists \( \left( a, b \right) \in \mathbb{R}_{++} \times \mathbb{R} \) such that
+
+		      \[
+			      u^{\prime} = a u + b \: \: \: and \: \: \: p^{\prime} = p ;
+		      \]
+
+		\item for each likelihood \( \ell \), if \( \alpha^{\prime}_{\ell} \neq \alpha_{\ell} \), then \( \ell = \ell^{*}_{S_{\ell}} \);
+		\item \( \ell_{S}^{\prime *} = \ell_{S}^{*} \) for each event \( S \).
+	\end{enumerate}
+\end{corollary}
+
+It is instructive to compare the uniqueness properties of the representation with previous results from the literature on BDP. \cite{eliazCanAnticipatoryFeelings2006} and \cite{liangInformationdependentExpectedUtility2017} show that preferences over posterior beliefs unique up to monotonic transformations cannot be identified from choices of information and acts alone. The lack of uniqueness is because the mean of the posteriors is equal to the prior beliefs. In the language of the current model, they establish that the function \( \mathcal{U}^{\prime} \) represents the same ranking as \( \mathcal{U} \) if and only if there exists \( \left( a, b, c \right) \in \mathbb{R}_{++} \times \mathbb{R} \times \mathbb{R}^{S} \) such that for each likelihood \( \ell \)
+
+\begin{equation}\label{eq:uniqtext}
+	\mathcal{U}^{\prime} \left(\cdot ; \ell \right) = a \mathcal{U} \left( \cdot ; \ell  \right) + b - \sum_{s} c \left( s \right) p_{\ell} \left( s \right) .
+\end{equation}
+
+When taking expectations over \( \mathcal{U} \), the term \( \sum_{s}  c \left( s \right) p_{\ell} \left( s \right) \) averages to a constant for all likelihoods.\footnote{ The algebra is as follows:
+
+	\begin{align*}
+		\sum_{M } \sum_{s } p \left( s \right) F_s \left( M \right) \sum_{s^{\prime} } c \left( s^{\prime} \right) p_{\ell_{M,F}} \left( s^{\prime} \right) & = \sum_{M } \sum_{s } p \left( s \right) F_s \left( M \right) \sum_{s^{\prime} } c \left( s^{\prime} \right) \frac{F_{s^{\prime}} \left( M \right) p \left( s^{\prime} \right)}{\sum_{s^{\prime \prime} } F_{s^{\prime \prime}} \left( M \right) p \left( s^{\prime \prime} \right)} \\
+		                                                                                                                                                    & = \sum_{M } \sum_{s } c \left( s \right) F_s \left( M \right) p \left( s \right)                                                                                                                                                                                                     \\
+		                                                                                                                                                    & = c       \: .                                                                                                                                                                                                                                                                       \\
+	\end{align*}
+
+} \cite{eliazCanAnticipatoryFeelings2006} provide examples showing how the lack of uniqueness prohibits the identification of preferred beliefs. An individual's choices of information can reveal only preferences for probability distributions which mean is the prior. Non-Bayesian updating is thus responsible for the identification result in Corollary \ref{cor:uniq}. The uniqueness properties of \( \mathcal{U} \) are inherited by the function \( u \). Owing to the functional form of \( \mathcal{U} \), the term \( \sum_{s} c \left( s \right) p_{\ell} \left( s \right) \) must necessarily be null for Equation \eqref{eq:uniqtext} to hold. Since \( u \left( \cdot ; \ell^{*}_S  \right) \) appears but the average of \( \sum_{s}  c \left( s \right) p_{\ell^{*}_{S}} \left( s \right) \), with the distorted likelihood, is not a constant, \( c \) must be \( 0 \) for the transformation to represent the same ranking.
+
+Identification of the model components allows elaborating on the behavioural meaning of \( \alpha_{\ell} \). First, define conditional preferences at likelihood \( \ell \) as follows:
+
+\[
+	M \succsim_{\ell} M^{\prime} \: \text{if} \: F \succsim F_{M \rightarrow M^{\prime}} \: \text{for some} \: F \: \text{such that} \: \ell_{M,F} = \ell,
+\]
+
+where \textquote{for some \( F \)} is equivalent to \textquote{for all \( F \)} under the axioms. The ranking \( \succsim_{\ell} \) is represented by \( \mathcal{U} \left( \cdot ; \ell \right) \). Consider act \( f \) and outcomes \(x, x^{\prime} \in \Delta \left( X \right) \) such that for some \( \ell \)
+
+\[
+	\left\{f \right\} \succ_{\ell} \left\{f, x \right\} \succ_{\ell} \left\{ x \right\} \: \text{,} \: \left\{f \right\} \succ_{\ell} \left\{f, x^{\prime} \right\} \succ_{\ell} \left\{ x^{\prime} \right\} \: \text{and} \:  \left\{ x \right\} \nsim_{\ell} \left\{ x^{\prime} \right\} .
+\]
+
+In other words, outcomes \( x \) and \( x^{\prime} \) are tempting when choosing from menus \( \left\{ f, x \right\} \),  \( \left\{ f, x^{\prime} \right\} \) and \( x \) and \( x^{\prime} \) are not indifferent at likelihood \( \ell \). Then
+
+\begin{align*}
+	\mathcal{U} \left( \left\{f \right\}; \ell \right) - \mathcal{U} \left( \left\{f, x \right\}; \ell \right)            & = \alpha_{\ell} \left( u\left(x ; \ell \right) - \sum_{s} p_{\ell} \left( s \right) u\left(f_{s} ; \ell \right) \right)     ,      \\
+	\mathcal{U} \left( \left\{f \right\} ; \ell \right) - \mathcal{U} \left( \left\{f, x^{\prime} \right\} ; \ell \right) & = \alpha_{\ell} \left( u\left(x^{\prime} ; \ell \right) - \sum_{s} p_{\ell} \left( s \right) u\left(f_{s} ; \ell \right) \right) .
+\end{align*}
+
+Subtracting the two equations, the following expression for \( \alpha_{\ell} \) yields
+
+\[
+	\alpha_{\ell} = \frac{\mathcal{U} \left( \left\{f, x \right\} ; \ell \right) - \mathcal{U} \left( \left\{f, x^{\prime} \right\} ; \ell \right) }{u \left( x ; \ell \right) - u \left( x^{\prime} ; \ell \right)} \: .
+\]
+
+Theorem 9 in \cite{gulTemptationSelfControl2001} allows interpreting \( \alpha_{\ell} \) as a measure of self-control. The ranking \( \succsim_{\ell} \) exhibits less self-control than \( \succsim^{\prime}_{\ell} \) if for all menus of acts \( M \) and \( M^{\prime} \), the ranking \( M \succ_{\ell} M \cup M^{\prime} \succ_{\ell} M^{\prime} \) implies that the same must hold for \( \succsim^{\prime}_{\ell} \). In the current setting, self-control is relative to acting according to distorted beliefs. Therefore, the interpretation of \( \alpha_{\ell} \) can be adapted as a measure of the strength of motivated reasoning. As in \cite{epsteinAxiomaticModelNonBayesian2006}, the number \( \alpha_{\ell} \) is an absolute measure. The difference \( \mathcal{U} \left( \left\{f \right\} ; \ell \right) - \mathcal{U} \left( \left\{f, x \right\} ; \ell \right) \) is the utility cost of self-control when the lottery \( x \) is available but the act \( f \) is chosen. Then, \( \alpha_{\ell} \), is the rate at which the cost of resisting temptation increases as \( x \) improves, as measured by \( u \left( x ; \ell \right) \). It is the marginal cost of self-control at likelihood \( \ell \).
+
+\section{Discussion}\label{sec:discuss}
+
+In this section, I discuss the model and its relationship with the previous literature. First, it is instructive to compare this model to \cite{epsteinAxiomaticModelNonBayesian2006} and \cite{gulTemptationSelfControl2001}, which are the closest in the decision theory literature. In the present model, the distortion of the likelihood induces a change in both beliefs, via non-Bayesian updating, and tastes, trough BDP. A change in both tastes and beliefs constitutes a departure from the previous literature. In \cite{epsteinAxiomaticModelNonBayesian2006}, temptation arises because of non-Bayesian updating due to cognitive biases, not BDP. The individual does not change tastes as represented by \( u \) but suffers from updating biases. She is thus tempted to act according to her biased posterior beliefs. In \cite{gulTemptationSelfControl2001}, instead, temptation arises because of a change in tastes. After observing her menu, the individual is tempted to choose according to new tastes \( v \). In the present model, both sources of temptation are present and linked to each other. The individual distorts her posterior beliefs \textit{because} her tastes \( u \) depend on them. These distortions have structure, as distorted tastes are those the individual would have if the true likelihood was her preferred one \( \ell^{*} \).
+
+Second, I discuss the relationships with other models of BDP and non-Bayesian updating. Compared with previous models, there are two main distinctions. First, I do not take a stance on the cognitive process underlying belief distortion. The main advantage of this methodological stance is that the object of choice is observable and that predictions do not rely on a psychological interpretation. Instead, previous studies have resorted to various cognitive assumptions. As an example, in \cite{brunnermeierOptimalExpectations2005} and \cite{koszegiEgoUtilityOverconfidence2006}, the individual chooses her beliefs. Assuming that beliefs are chosen makes theories hard to test and obfuscates their revealed preference foundations. \cite{spieglerTwoPointsView2008} shows that in the two models above the individual violates Independence of Irrelevant alternatives. The implication is that the individual's ranking of options depends on the set of options itself, and predictions vary significantly. A second relevant model is that of \cite{benabouEconomicsMotivatedBeliefs2015} and \cite{benabou2016mindful}, where the individual chooses the probability with which she forgets a signal and updates her beliefs by recalling such probability. Their model features multiple-selves with different preferences playing a game whose equilibrium is a forgetting strategy. The drawback of such a modelling approach is that the relevant unit of choice is not a single individual, which complicates the interpretation of the theory and leaves degrees of freedom to conduct welfare analyses. Second, in the present model non-Bayesian updating is not disjointed from BDP. The models above instead make two disjointed assumptions: that individuals' well-being depends on their beliefs and how they update their beliefs. Instead, here knowledge of the function \( u \) implies knowledge of how beliefs are distorted.
+
+The informational parsimony in assumptions does not come at a cost to consistency with the empirical evidence. The robust stylised fact that individuals update suitably when facing good news but fail to properly account for bad news is consistent with the model.\footnote{See \cite{eilGoodNewsbadNews2011}, \cite{garrettOptimisticUpdateBias2017}, \cite{mobiusManagingSelfConfidenceTheory2022}, \cite{drobnerMotivatedBeliefUpdating2024}, among others.} When observing a likelihood different from the preferred likelihood, individuals exhibit non-Bayesian updating, but they do not when they face what they want to hear.
+
+I consider the posterior obtained by updating conditional on the likelihood \( \ell^{*} \), distorted compared with the Bayesian update of the subjective prior \( p \). This is in contrast to previous literature, in which individuals distorted their beliefs compared with an objective probability distribution that is considered \textquote{true} or has an empirical counterpart observable by the modeller \citep{brunnermeierOptimalExpectations2005,yarivLlSeeIt2002}. The model thus reconciles motivated belief updating to subjective Bayesianism in the tradition of \cite{savageFoundationsStatistics1972}. Such distortion operates by interpreting the objective likelihood \( \ell \) as \( \ell^{*} \), which is arguably a mistake. I provide a second interpretation of the model in the concluding remarks relying on a more \textquote{rational} view of such a decision criterion.
+
+The particular choice of preferred likelihood requires justification. First, why consider the preferred likelihood given that the choice is from the menus of objective lotteries? An alternative is to identify the preferred likelihood when the choice is from among all the acts. The outcome of acts depends on the realisation of the uncertain state. Therefore, such a preferred likelihood would reflect not only preferences over beliefs but also an evaluation of the instrumental value of beliefs. To illustrate why this procedure is conceptually confusing, consider an individual with no BDP. Her \textquote{preferred beliefs} would be those which put all the weight on states inducing her preferred outcome under some act. The reason for limiting choice to objective lotteries is thus to identify only the BDP component of the preferred likelihood, not the instrumental one. To see this intuition formally, consider that if I were to strengthen \usename{axn:independence} to hold for all contingent menus, then for any event \( S \), all likelihoods are indifferent, as discussed above. If the individual has no BDP, her choices from objective lotteries do not depend on information and preferences on likelihoods are flat. Assume that I considered preferred likelihoods given that the choice is from some menu of acts \( M \). The reasoning above would not hold; the preferred likelihoods of an individual satisfying independence are those that induce her preferred outcomes with probability \( 1 \) for some act. Therefore, \usename{axn:srbl} together with Independence would imply that an individual with no BDP is tempted to act according to such degenerate beliefs, even if there is no reason to have them. Independence and \usename{axn:srbl} would not deliver standard expected utility with Bayesian updating.
+
+Second, why consider the preferred likelihood when the choice is from all objective lotteries and not one conditional on each possible menu of objective lotteries? This procedure would make the preferred likelihood depend on the event and on the outcomes in \( X \) that could be induced by the available acts and thus on the menu realisation. The model would be more complex without a clear gain in scope. Moreover, the representation would be weaker, as its components depend directly on the contingent menu. Regardless, the expression of \usename{axn:srbl} does not depend on the definition of best likelihood and can accommodate other interpretations.
+
+\section{Application: Polarisation}\label{sec:application}
+
+In this section, I develop a simple application of the model to show how BDP can lead to belief polarisation. I assume a sender wants to persuade an individual with BDP to take a specific action. The example is a simple variant of the judge and prosecutor example in \cite{kamenicaBayesianPersuasion2011} and has various interpretations.
+
+There is a binary state space \( \mathcal{S} = \left\{ 0, 1 \right\} \). An individual chooses an action \( a \in \left\{ 0, 1 \right\} \). She has an identity \( i \in \left[ 0, 1 \right] \), representing a belief she would like to hold over the uncertain state. The sender and the individual have a common prior over state \( 1 \) of \( p = \nicefrac{3}{10} \). The individual's utility of choosing action \( a \) at state \( s \) and likelihood \( \ell \) is
+
+\[
+	w \left( a ; s, \ell \right) = - \left( a - s \right)^2 - \left( p_{\ell} - i \right)^2 ,
+\]
+
+where \( p_{\ell} \) is the posterior belief of state \( 1 \) at likelihood \( \ell \).\footnote{In the language of the model in the paper, each action is an AA act mapping state realisations to differences between actions and the state.} She would like to match the state, but also hold beliefs that match with her identity. When \( i = 0 \), the individual has the same preferences as in \cite{kamenicaBayesianPersuasion2011}. Her optimal action ex ante, under the prior belief, is \( a = 0 \).
+
+Assume the sender wants to steer the individual toward choosing \( a = 1 \). The sender can choose among Blackwell experiments, mappings between states and distributions over action recommendations \( E : \mathcal{S} \rightarrow \Delta \left( \left\{0,1 \right\} \right) \), and commits to reporting the signal, as in Bayesian Persuasion. The action recommendation \( a \) realised from the experiment \( E \) induces the likelihood over states
+
+\[
+	\ell_{a,E} \left( s \right) = \frac{E_{s} \left( a \right)}{\sum_{s^{\prime}} E_{s^{\prime}} \left( a \right) }.
+\]
+
+Once the individual observes a signal, her preferences over actions are BDP as in Definition \ref{def:bdp}. Because \( p_{\ell^{*}} = i \), as long as a signal does not rule out any state, preferences over actions are as follows:
+
+\begin{align*}
+	 & - \left[ p_{\ell} \left( a - 1 \right)^2 + \left( 1 - p_{\ell} \right) \left( a - 0 \right)^2 + \left( p_{\ell} - i \right)^{2} \right] \\
+	 & - \alpha \left[ i \left( a - 1 \right)^2 + \left( 1 - i \right) \left( a - 0 \right)^2 \right]                                          \\
+	 & + \alpha \left[ \left( 1 - i \right) \right] .
+\end{align*}
+
+Otherwise, if a signal reveals the state, the second and third term of the equation above cancel out and preferences over actions reduce to:
+
+\begin{align*}
+	 & - \left[ p_{\ell} \left( a - 1 \right)^2 + \left( 1 - p_{\ell} \right) \left( a - 0 \right)^2 + \left( p_{\ell} - i \right)^{2} \right].
+\end{align*}
+
+The individual has an identity of \( i >  \nicefrac{1}{2} \), i.e., should would like to have a belief favourable to the sender. The sender wants to maximise the probability that the individual chooses action \( a = 1 \). The optimal experiment is the following:\footnote{Computations for this section are in Appendix \ref{app:application}.}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{c c | c c}
+		                       & \( E_s \left( a \right) \) & \( 0 \) & \( 1 \)   \\
+		\hline
+		\( \nicefrac{7}{10} \) & \( 0 \)                    & \( q \) & \( 1-q \) \\
+		\( \nicefrac{3}{10} \) & \( 1 \)                    & \( 0 \) & \( 1 \)   \\
+	\end{tabular}
+	\caption{Optimal experiment for \( i \in \left( \nicefrac{1}{2}, 1 \right] \).}
+	\label{tab:experiment2}
+\end{table}
+
+where
+
+\[
+	q = \min \left\{ \frac{4 - 10 \alpha \left( 2i - 1\right)}{7 \left( 1 - \alpha \left( 2i  - 1 \right) \right)}, 1 \right\}.
+\]
+
+When \( \alpha = 0 \) or \( i = \nicefrac{1}{2} \), the optimal experiment is the same as in \cite{kamenicaBayesianPersuasion2011}. The sender can induce the individual to choose action \( a = 1 \) more often when the individual has \( i > \nicefrac{1}{2} \) compared to what she can do in the standard case when \( i = 0 \). Moreover, the sender can do better when \( \alpha \), the strength of motivated reasoning, is higher.
+
+If the sender can target individuals with different identities, then they will have different beliefs. Even if two individuals with different identities observe the realisation of the same experiment, they will distort beliefs differently. This simple example illustrates how BDP can lead to belief polarisation even when individuals are subject to the same information.\footnote{For example, \cite{kahanPolarizingImpactScience2012} results suggest that division over climate change stem from a desire of individuals to form beliefs in line with those held by others with whom they share close ties.}
+
+\section{Conclusion}\label{sec:conclusion}
+
+In this paper, I develop a theory of BDP and belief updating that can be tested by observing choices over contingent menus. I conclude by providing a second interpretation of the model and discussing a few implications of the analysis.
+
+The interpretation of the model in the main text is that the individual distorts signals in the direction of her BDP preferences and updates beliefs with Bayes rule via distorted signals. However, the model admits a second interpretation, closer in spirit to that of \cite{epsteinAxiomaticModelNonBayesian2006}. When observing the realisation of the contingent menu, the individual might revise her prior beliefs rather than distort the signal. The revised prior beliefs are updated according to the true signal, leading to posterior beliefs satisfying BDP. The conceptual distinction between these two interpretations relates to the supposed \textquote{irrationality} of motivated reasoning. Distorting the objective likelihood of a signal is arguably a mistake. However, revising a prior belief is not necessarily irrational. Since it is a subjective belief, there is no objective counterpart to qualify it as \textquote{wrong}. Such an interpretation is possible in this model because it features subjective beliefs contrary to the objective lotteries framework in the past literature. Under this second interpretation, discussing the trade-off between accuracy and utility from beliefs is meaningless, as there is no \textquote{accurate} belief. Moreover, regardless of the subjective or objective nature of the belief constituting a benchmark, both the current and previous models feature individuals having both the \textquote{true} belief and the \textquote{distorted} belief in mind. If the individual can formulate the trade-off between accuracy and utility, she knows what is accurate, but how can she believe something else then? This trade-off is a critical component of the BDP literature \citep{benabou2016mindful}. If motivated reasoning is interpreted as a rational model of decision-making, the process leading to belief revision inconsistent with Bayes rule cannot be explained in terms of an accuracy-utility trade-off. There is a second element that favours the change in prior interpretation. The model requires independence, which I justified with indifference to probabilistic mixtures. Why should the individual distort the likelihood of a signal and not the probability mixture of two contingent menus? The change in the prior interpretation is consistent with the correct processing of information coming from objective lotteries of contingent menus in the model. I thus challenge the common wisdom that the accuracy-utility trade-off is a conceptually appealing tool for theories of motivated belief updating. A trade-off between material and belief-based utility, such as the one formulated in the first example in Section \ref{sec:example}, seems more intuitive.
+
+Adopting a model of BDP leading to non-Bayesian updating has implications for agreement theorems in the style of \cite{aumannAgreeingDisagree1976}. Two individuals with the same prior beliefs but different BDP have distinct posteriors beliefs, even if these are common knowledge. Individuals with the same BDP will instead have the same posterior beliefs. This does not necessarily follow from previous models, in which BDP and non-Bayesian updating are disjointed assumptions. This violation of \citeauthor{aumannAgreeingDisagree1976} makes BDP suitable candidates for explaining phenomena of polarisation and assortativity on the basis of preferences, as hinted in the application in Section \ref{sec:application}.
+
+\bibliographystyle{apacite}  % or another  style
+\bibliography{references} % .bib file goes in ./bib/

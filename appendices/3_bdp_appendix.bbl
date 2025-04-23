@@ -1,0 +1,98 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Fishburn%
+}{%
+Fishburn%
+}{%
+{\protect \APACyear {1970}}%
+}]{%
+fishburnUtilityTheoryDecision1970}
+\APACinsertmetastar {%
+fishburnUtilityTheoryDecision1970}%
+\begin{APACrefauthors}%
+Fishburn, P\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1970}.
+\newblock
+\APACrefbtitle {Utility Theory for Decision Making} {Utility theory for
+  decision making}.
+\newblock
+\APACaddressPublisher{New York}{Wiley}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Gul%
+\ \BBA {} Pesendorfer%
+}{%
+Gul%
+\ \BBA {} Pesendorfer%
+}{%
+{\protect \APACyear {2001}}%
+}]{%
+gulTemptationSelfControl2001}
+\APACinsertmetastar {%
+gulTemptationSelfControl2001}%
+\begin{APACrefauthors}%
+Gul, F.%
+\BCBT {}\ \BBA {} Pesendorfer, W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2001}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Temptation and {{Self-Control}}} {Temptation and
+  {{Self-Control}}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Econometrica}{69}{6}{1403--1435}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kopylov%
+}{%
+Kopylov%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+kopylovTemptationsGeneralSettings2009}
+\APACinsertmetastar {%
+kopylovTemptationsGeneralSettings2009}%
+\begin{APACrefauthors}%
+Kopylov, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Temptations in {{General Settings}}} {Temptations in
+  {{General Settings}}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The B.E. Journal of Theoretical Economics}{9}{1}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Liang%
+}{%
+Liang%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+liangInformationdependentExpectedUtility2017}
+\APACinsertmetastar {%
+liangInformationdependentExpectedUtility2017}%
+\begin{APACrefauthors}%
+Liang, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Information-Dependent Expected Utility}
+  {Information-dependent expected utility}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Available at SSRN 2842714}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

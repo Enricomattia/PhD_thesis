@@ -1,0 +1,325 @@
+\chapter{Meritocracy as an End and as a Means}\label{ch:meritocracy}
+
+\begin{chapterabstract}
+	I introduce a framework for studying different interpretations of meritocracy and testing whether individuals adhere to them. Each meritocracy has two components: a merit criterion, determining when one individual is more meritorious than another, and a reward criterion for each individual, determining when one outcome constitutes a better reward than another for that individual. An allocation is meritocratic if more meritorious individuals are better rewarded. I distinguish between two conceptions of meritocracy. Meritocracy as an end holds it intrinsically valuable that individuals are rewarded according to their merit. Meritocracy as a means views rewarding merit as instrumental in achieving desirable outcomes according to other standards, such as efficiency. I show that these two conceptions are equivalent: each instance of meritocracy as a means can be associated with a corresponding meritocracy as an end. Finally, I examine two specific meritocracies present in the literature. Pareto meritocracy defines an action as more meritorious if it leads to a Pareto improvement in welfare, whereas proportional meritocracy requires that an individual’s consumption be proportional to the amount of labour he provides. By observing whether allocation choices of impartial spectators align with specific merit criteria, one can test whether individuals adhere to these meritocracies.
+\end{chapterabstract}
+
+\section{Introduction}\label{sec:intromerit}
+
+Meritocracy has recently attracted considerable attention in economics and political philosophy \citep{markovitsMeritocracyTrap2019,mulliganJusticeMeritocraticState2018,sandelTyrannyMeritWhat2020, tiroleMeritocracySocialJustice2022}. However, as \citet[p. 5]{senMeritJustice2000} observes, \textquote{\emph{the idea of meritocracy may have many virtues, but clarity is not one of them.}} This paper attempts to bring some clarity. I introduce a framework that allows me to explicitly distinguish between multiple interpretations of meritocracy across different literatures and clarify their relationships. To showcase the use of the framework, I characterise, through assumptions on primitive elements, a particular form of meritocracy referenced in behavioural and experimental economics: proportional meritocracy, according to which an individual's consumption should be proportional to his provided labour.
+
+The setting is as follows. Individuals have preferences over a set of outcomes. A social choice function maps each preference profile to an outcome. A social choice function is meritocratic if it assigns better outcomes to more meritorious individuals. To express this condition, I consider two criteria: first, the conditions under which an individual or an action is deemed more meritorious; and second, when an outcome qualifies as a better reward for merit. Accordingly, the framework relies on two fundamental primitives: the \textbf{merit criterion} and the \textbf{reward criterion}. The merit criterion is a binary relation over preferences determining when a preference is more meritorious than another. By interpreting preferences as representations of individual choices, the merit criterion identifies who is more meritorious based on their behavioural attitudes. For example, one might be deemed more meritorious if he requires less consumption as compensation for performing more productive work. The reward criterion for an individual is a binary relation over outcomes determining when an outcome is a better reward than another for that individual. For instance, an individual may consider an outcome a better reward if it is preferred to another. A social choice function is meritocratic if, for each individual, having more meritorious preferences according to the merit criterion leads to better outcomes according to the reward criterion.
+
+I refer to the notion of meritocracy represented by a meritocratic social choice function as \textbf{meritocracy as an end}. One might desire a social choice function to be meritocratic \emph{per se}, independently of any other properties it has. That is, it may be considered intrinsically valuable that an individual is better rewarded if he is more meritorious. This view aligns with desert-based theories of justice in the philosophical literature: \textquote{\emph{It is a good thing, morally speaking, if people are getting what they deserve}} \citep[p. 5]{kaganGeometryDesert2014}.
+
+I also consider a second notion, \textbf{meritocracy as a means}, in which meritocracy is a tool to achieve outcomes desirable according to other criteria. For example, meritocracy as a means could be employed to induce efficient outcomes: \textquote{\emph{the creed of meritocracy: the belief that in the rat race of life rewards should go to the best performers, thereby unleashing society’s full potential}} \citep[p. 1]{morganLimitsMeritocracy2022}. To represent meritocracy as a means, I introduce mechanisms, which consist of a collection of action sets, one for each individual, and an outcome function, mapping each action profile to an outcome. Within a mechanism, a merit criterion is a binary relation over action profiles, determining when an individual's action, given the actions of others, is considered more meritorious. The reward criterion for an individual remains a binary relation over outcomes determining when an outcome is a better reward than another for that individual. A mechanism is meritocratic if, for each individual, more meritorious actions lead to better outcomes under the respective criteria.
+
+I derive three results. The first result, Proposition \ref{prop:impl}, details the relationship between meritocracy as an end and meritocracy as a means. I characterise the conditions under which a mechanism implements a meritocratic social choice function. This requires that the mechanism is meritocratic relative to an action-based merit criterion that agrees with the merit criterion over preferences, where agreement means that more meritorious preferences induce more meritorious actions in the mechanism. Therefore, each conception of meritocracy as a means has a meritocracy as an end counterpart. This characterization yields two main implications. First, if one commits to a merit criterion over preferences, the merit criterion over actions of a mechanism is meaningless by itself, as its interpretation relies on the mechanism's outcome function. Common merit criteria in the literature and public discourse are binary relations of the type \textquote{exerting more effort is more meritorious}. However, the result indicates that such criteria are meaningless unless explicitly linked to an outcome function clarifying the implications of effort. Second, if one commits to a merit criterion over actions, independent of the outcome function, he must also accept that such ranking is independent from the outcome the meritocratic mechanism induces. However, this viewpoint is in contrast with meritocracy as a means, as the outcome of the mechanism is thus irrelevant. In a nutshell, one is forced to abandon the idea of meritocracy as a means to stick to a merit criterion over actions as a primitive object.
+
+I showcase the use of the framework and the equivalence between meritocracy as an end and as a means by analysing assumptions on merit and reward criteria that lead to two distinct forms of meritocracy. I start by studying a conception of meritocracy in which an individual's action is more meritorious than another if it leads to a Pareto improvement. The second result, Proposition \ref{prop:pareto}, shows that such merit criterion, if not complemented with other assumptions, is vacuous, in the sense that it ranks as more meritorious individuals who prefer a Pareto improvement to a Pareto worsening, but nothing more. Since such Pareto ordering is weak, I proceed to study assumptions on the merit criterion leading to a stronger ordering of individuals.
+
+The third and main result of this paper, Proposition \ref{prop:prop}, is a characterisation of a widely referenced version of meritocracy within a more structured environment, a private goods economy. Individuals provide a labour input to produce a consumption output. They have preferences over pairs of labour and consumption allocations. Several settings in which meritocracy is explored in the literature are particular cases of such economy. I characterise a \textbf{proportional meritocracy}, where each individual's consumption is proportional to his labour input. Proportional meritocracy is characterised by two conditions on the merit criterion and one on the reward criterion. First, the merit criterion is monotonic in the labour input, if one works more, he is more meritorious. Second, the merit criterion is scale-invariant, if the labour input of everyone is multiplied by a constant, the ordering of labour input profiles according to the merit criterion does not change. Third, the reward criterion is welfarist, the reward for merit is individual welfare. I then show that the merit criteria over preferences agreeing with the merit criteria of actions in a proportional meritocracy ranks preferences according to the marginal rate of substitution between labour and consumption. I suggest that such criterion over preferences is more fundamental than one over the labour input, as it can be formulated independently from any specific mechanism. The characterisation of proportional meritocracy can guide empirical studies. Observing allocation choices of an impartial spectator, one could test whether individuals adhere to proportional meritocracy by checking whether they abide by the requirements on the merit criterion.\footnote{See e.g. \cite{cappelenFairnessLimitedInformation2024}.} I further discuss how the present paper paves the way for further empirical evidence on meritocracy in Section \ref{subsec:pareto}. A brief literature review follows.
+
+\emph{Related Literature.} This paper contributes to the literature on responsibility sensitive social choice theory, surveyed by \cite{fleurbaeyFairnessResponsibilityWelfare2008} and \cite{roemerEqualityOpportunityTheory2016}. The literature develops allocation criteria that are sensitive to factors for which individuals are held responsible, with meritocracy being an instance.\footnote{\cite{carrollEqualOpportunityDifferent2025} discusses the distinction between responsibility sensitive criteria and standard welfarism.} Equality of opportunity is the main focus of this literature. An allocation rule satisfies equality of opportunity if it neutralises the effects of circumstances beyond individuals' control on their outcomes. One example is allowing students access to education regardless of their parents' income. A key element of this literature is the distinction between compensation for unequal circumstances and reward for choices under control of the individual. A relevant insight is that a compensation criterion for unequal circumstances does not specify a rewarding rule for free actions, these two are distinct concepts. In general, fair compensation is logically independent from fair reward \citep{moulinFairDivisionCollective2004}. Both theoretical and empirical work studying meritocracy often neglect such distinction. Compensation for unequal circumstances is frequently considered a necessary condition for meritocracy, but if the latter is interpreted as a reward criterion for choices, there are no links between the two concepts. This results in meritocracy being conflated with equality of opportunity. In this paper, I propose to view meritocracy as an allocation rule that depends on a merit criterion, regardless of individuals' unequal circumstances. Characterising meritocracy separately from equality of opportunity allows for studying the scope of their intersection. Section \ref{sec:eq} further discussed the relationship between meritocracy and equality of opportunity.
+
+The need for a framework to explicitly discuss meritocracy is revealed by the different meanings different authors give to the same word. I briefly review the theoretical and experimental literature on meritocracy to showcase the lack of common language and conceptual overlap with equal opportunity. I also discuss the relation between past literature and the present work in the body of the text. \cite{moissonCooptationMeritocracyVs2024} study co-optation into an organisation. Candidates have a quality and a personal trait, such as race, gender, or taste. A higher quality trait benefits all members of the organisation. A specific personal trait benefits members with the same trait. The organisation is meritocratic if it selects candidates based on quality traits. Therefore, in this paper, meritocracy is rewarding a trait benefiting more individuals. I study a general version of such assumption in Section \ref{subsec:pareto}. The only distinction between the two traits is the preferences individuals have for them. The underlying idea is that only quality should matter because it is the trait that impacts the firm's output, but equality of opportunity is necessary for individuals with the same productivity not to be discriminated against due to their personal traits. However, such distinction between the two traits is outside the model, as candidates do not choose them, and there is no reason to distinguish them except for employers' preferences.
+
+In \cite{morganLimitsMeritocracy2022}, individuals exert effort in a contest and are rewarded according to a ranking of their performance. There is no meritocracy when the ranking is random, while there is full meritocracy when the ranking precisely reflects the amount of effort exerted. Individuals exert effort to win the contest and obtain a prize. The paper focuses on the relationship between the precision of the ranking and the effort exerted. Interpreting meritocracy as a more or less precise ranking of effort is common, but the reason effort should be rewarded and to which extent is not addressed. Interpreting meritocracy as the precision of effort-based rankings effectively collapses the concept into that of equal opportunity, as randomness can be interpreted as a circumstance outside the individual's control. \cite{moisson2024meritocracy} adheres to a similar definition: in his paper, meritocracy is the relative weight given to effort, ability, and unequal circumstances in determining outcomes.
+
+Similar understandings of meritocracy are also present in the experimental literature. In \cite{cappelenMeritPrimacyEffect2023} and related work by the same authors, subjects in an experiment are divided into workers and spectators.\footnote{\cite{cappelenFairUnfairIncome2020,cappelenMeritocraticOriginEgalitarian2022,cappelenFairnessLimitedInformation2024}.} Workers must complete a real effort task, and spectators have to distribute an amount of money among two workers. The experimental variation is the degree to which the outcome of the effort task is due to the workers' effort or randomness introduced by the experimenter. The idea in \cite{cappelenMeritPrimacyEffect2023} is thus similar to \cite{morganLimitsMeritocracy2022}. Meritocracy is defined as rewarding workers increasingly in their effort. \cite{andreShallowMeritocracy2024} studies how circumstances of which individuals are not in control of shape how meritorious others consider them. One individual has to reward others after observing their choices. He shows that rewards are insensitive to unequal circumstances which shape choices. Both \cite{andreShallowMeritocracy2024} and \cite{cappelenFairnessLimitedInformation2024} more or less explicitly refer to proportional meritocracy, which I discuss in Section \ref{subsec:prop}. Moreover, they find empirical evidence that individuals adhere to such a particular form of meritocracy.
+
+This brief review shows that papers mentioning meritocracy interpret it as a criterion for rewarding effort under equal opportunity, adapted to different settings. Surprisingly, in these papers there is often no reference to the relevant literature in social choice theory on the topic. I will further discuss differences between previous papers and this one in the body of the text.
+
+Lastly, this paper draws from the philosophical literature studying desert-based theories of justice, according to which the allocation of goods in society should reflect individuals' deservingness.\footnote{See \cite{arnesonDesertEquality2007,kaganGeometryDesert2014,sep-meritocracy} for recent developments relevant to the current paper.}
+
+\section{Framework}\label{sec:modelmerit}
+
+Let \(I \) be a finite set of \( n \) individuals. Each individual \( i \) has preferences \( R_i \in \mathcal{R} \) over a set \( X \) of outcomes. A social choice function \( f \colon \mathcal{R}^{n} \rightarrow X \) assigns an outcome to each profile of individual preferences. I introduce two primitives that allow me to define a meritocratic social choice function. First, a binary relation \( \geq_{\mathcal{R}} \) over the set of preferences, determining whether a preference is more meritorious than another, the \textbf{merit criterion}. For each individual \( i \), preference \( R_i \) over outcomes is more meritorious than \( R^{\prime}_i \) if \( R_i \geq_{\mathcal{R}} R^{\prime}_i \). The relation \( \geq_{\mathcal{R}} \) over preferences is common for all individuals. Second, a collection of binary relations \( \geq_{i} \) over outcomes, one for each individual \( i \), determining whether an outcome is a better reward for individual \( i \) than another, the \textbf{reward criterion}. An outcome \( x \) is a better reward for individual \( i \) than \( x^{\prime} \) if \( x \geq_{i} x^{\prime} \). In general, the reward criterion does not coincide with preferences and need not be identical across individuals.
+
+\begin{example} \label{ex:priv}
+	\labelname{ex:private}{Private Goods Economy} (\textbf{Private Goods Economy}) Several papers studying meritocracy \citep{andreShallowMeritocracy2024,cappelenMeritocraticOriginEgalitarian2022,cappelenMeritPrimacyEffect2023,cappelenFairnessLimitedInformation2024,fleurbaeyFairnessResponsibilityWelfare2008} consider particular cases of the following setting. There is an economy with two private goods, labour serves as an input in the production of a consumable output. The production of \( y \) units of consumption requires \( \ell = c ( y ) \) units of labour, where the cost function \( c \) is strictly increasing and invertible. Each individual \( i \) has preferences \( R_i \) over his labour and consumption allocation represented by the utility function \( u_i ( \ell_i, y_i ) \), which is strictly decreasing in labour \( \ell_i \), strictly increasing in consumption \( y_i \) and differentiable in both its arguments. An allocation  \( ( \ell, y ) \) is feasible if the total labour input suffices to produce the total consumption \( \sum_{i} \ell_i = c  ( \sum_i y_i ) \). A social choice function maps each preference profile to a feasible allocation.\footnote{More structure would allow me to consider different productivities. Say that \( \ell_i = b_i e_i \) measures unit of effective labour, where \( b_i \) is productivity. Then preferences are on pairs of \( ( \nicefrac{\ell_i}{b_i}, y_i ) = ( e_i, y_i ) \).}
+
+	Denote the marginal rate of substitution between labour and consumption for individual \( i \) in each point by \( \operatorname{MRS}_{R_i} ( \ell_i, y_i ) \), measuring how many units of consumption the individual needs to be compensated for one additional unit of labour. A possible merit criterion states that a preference is more meritorious if, for each level of labour and consumption, it requires less consumption as compensation for one more unit of labour, that is
+
+	\[ R_i \geq_{\mathcal{R}} R_i^{\prime} \quad \Longleftrightarrow \quad \operatorname{MRS}_{R_i} ( \ell_i, y_i ) \leq \operatorname{MRS}_{R^{\prime}_i} ( \ell_i, y_i ) \text{ for each } ( \ell_i, y_i ) \: .\]
+
+	One plausible reward criterion holds that an individual is better rewarded if he receives a preferred allocation, and therefore that \( \geq_i = R_i \) for each individual \( i \). I explore the implications of these merit and reward criteria in Section \ref{subsec:prop}.
+\end{example}
+
+With these primitives at hand, I define a meritocratic social choice function.
+
+\begin{definition}\label{definition:funcmer}
+	A social choice function \( f \) is \textbf{meritocratic} if, for each individual \( i \), for all preferences \( R_i, R_i^{\prime} \) and for each preference profile \( R_{-i} \),
+
+	\[ R_i \geq_{\mathcal{R}} R^{\prime}_i \implies f ( R_i, R_{-i} ) \geq_i f ( R_i^{\prime}, R_{-i} ) \: .\]
+\end{definition}
+
+A social choice function is meritocratic if it assigns a better reward, according to the reward criterion, to a more meritorious preference, according to the merit criterion. Therefore, different notions of meritocracy correspond to different pairs of criteria. In the words of \cite{senMeritJustice2000}: \textquote{\emph{the notion of merit is fundamentally derivative, and thus cannot but be qualified and contingent}.} Strictly speaking, one should say \textquote{meritocratic with respect to these merit and reward criteria}, but I avoid the qualification when no confusion should arise. Arguably, such modelling choice is convenient as it allows one to trace the underlying sources of disagreement about meritocracy. As an example, some critique meritocracy because it does not take into account unequal circumstances outside individuals' control. I argue that such critique could be phrased as disagreement about what the merit criterion \( \geq_{\mathcal{R}} \) should trace. One might want it to be independent of features individuals cannot control. Definition \ref{definition:funcmer} represents \textbf{meritocracy as an end}. One might desire the social choice function to be meritocratic regardless of other properties it has: \textquote{\emph{a just distribution is merit-based}} \citep[p. 2]{sep-meritocracy}.
+
+This notion of meritocracy as an end aligns with desert-based theories of justice as studied in \cite{kaganGeometryDesert2014}. The difference is that, in the present setting, I only consider qualitative notions of merit and reward. \cite{kaganGeometryDesert2014} instead assumes that these two are measurable quantities, and is therefore able to describe how far an allocation is from being meritocratic. Definition \ref{definition:funcmer} is instead either satisfied or not. In Section \ref{subsec:prop}, where I introduce proportional meritocracy, I show how assumptions on the merit criterion allow me to derive a quantitative representation of individual merit.
+
+However, meritocracy is sometimes conceived as a mechanism for inducing outcomes satisfying other desirable properties, such as Pareto efficient outcomes. To represent such instrumental understanding of meritocracy, I introduce mechanisms. A mechanism \( M = ( ( A_i )_{i \in I}, g ) \) is a collection of action sets, one for each individual \( i \), and an outcome function  \( g \colon A \rightarrow X \) mapping each action profile to an outcome. To define a meritocratic mechanism, I introduce a merit criterion over action profiles of the mechanism. Consider a collection of binary relations \( \geq_{A_i} \), one for each individual \( i \), such that, fixing a profile of actions \( a_{-i} \) of individuals other than \( i \), action \( a_i \) of individual \( i \) is more meritorious than \( a_i^{\prime} \) if \( ( a_i, a_{-i} ) \geq_{A_i} ( a_i^{\prime}, a_{-i} ) \). The binary relation \( \geq_{A_i} \) is distinct from \( \geq_{\mathcal{R}} \), as the first ranks action profiles in a mechanism, while the second ranks preferences. I discuss a notion of agreement between the two merit criteria in Section \ref{sec:agree}. The reward criterion is again defined as a collection of binary relations \( \geq_i \) over outcomes, one for each individual \( i \).
+
+\begin{definition}\label{definition:mecmer}
+	A mechanism \( M \) is \textbf{meritocratic} if, for each individual \( i \), for all actions \( a_i, a_i^{\prime} \) and for each action profile \( a_{-i} \),
+
+	\[ ( a_i, a_{-i} ) \geq_{A_i} ( a^{\prime}_i, a_{-i} ) \implies g ( a_i, a_{-i} ) \geq_i g ( a^{\prime}_i, a_{-i} ) .\]
+\end{definition}
+
+A mechanism is meritocratic if it assigns a better reward as a consequence of an individual choosing a more meritorious action. Definition \ref{definition:mecmer} differs from Definition \ref{definition:funcmer} of meritocratic social choice functions, which assigned a better reward for individuals who are more meritorious according to their preferences. Definition \ref{definition:mecmer} represents \textbf{meritocracy as a means}. One might ask whether a meritocratic mechanism implements a social choice function satisfying desirable properties. As an example, it is often explored in the literature, and discussed in popular debate, whether meritocratic mechanisms implement efficient outcomes. For instance, \cite{moisson2024meritocracy} examines various definitions of \textquote{merit} based on different weightings assigned to talent, effort, and head start in a specific game. The author investigates which weight distributions achieve desirable outcomes, such as maximizing efficiency in preference satisfaction.
+
+In the next section, I study the relationship between meritocracy as an end and meritocracy as a means, i.e., meritocratic social choice functions and mechanisms.
+
+\section{When Means and End Coincide}\label{sec:agree}
+
+In this section, I characterise the conditions for a mechanism to implement a meritocratic social choice function. I show that the mechanism must be meritocratic according to a merit criterion on actions of the mechanism that agrees with the merit criterion on individuals' preferences. I say that \( \geq_{\mathcal{R}} \) and \( \geq_{A_i} \) agree if, whenever, for a fixed profile \( a_{-i} \), individual \( i \)'s actions \( a_i, a_i^{\prime} \) produce outcomes with opposite rankings under two distinct preferences  \( R_i \) and \( R_i^{\prime} \), then \( a_i \) is deemed more meritorious than \( a_i^{\prime} \) according to \( \geq_{A_i} \) if and only if \( R_i \) is deemed more meritorious than \( R_i^{\prime} \) according to \( \geq_{\mathcal{R}} \).
+
+\begin{definition}
+	Fix a mechanism \( M \). Two merit criteria \( \geq_{\mathcal{R}} \) and \( \geq_{A_i} \) \textbf{agree} if,
+	\begin{itemize}
+		\item for all actions \( a_i, a^{\prime}_{i} \) and action profiles \( a_{-i} \),
+		\item for all preferences \( R_i, R^{\prime}_i \) such that \( g ( a_{i}, a_{-i} ) R_i g ( a^{\prime}_{i}, a_{-i} ) \) and \( g ( a^{\prime}_{i}, a_{-i} ) R^{\prime}_i g ( a_{i}, a_{-i} ) \),
+	\end{itemize}
+
+	\[ ( a_i, a_{-i} ) \geq_{A_i} ( a^{\prime}_i, a_{-i} ) \iff R_i \geq_{\mathcal{R}} R^{\prime}_i \: . \]
+\end{definition}
+
+Crucially, agreement between the two merit criteria depends on the outcome function \( g \). That is, fixing action sets and a merit criterion over preferences, two different outcome functions induce two different criteria of merit over actions agreeing with the original criterion over preferences. In fact, if one wants to adhere to a merit criterion that depends on preferences, it is meaningless to assign a merit criterion to actions, as these might be ranked differently by preferences under different outcome functions.
+
+Instead, if one wants to stick to an understanding of merit that is related to a particular interpretation of actions, such as effort or labour, regardless of the outcome function, one should also accept that such ranking is independent from the outcome the meritocratic mechanism induces. However, this is in contrast with the view of meritocracy as a means, as the outcome of the mechanism is irrelevant for defining a merit criterion over actions. Therefore, supporting both meritocracy as a means and an action-based merit criterion leads to logical inconsistency. In fact, I suggest that it would be more transparent to consider a merit criterion over preferences as a primitive object, and then derive the merit criterion over actions agreeing with it. Moreover, as I show in my next result, any meritocratic mechanism has a meritocratic social choice function counterpart. Therefore, adherence to a meritocratic mechanisms is equivalent to adherence to a meritocratic social choice function.
+
+I now define the notion of implementation I consider. With a slight abuse of notation, I denote a strategy of individual \( i \) in a mechanism with \( a_{i} \colon \mathcal{R} \rightarrow A_i \) mapping each preference to an action. I say that a mechanism \( M \) implements a social choice function \( f \) if, for each preference profile \( R \), each Nash equilibrium of the game induced by \( M \) results in the outcome \( f ( R ) \).\footnote{See, e.g., \citet[p. 913]{mas-colellMicroeconomicTheory1995}.}
+
+\begin{definition}
+	A mechanism \( M \) \textbf{implements} a social choice function \( f \) if, for each preference profile \( R \), for each Nash equilibrium strategy profile \( a^{*} \), it holds that \( g( a^{*} ( R ) ) = f ( R ) \).
+\end{definition}
+
+I now state my first result, a characterisation of the mechanisms implementing meritocratic social choice functions.\footnote{All proofs are in Appendix \ref{sec:proofsmeritocracy}.} In the statement of the proposition, I do not mention agreement between the two reward criteria, which are assumed to coincide.
+
+\begin{prop}\label{prop:impl}
+	A mechanism implements a meritocratic social choice function if and only if it is meritocratic with respect to merit criteria \( \geq_{A_i} \) which, for each \( i \), agree with \( \geq_{\mathcal{R}} \).
+\end{prop}
+
+Proposition \ref{prop:impl} shows that, whenever a meritocratic social choice function is implemented by a mechanism, such mechanism must be meritocratic with respect to the same criteria. The result remarks that, once one is committed to meritocracy as an end, the merit criterion on actions depends on the outcome function of the mechanism, and therefore ranking actions by merit independent of the outcome function is unjustified. Such a discussion raises doubts about common criteria of merit of the type \textquote{exerting more effort is more meritorious.} Conversely, every meritocratic mechanism implements a meritocratic social welfare function according to the same criteria. Therefore, every meritocratic mechanism has a social choice function counterpart.
+
+This equivalence is closely related to the \textquote{control principle} \citep{arnesonDesertEquality2007,fleurbaeyFairnessResponsibilityWelfare2008}, which asserts that, under desert-based theories of justice, individuals should be held accountable only for what lies within their power to control. This principle is elusive to capture within the economic revealed preference framework. If an action causally follows from preferences, it seems odd to hold an individual responsible for them. However, within a mechanism, the action an individual ultimately chooses is shaped by the mechanism itself, via the outcome function. This dependence highlights the arbitrariness of assigning merit to actions, as any action may be part of an equilibrium in a suitable mechanism, thereby violating the control principle. I therefore argue that considering merit criteria over preferences, rather than actions, is more appropriate, despite the criticisms that have been raised against such practice.\footnote{\citet[ch. 10]{fleurbaeyFairnessResponsibilityWelfare2008} offers a comprehensive discussion of this point.}
+
+In the next section, I examine two specific notions of meritocracy that have been employed in the literature. These notions, often implicitly, arise within the context of mechanisms. I use Proposition \ref{prop:impl} to identify their corresponding meritocratic social choice functions.
+
+\section{Two Versions of Meritocracy}\label{sec:priv}
+
+This section explores commonly assumed properties of the merit and reward criteria that give rise to distinct meritocracies. In particular, I study what I call a Pareto meritocracy and (labour) proportional meritocracy. In the first, an action is considered more meritorious if it induces a Pareto improvement. In the second, defined in the private goods economy of Example \ref{ex:priv}, the more an individual works, the more meritorious he is.
+
+\subsection{Pareto Meritocracy}\label{subsec:pareto}
+
+Here, I study a merit criterion according to which an action in a mechanism is more meritorious than another if it induces a Pareto improvement in welfare. The definition follows.
+
+\begin{definition}\label{def:pareto}
+	\labelname{axn:pareto}{Pareto Merit}
+	A merit criterion \( \geq_{A_i} \) satisfies \textbf{Pareto merit} if, for all actions \( a_i, a_i^{\prime} \) and for each action profile \( a_{-i} \),
+
+	\[ ( a_i, a_{-i} ) \geq_{A_i} ( a^{\prime}_i, a_{-i} ) \iff g ( a_i, a_{-i} ) R_j  g ( a^{\prime}_i, a_{-i} ) \: \text{ for all } \: j \: , \]
+
+	\[ ( a_i, a_{-i} ) \geq_{A_i} ( a^{\prime}_i, a_{-i} ) \iff g ( a_i, a_{-i} ) P_j  g ( a^{\prime}_i, a_{-i} ) \: \text{ for some } \: j \: .\]
+\end{definition}
+
+In words, fixing an opponents' action profile \( a_{-i} \), an action \( a_i \) scores higher in the merit criterion than action \( a^{\prime}_{i} \) if the outcome resulting from \( a_i \) is weakly preferred to the outcome resulting from \( a^{\prime}_{i} \) by all individuals, and it is strictly preferred by at least one individual. This assumption is frequently invoked in the economic literature and popular debate. As an example, \cite{moissonCooptationMeritocracyVs2024} refer to the employment of a candidate with a talent trait that benefits all members of an organisation as meritocratic. In the philosophical literature, it is argued that a meritocratic governance should be in the hands of capable individuals, able to make people better-off \citep{sep-meritocracy}.
+
+In what follows, I show that the Pareto merit criterion is vacuous in that it only identifies individuals who prefer Pareto improvements as more meritorious—an uninformative condition in standard settings.
+
+\begin{prop}\label{prop:pareto}
+	Assume that for each preference \( R_i \) there is a unique maximal element \( x^{*} (R_i) \). Fix a mechanism \( M \). Merit criteria over preferences \( \geq_{\mathcal{R}} \) agreeing with a merit criterion over actions \( \geq_{A_i} \) satisfying \usename{axn:pareto} must satisfy the following:
+
+	\[
+		R_i \geq_{\mathcal{R}} R_i^{\prime} \iff x^{*} (R_i) R_j x^{*} (R^{\prime}_i)  \: \text{ for all } \: j \: ,
+	\]
+
+	\[
+		R_i \geq_{\mathcal{R}} R_i^{\prime} \iff x^{*} (R_i) P_j x^{*} (R^{\prime}_i)  \: \text{ for some } \: j \: .
+	\]
+\end{prop}
+
+To evaluate Proposition \ref{prop:pareto}, consider the implications of the \usename{axn:pareto} criterion in the private economy of Example \ref{ex:priv}. In that setting, each individual prefers a Pareto improvement to a Pareto worsening in that setting. Therefore, the \usename{axn:pareto} criterion does not rank any individual as more meritorious than another. In other words, all individuals are equally meritorious according to \usename{axn:pareto}. If not supplemented with other assumptions, the \usename{axn:pareto} criterion does not provide any information about the relative merits of individuals.
+
+It is often argued in philosophy that merit is a contextual phenomenon, suggesting that more structured settings are necessary to meaningfully define it. In the next subsection, I consider a second meritocracy, defined in the more structured setting of Example \ref{ex:priv}, which yields more substantive implications.
+
+\subsection{Proportional Meritocracy}\label{subsec:prop}
+
+In this section, I study a meritocratic mechanism in the setting of Example \ref{ex:priv}. Each individual \( i \) chooses his labour supply \( \ell_i \), and the outcome function \( g \) maps each labour input profile to a feasible consumption profile. In this mechanism, a merit criterion is a binary relation over profiles of labour inputs, while each reward criterion is a binary relation over pairs of labour input and consumption. I study conditions on merit and reward criteria that, under the assumption that the mechanism is meritocratic, uniquely characterise a proportional outcome function, where each individual's consumption is proportional to the labour input he provides.
+
+\begin{definition}\label{def:prop}
+	\labelname{def:prop}{Proportional Meritocracy}
+	A mechanism is a \textbf{Proportional Meritocracy} if, for each individual \( i \), labour input \( \ell_i, \ell^{\prime}_{i} \) and labour input profile \( \ell_{-i} \),\footnote{With a slight abuse of notation, I do not include the allocation of labour inputs \( g \) induces, as each individual is always assigned his chosen \( \ell_i \).}
+
+	\[ g ( \ell_i, \ell_{-i} ) = \alpha_i(\ell) c^{-1}\left(\sum_{j} \ell_j\right) \: ,\]
+
+	where the numbers \( \alpha_i(\ell) \) satisfy the following conditions:
+	\begin{enumerate}
+		\item sum to a unit \( \sum_{i} \alpha_i(\ell) = 1 \);
+		\item are monotonic in labour inputs \( \ell_i \geq \ell_i^{\prime} \implies \alpha_i (\ell_i, \ell_{-i} ) \geq \alpha_i (\ell_i^{\prime}, \ell_{-i} ) \);
+		\item are homogeneous of degree zero, \( \alpha_i (\lambda \ell_1, \ldots, \lambda \ell_n )=\alpha_i (\ell_1, \ldots, \ell_n ) \) for any \( \lambda>0 \).
+	\end{enumerate}
+
+\end{definition}
+
+Allocation rules similar to \usename{def:prop} have been characterised in various settings, but I follow a slightly different conceptual path.\footnote{See the monograph on claim problems by \cite{thomsonHowDivideWhen2019}.} In a proportional meritocracy, the shares \( \alpha_i \) are interpreted as quantitative measures of merit of individual \( i \). The individual consumes a proportion of the total output, and such proportion coincides with his merit, as measured by \( \alpha_i \). There is a relationship between such interpretation of the allocation rule and a claim problem, where proportional allocations are typically defined. The distinction is that, in claim problems, claims are exogenous, while here the labour input is chosen by the individual once the mechanism is specified. Therefore, a proportional meritocracy might be viewed as a novel rationale for implementing proportional allocation rules, one related to desert-based views of justice.
+
+A proportional conception of meritocracy traces back to Aristotle, who proposed that the ratio of merits and rewards should be equal among individuals \citep{sep-meritocracy}. Taken literally, Aristotle's condition characterises proportional meritocracies in the current setting. For each individual \( i \), his merit is \( \alpha_i \), while his reward is his consumption level
+
+\[ \alpha_i c^{-1}\left(\sum_{j} \ell_j\right) , \]
+
+and the ratio between these two quantities is
+
+\[ c^{-1}\left(\sum_{j} \ell_j\right) , \]
+
+equal among individuals. Therefore, Aristotle's condition is satisfied in a \usename{def:prop}.
+
+I now introduce the assumptions characterising \usename{def:prop}. I start by restricting attention to merit criteria according to which a higher labour input is more meritorious, fixing the labour input profile of all other individuals.
+
+\begin{definition}\label{def:mono}
+	\labelname{axn:mono}{Conditional Labour Monotonicity}
+	A merit criterion \( \geq_{A_i} \) satisfies \textbf{Conditional Labour Monotonicity} if, for each individual \( i \), labour input \( \ell_i, \ell^{\prime}_{i} \) and labour input profile \( \ell_{-i} \),
+
+	\[ \ell_i \geq \ell_i^{\prime} \implies ( \ell_i, \ell_{-i} ) \geq_{A_i} ( \ell^{\prime}_i, \ell_{-i} ) \: .\]
+\end{definition}
+
+\usename{axn:mono} states that, fixing a profile of others' labour input \( \ell_{-i} \), a labour input \( \ell_i \) is more meritorious than \( \ell'_i \) if it is bigger. Such definition relies on the structured setting, which allows to measure individual actions. Notice that \usename{axn:mono} does not state that if \( \ell_i \geq \ell'_i \) then the first is more meritorious, which would be a stronger requirement, as captured in the following definition.
+
+\begin{definition}\label{def:mono'}
+	\labelname{axn:mono'}{Labour Monotonicity}
+	A merit criterion \( \geq_{A_i} \) satisfies \textbf{Labour Monotonicity} if, for each individual \( i \), labour input \( \ell_i, \ell^{\prime}_{i} \) and labour input profile \( \ell_{-i} \),
+
+	\[ \ell_i \geq \ell_i^{\prime} \iff ( \ell_i, \ell_{-i} ) \geq_{A_i} ( \ell^{\prime}_i, \ell_{-i} ) \: .\]
+\end{definition}
+
+\usename{axn:mono'} states that a higher labour input is more meritorious, regardless of what others' do. Under \usename{axn:mono}, how an individual's labour input scores in merit is conditional on what others' do, which is not the case under \usename{axn:mono'}. This distinction is especially relevant under desert-based theories of justice, because \usename{axn:mono} arguably violates the control principle, stating that individuals should be held accountable only for what is in their control. I study the implications of assuming \usename{axn:mono} or \usename{axn:mono'}, and will show that \usename{axn:mono'} implies a quantitative measure of merit, captured by a number \( \alpha_i \), that only depends on the individual action, while \usename{axn:mono} does not.
+
+Next, I consider a condition on merit criteria establishing that, whenever each individual labour input is multiplied by a positive constant, the merit ranking is preserved, as captured by the following definition.
+
+\begin{definition}
+	\label{def:scale}
+	\labelname{axn:scale}{Scale-Invariance}
+	A merit criterion \( \geq_{A_i} \) satisfies \textbf{Scale-Invariance} if, for each individual \( i \), labour input \( \ell_i, \ell^{\prime}_{i} \), labour input profile \( \ell_{-i} \) and \( \lambda > 0 \),
+
+	\[ ( \ell_i, \ell_{-i} ) \geq_{A_i} ( \ell^{\prime}_i, \ell_{-i} ) \implies ( \lambda \ell_i, \lambda \ell_{-i} ) \geq_{A_i} ( \lambda \ell^{\prime}_i, \lambda \ell_{-i} ) \: .\]
+\end{definition}
+
+\usename{axn:scale} is a typical requirement to characterise proportional allocation rules. It states that the merit of an individual depends only on the ratio between his and others' labour input, which is preserved when each of them is multiplied by a constant. Other invariance properties—such as additive invariance—might instead support alternative characterizations of meritocracy in which merit is monotonic in labour, but the consumption allocation depends on merit in other ways than proportional.
+
+Lastly, I introduce the only restriction imposed on the reward criterion: Welfarist Reward. Under Welfarist Reward, an outcome constitutes a better reward for an individual if it is preferred over another outcome.
+
+\begin{definition}\label{def:welfrew}
+	\labelname{axn:welfrew}{Welfarist Reward}
+	A reward criterion satisfies \textbf{Welfarist Reward} if \( \geq_i = R_i \).
+\end{definition}
+
+It is often argued in philosophy \citep{arnesonDesertEquality2007,kaganGeometryDesert2014} and tacitly assumed in economics that the appropriate reward criterion should be welfare. In other words, if an individual is more meritorious, he should be better off. Assuming that welfare corresponds to preference satisfaction, \usename{axn:welfrew} represents this assumption.
+
+I now characterise proportional meritocracy.
+
+\begin{prop}\label{prop:prop}
+
+	\begin{enumerate}
+		\item A meritocratic mechanism is a \usename{def:prop} if and only if \usename{axn:welfrew}, \usename{axn:mono}, and \usename{axn:scale} hold for each \( i \).
+		\item Assume \( n \geq 3 \). A meritocratic mechanism is a \usename{def:prop} where, for each \( i \),
+
+		      \[ \alpha_i (\ell) = \frac{\ell_i}{\sum_j \ell_j} \: , \]
+
+		      if and only if \usename{axn:welfrew}, \usename{axn:mono'}, and \usename{axn:scale} hold for each \( i \). In this case, the only merit criterion on preferences agreeing with merit criteria on actions satisfies the following
+		      \[ R_i \geq_{\mathcal{R}} R_i^{\prime} \quad \Longleftrightarrow \quad \operatorname{MRS}_{R_i} ( \ell_i, y_i ) \leq \operatorname{MRS}_{R^{\prime}_i} ( \ell_i, y_i ) \text{ for each } ( \ell_i, y_i ) \: .\]
+	\end{enumerate}
+\end{prop}
+
+Proposition \ref{prop:prop} establishes that the stated assumptions are equivalent to a quantitative representation of individual merit via \( \alpha_{i} (\ell) \), which depends on the profile of labour input. Each individual’s consumption corresponds to a share of the total output, where this share reflects their relative merit. If \usename{axn:mono} is strengthened to \usename{axn:mono'}, the measure of merit of each individual is just his labour supply, and thus does not depend on others' actions.
+
+The second item of Proposition \ref{prop:prop} establishes that, under \usename{axn:mono'}, the merit criterion on preferences agreeing with the merit criterion on actions is a ranking of marginal rates of substitution between labour and consumption. Such equivalence gives a more fundamental interpretation of the merit criterion underlying \usename{def:prop}. Under different outcome functions, an individual might choose different levels of labour inputs, rendering the interpretation of the merit criterion as a measure of effort less meaningful. Instead, the marginal rate of substitution is independent of the outcome function.
+
+There is empirical evidence suggesting that individuals adhere to a form of \usename{def:prop} \citep{andreShallowMeritocracy2024,cappelenFairnessLimitedInformation2024}. However, these empirical studies primarily test whether impartial observers' choices satisfy \usename{axn:mono'}, without discussing other conditions, such as \usename{axn:mono} or \usename{axn:scale}. Proposition \ref{prop:prop} shows that a test of \usename{axn:mono'} is not enough to conclude one adheres to \usename{def:prop}, and should be complemented with other empirical results. The result hopefully showcases how the framework in this paper could be employed to advance empirical studies of meritocracy. By introducing other assumptions, such as the additive invariance discussed before, other forms of meritocracies could be characterised, and empirical studies could be designed to test whether impartial observers adhere to them.
+
+\section{Meritocracy and Equality of Opportunity}\label{sec:eq}
+
+Before concluding, I briefly examine the relationship between meritocracy, as defined in this paper, and the concept of equality of opportunity, terms that are often used interchangeably in the economic literature. For this purpose, I compare the model here with the responsibility-sensitive allocation model of \cite{fleurbaeyFairnessResponsibilityWelfare2008}. I discuss a simplified version of his general model, which is also a particular case of the private good economy of the previous section. I show that meritocracy, understood as an allocation rule rewarding merit, is distinct from equality of opportunity, i.e., guaranteeing that each individual \textquote{starts on the same line}, a point that has already been made elsewhere \citep{moulinFairDivisionCollective2004,fleurbaeyFairnessResponsibilityWelfare2008}, but is often neglected in more recent literature.
+
+There are four individuals, each of whom has a level of bequest \( b_i \in \{1, 3 \} \) and dedication \( a_i \in \{ 1, 3 \} \), determining their production in monetary amounts. The set of outcomes is the set of monetary allocations such that \( \sum_i x_i = \sum_i b_i a_i \). Each individual \( i \) prefers to have more money. An allocation rule maps bequest and action profiles to monetary allocations. Consider an allocation rule under which each individual consumes what he produces and there are no transfers. Such allocation rule is illustrated in the following table.
+
+\begin{table}[H]
+	\caption{No transfers}
+	\begin{center}
+		\begin{tabular}{ |c|cc| }
+			\hline
+			\( x_i = b_i a_i \)        & low dedication \( a_i = 1 \) & high dedication \( a_i = 3 \) \\
+			\hline
+			low bequest \( b_i = 1 \)  & 1                            & 3                             \\
+			high bequest \( b_i = 3 \) & 3                            & 9                             \\
+			\hline
+		\end{tabular}
+	\end{center}
+\end{table}
+
+Under this allocation rule, individuals with high bequest obtain a better outcome, thus violating equality of opportunity, since bequests are outside their control. The next table illustrates a second allocation rule neutralising the effect of bequests, transferring from individuals with high bequest to individuals with low bequest.
+
+\begin{table}[H]
+	\caption{Neutralising bequests}
+	\label{tb:eq}
+	\begin{center}
+		\begin{tabular}{ |c|cc| }
+			\hline
+			\( x_i = ( b_i + t_i )a_i \) & low dedication \( a_i = 1 \) & high dedication \( a_i = 3 \) \\
+			\hline
+			low bequest \( b_i = 1 \)    & 2 (transfer = +1)            & 6     (transfer = +1)         \\
+			high bequest \( b_i = 3 \)   & 2   (transfer = -1)          & 6    (transfer = -1)          \\
+			\hline
+		\end{tabular}
+	\end{center}
+\end{table}
+
+This allocation rule may be described as one satisfying equality of opportunity, as it neutralises the effect of unequal bequests in determining the outcome. However, the allocation rule in Table \ref{tb:eq} is not the only one satisfying equality of opportunity. One might want to reward high dedication, and therefore induce a better outcome for individuals with high dedication. The following table illustrates such an allocation rule.
+
+\begin{table}[H]
+	\caption{Neutralising bequests and rewarding dedication}
+	\label{tb:eq2}
+	\begin{center}
+		\begin{tabular}{ |c|cc| }
+			\hline
+			\( x_i = ( b_i + t_i )a_i \) & low dedication \( a_i = 1 \) & high dedication \( a_i = 3 \) \\
+			\hline
+			low bequest \( b_i = 1 \)    & 1 (transfer = +0)            & 9     (transfer = +2)         \\
+			high bequest \( b_i = 3 \)   & 1   (transfer = -2)          & 9    (transfer = +0)          \\
+			\hline
+		\end{tabular}
+	\end{center}
+\end{table}
+
+A third allocation rule which rewards dedication independently of bequests is the following.
+
+\begin{table}[H]
+	\caption{Rewarding dedication}
+	\label{tb:rew}
+	\begin{center}
+		\begin{tabular}{ |c|cc| }
+			\hline
+			\( x_i = ( b_i + t_i )a_i \) & low dedication \( a_i = 1 \) & high dedication \( a_i = 3 \) \\
+			\hline
+			low bequest \( b_i = 1 \)    & 0 (transfer = -1)            & 6      (transfer = +1)        \\
+			high bequest \( b_i = 3 \)   & 2   (transfer = -1)          & 12    (transfer = +1)         \\
+			\hline
+		\end{tabular}
+	\end{center}
+\end{table}
+
+Tables \ref{tb:eq} and \ref{tb:eq2} both represent allocation rules consistent with equality of opportunity, though they differ in how they reward dedication. Instead, allocations in Tables \ref{tb:eq2} and \ref{tb:rew} both reward dedication, but the first satisfies equality of opportunity and the second does not.
+
+Since they are logically independent, meritocracy and equality of opportunity can be combined. For instance, in the private good economy of Example \ref{ex:priv}, one could put more structure to distinguish between labour input and productivity of each individual. Then, the merit criterion could be monotonic in labour input, rather than in productive units of labour, under the assumption that productivity comes from sources the individual cannot control, such as bequests. These requirements would complement the meritocratic idea of rewarding more effort and the equality of opportunity idea of neutralising the effect of bequests. Distinguishing these two concepts clarifies the rationale behind various allocation rules, and gives guidance on how to identify the two components separately in experiments, where these ideas are often conflated.\footnote{As an example, \cite{andreShallowMeritocracy2024} defines \textquote{Shallow Meritocracy} as an allocation rule that does not take into account unequal circumstances. I argue that \textquote{Shallow Meritocracy} is more accurately described as a lack of equality of opportunity, rather than a failure of meritocracy.}
+
+\section{Conclusion}\label{sec:conclusionmerit}
+
+This paper develops a unifying framework for analysing meritocracy, distinguishing between two conceptually distinct notions: meritocracy as an end, represented by meritocratic social choice functions, and meritocracy as a means, represented by meritocratic mechanisms. The core innovation lies in introducing two primitives: a merit criterion that identifies when one individual is more meritorious and a reward criterion that determines which outcomes constitute superior rewards. I thus suggest that common disagreements on meritocracy can often be traced to different assumptions about the merit and reward criteria.
+
+I showed that meritocracy as an end and as a means are equivalent, in the sense that a mechanism implementing a meritocratic social choice function is itself meritocratic. Therefore, adhering to a notion of meritocracy as a means is equivalent to adhering to a notion of meritocracy as an end. This equivalence permits merit criteria to be consistently expressed over either individuals’ preferences or their actions within a mechanism.
+
+I examined two illustrative conceptions of meritocracy from the literature: Pareto meritocracy and proportional meritocracy. I showed that Pareto meritocracy is vacuous, as it only ranks individuals who prefer a Pareto improvement to a Pareto worsening. Proportional meritocracy, defined in a private goods economy in which individuals supply labour and share their production, is more structured and allows to define a quantitative measure of merit. Assumptions on the merit and reward criteria characterise a mechanism in which each individual consumes a proportion of the total output, and such proportion coincides with his merit.
+
+The study of meritocracy as an allocation principle remains in its early stages. Given the empirical evidence supporting the conclusion that individuals adhere to various forms of meritocracy, theoretical study is much needed. Future work could explore the implications of alternative meritocracies in other settings, or empirically test whether individuals adhere to specific meritocracies. Additionally, the relationship between meritocracy and other social justice principles, such as equality of opportunity, warrants further investigation.
+
+\bibliographystyle{apacite}  % or another  style
+\bibliography{references} % .bib file goes in ./bib/

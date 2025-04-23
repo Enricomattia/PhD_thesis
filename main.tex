@@ -1,0 +1,67 @@
+\documentclass[12pt, a4paper]{report}
+
+\usepackage{preamble}     % your custom style file (already uploaded)
+
+\usepackage[round,sort,sectionbib]{natbib}  %  → References heading gets correct size
+
+\usepackage{chapterbib}   % enables a separate .bbl for every \include
+
+% hyperref should come **last**                                    
+\usepackage[colorlinks=true,backref=page]{hyperref}
+\hypersetup{linkcolor=gray, citecolor=gray, urlcolor=gray}
+
+\title{<Your Thesis Title>}
+\author{Enrico Mattia Salonia}
+\date{\today}  % or a fixed date
+
+% --------------------------------------------------------------------
+\begin{document}
+% --------------------------------------------------------------------
+
+% Title page ---------------------------------------------------------
+\begin{titlepage}
+	\centering
+	\makeatletter                   % <— open access to @‑macros
+	{\Huge\bfseries \@title\par}\vspace{2cm}
+
+	{\Large \textit{A thesis submitted for the degree of Doctor of Philosophy}\par}\vspace{1.5cm}
+
+	{\Large by\par}\vspace{0.5cm}
+	{\Large\bfseries \@author\par}\vfill   % line 44 — now defined
+
+	{\@date}                        % uses whatever you put in \date{}
+	\makeatother                    % <— close @ access
+\end{titlepage}
+
+
+\cleardoublepage
+
+% Roman‑numeral prelims ----------------------------------------------
+\pagenumbering{roman}
+\setcounter{page}{2} % title‑page is p. i
+\tableofcontents
+\cleardoublepage
+
+% Arabic‑numeral main matter -----------------------------------------
+\pagenumbering{arabic}
+
+
+\include{chapters/0_intro}
+\include{chapters/1_universalisation}
+\include{chapters/2_meritocracy}
+\include{chapters/3_bdp}
+
+\appendix
+
+% — Appendix to Chapter 1 —
+\include{appendices/1_universalisation_appendix}
+
+% — Appendix to Chapter 2 —
+\include{appendices/2_meritocracy_appendix}
+
+% — Appendix to Chapter 3 —
+\include{appendices/3_bdp_appendix}
+
+
+% --------------------------------------------------------------------
+\end{document}

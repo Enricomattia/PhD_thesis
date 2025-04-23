@@ -1,0 +1,561 @@
+\chapter{Appendix for Chapter \ref{ch:bdp}}
+\label{app:bdp}
+
+\section{Proofs}\label{app:proofsbdp}
+
+\noindent \textit{Proof of Theorem \ref{thm:rep}.} Necessity is omitted. I only prove sufficiency.
+
+First, I study the properties of conditional rankings on menus induced by preferences over contingent menus. For each likelihood \( \ell \), the ranking \(\succsim \) induces the conditional ranking \(\succsim_{\ell}\) on the set of menus \( \mathcal{M} \) defined as
+
+\[
+	M \succsim_{\ell} M^{\prime} \: \: \text{if} \: \: F \succsim F_{M \rightarrow M^{\prime}} \: \text{for some} \: F \: \text{such that} \: \ell_{M,F} = \ell,
+\]
+
+where \( F \) and \( F_{M \rightarrow M^{\prime}} \) coincide except for one realisation delivering \( M \) in the first when the second delivers \( M^{\prime} \notin \mathcal{M}_F \). Any two contingent menus \( F \) and \( F_{M \rightarrow M^{\prime}} \) satisfy \usename{def:ii}, as they coincide except when delivering \(M\) and \(M^{\prime}\) inducing the same likelihood. By \usename{axn:independence}, any mixture of \( F \), \( F_{M \rightarrow M^{\prime}} \) with a third contingent menu \( F_{M \rightarrow M^{\prime \prime}} \) preserves their ranking. Therefore, for all likelihoods \( \ell \), the ranking \( \succsim_{\ell} \) satisfies Independence on the set of menus \(\mathcal{M}\). Due to Independence, the ranking between any two menus \( M \) and \( M^{\prime} \) under \( \succsim_{\ell} \) does not depend on the specific contingent menu \( F \), as long as \( \ell_{M, F}=\ell \). Therefore, Independence implies that \textquote{for some} in the above definition of \( \succsim_{\ell} \) is equivalent to \textquote{for all}.
+
+I now study properties of conditional preferences on particular singleton menus. The set of all contingent menus is \( \mathcal{C} \). For any collection of likelihoods indexed by menus \( \widehat{\ell} = \left( \widehat{\ell}_M \right)_{M \in \mathcal{M}} \), consider the set of contingent menus
+
+\[
+	\mathcal{C}_{\widehat{\ell}} := \left\{ F \in \mathcal{C} \: \middle\vert  \: \ell_{M,F} = \widehat{\ell}_{M} \: \text{and} \: M = \left\{ f \right\} \: \text{for one} \: f \in \Delta \left( X \right)^\mathcal{S} \text{for all} \: M \in \mathcal{M}_F \: \right\} .
+\]
+
+Contingent menus in any \( \mathcal{C}_{\widehat{\ell}} \) only deliver distributions of singleton menus containing an act for each state \( s \) and the same likelihood \( \widehat{\ell}_{\left\{ f \right\}} \) for each menu realisation \( \left\{ f \right\} \) in their support. The set of such contingent menus is a set of AA acts \( F : \mathcal{S} \rightarrow \Delta^{\circ} \left( M \right) \), each inducing the same likelihood at time \( 1 \) for each of the menu realisations in their support. The ranking \( \succsim \) on each \( \mathcal{C}_{\widehat{\ell}} \) satisfies \usename{axn:order}, \usename{axn:continuity} and Independence, and hence has a standard AA representation. By standard results \citep[Theorem 13.1 pag. 176]{fishburnUtilityTheoryDecision1970} preferences over contingent menus in \( \mathcal{C}_{\widehat{\ell}} \) have the following representation
+
+\begin{equation}\label{eq:singfirst}
+	\mathscr{U} \left( F \right) = \sum_{\left\{ f \right\}} \sum_s F_s \left( \left\{ f \right\} \right) U \left( f ; \widehat{\ell}_{\left\{ f \right\}} \right) ,
+\end{equation}
+
+for all \( F \in \mathcal{C}_{\widehat{\ell}} \), where \( U \left( f ; \widehat{\ell}_{\left\{ f \right\}} \right) \) represents the conditional ranking \( \succsim_{\widehat{\ell}_{\left\{ f \right\}}} \) over singleton menus.
+
+The next step is to employ Theorem 1 in \cite{liangInformationdependentExpectedUtility2017} to show that \usename{axn:order}, \usename{axn:continuity}, \usename{axn:independence} and \usename{axn:degeneracy} imply that preferences over menus depend on the likelihood these induce. \cite{liangInformationdependentExpectedUtility2017} has a different setting, assumes the set of outcomes is infinite and has different axioms, so a few modifications of his proof are needed.
+
+I now prove two preliminary lemmas that allow me to employ \citeauthor{liangInformationdependentExpectedUtility2017}'s result. Recall that \( f s f^{\prime} \) is an act equivalent to \( f \) in state \( s \) and to \( f^{\prime} \) in all states \( s^{\prime} \neq s \).
+
+\begin{lemma}\label{lem:pre1}
+	Assume \( \succsim \) satisfies \usename{axn:order}, \usename{axn:continuity}, and \usename{axn:independence}. Then, for any collection of likelihoods \( \widehat{\ell} \), if \( F \in \mathcal{C}_{\widehat{\ell}}  \) and \( \widehat{\ell}_{\left\{ f^{\prime} \right\}} \left( s \right) = 0 \) for some \( f^{\prime} \) and \( s \), then \( F \sim F_{ \left\{ f^{\prime} \right\} \rightarrow \left\{ f s f^{\prime} \right\}} \) for all \( f \).
+\end{lemma}
+
+\begin{proof}
+	Preferences over contingent menus in each \( \mathcal{C}_{\widehat{\ell}} \) are represented by Equation \eqref{eq:singfirst}
+
+	\begin{equation}
+		\mathscr{U} \left( F \right) = \sum_{\left\{ f \right\}} \sum_s F_s \left( \left\{ f \right\} \right) U \left( f_s ; \widehat{\ell}_{\left\{ f \right\}} \right) , \tag{\ref{eq:singfirst}}
+	\end{equation}
+
+	and therefore
+
+	\begin{align*}
+		\mathscr{U} \left( F_{ \left\{ f^{\prime} \right\} \rightarrow \left\{ f s f^{\prime} \right\}} \right) & = \sum_{\left\{ f^{\prime \prime} \right\} \neq \left\{ f s f^{\prime} \right\}} \sum_{s^{\prime}} \left( F_{ \left\{ f^{\prime} \right\} \rightarrow \left\{ f s f^{\prime} \right\}} \right)_{s^{\prime}} \left( \left\{ f^{\prime \prime} \right\} \right) U \left( f^{\prime \prime}_s ; \widehat{\ell}_{\left\{ f \right\}} \right) \\
+		                                                                                                        & + \sum_{s^{\prime}} \left( F_{ \left\{ f^{\prime} \right\} \rightarrow \left\{ f s f^{\prime} \right\}} \right)_{s^{\prime}} \left( \left\{ f s f^{\prime} \right\} \right) U \left( \left( f s f^{\prime} \right)_{s^{\prime}} ; \widehat{\ell}_{\left\{ f \right\}} \right).
+	\end{align*}
+
+	Due to the definition of \( f s f^{\prime} \), it follows that the last term is equal to
+
+	\begin{align*}
+		  & \sum_{s^{\prime} \neq s} \left( F_{ \left\{ f^{\prime} \right\} \rightarrow \left\{ f s f^{\prime} \right\}} \right)_{s^{\prime}} \left( \left\{ f s f^{\prime} \right\} \right) U \left( f^{\prime}_{s^{\prime}} ; \widehat{\ell}_{\left\{ f \right\}} \right) \\
+		+ & \left( F_{ \left\{ f^{\prime} \right\} \rightarrow \left\{ f s f^{\prime} \right\}} \right)_{s} \left( \left\{ f s f^{\prime} \right\} \right) U \left( f_s ; \widehat{\ell}_{\left\{ f \right\}} \right).
+	\end{align*}
+
+	If \( \widehat{\ell}_{\left\{ f^{\prime} \right\}} \left( s \right) = 0 \) then \( \widehat{\ell}_{\left\{ f s f^{\prime} \right\}} \left( s \right) = 0 \) and \(\left( F_{ \left\{ f^{\prime} \right\} \rightarrow \left\{ f s f^{\prime} \right\}} \right)_{s} \left( \left\{ f s f^{\prime} \right\} \right) = 0 \). The last term of the equation is thus equal to zero. Therefore, changing \( f^{\prime} \) to \( f \) in state \( s \) leads to indifference.
+\end{proof}
+
+\begin{lemma}\label{lem:pre2}
+	The ranking \(\succsim\) satisfies \usename{axn:order}, \usename{axn:continuity}, \usename{axn:independence}, \usename{axn:degeneracy} if and only there exist a function \( \mathscr{U} \) representing \( \succsim \) that is mixture linear in contingent menus satisfying \usename{def:ii}.
+\end{lemma}
+
+\begin{proof}
+	The set of finite probability distributions on \(\mathcal{M}\) is a mixture space and each contingent menu \( F : \mathcal{S} \rightarrow \Delta^{\circ} \left( \mathcal{M} \right) \) is an AA act inducing only lotteries with finite support. Any two mixtures of two contingent menus satisfying \usename{def:ii} also satisfy \usename{def:ii}. Therefore, if \( F \succsim F^{\prime} \succsim F^{\prime \prime} \) and \( F, F^{\prime \prime} \) satisfy \usename{def:ii}, there exists a unique \( \lambda \) such that \( \lambda F + \left( 1 - \lambda \right) F^{\prime \prime} \sim F^{\prime} \) \citep[Theorem 8.3 pag. 112]{fishburnUtilityTheoryDecision1970}.
+
+	Consider two contingent menus such that \( F \succ F^{\prime} \) and \( F_{s} \left( \left\{ x_{s} \right\} \right) = 1 \) and \( F^{\prime}_{s} \left( \left\{ x^{\prime}_{s} \right\} \right) = 1 \) for all \( s \). These contingent menus induce a distinct singleton menu in each state, and therefore each of their realisation reveals the state. These two contingent menus exist by \usename{axn:degeneracy}. For each contingent menu \( G \) such that \( F \succ G \succ F^{\prime} \), define \( \mathscr{U} \left( G \right) \) to be equal to the unique \( \lambda \) such that \( \lambda F + \left( 1 - \lambda \right) F^{\prime} \sim G \).
+
+	For each contingent menu \( G \) satisfying \usename{def:ii} with \( F^{\prime} \) and such that \( G \succ F \), define \( \mathscr{U} \left( G \right) \) to be \( \nicefrac{1}{\lambda} \) where \( \lambda \) is the unique number such that \( \lambda G + \left( 1 - \lambda \right) F^{\prime} \sim F \). For each contingent menu \( G \) satisfying \usename{def:ii} with \( F \) and such that \( G \prec F^{\prime} \), define \( \mathscr{U} \left( G \right) \) to be \( \nicefrac{\lambda}{\left( \lambda - 1 \right)} \) where \( \lambda \) is the unique number such that \( \lambda F + \left( 1 - \lambda \right) G \sim F^{\prime} \).
+
+	Consider a contingent menu such that \( G \prec F^{\prime} \) but \( G \) and \( F \) do not satisfy \usename{def:ii}. This means that, for some \( s \), \( \left\{ x_{s} \right\} \in \mathcal{M}_G \), the support of menus induced by the contingent menu \( G \) and \( \ell_{\left\{ x_s \right\}, G} \left( s \right) \neq 1 \). By Lemma \ref{lem:pre1}, \( F \sim F_{ \left\{ x_{s} \right\} \rightarrow \left\{ f s^{\prime} x_{s} \right\}} \) for all \( f \) and \( s^{\prime} \neq s \), since \( \ell_{\left\{ x_{s} \right\}, F} \left( s^{\prime} \right) = 0 \) for all \( s^{\prime} \neq s \). Because the support of any contingent menu is finite, there is always an act \( f \) such that the menu \(  \left\{ f s^{\prime} x_{s} \right\} \) is outside the support of \( G \). Therefore, it is enough to define \( \mathscr{U} \left( G \right) \) using the procedure above and mixing it with \( F_{ \left\{ x_{s} \right\} \rightarrow \left\{ f s^{\prime} x_{s} \right\}} \). A similar construction works if \( G \succ F \) but \( G \) and \( F^{\prime} \) do not satisfy \usename{def:ii}.
+
+	By Proposition 1 in \cite{liangInformationdependentExpectedUtility2017}, the utility function \( \mathscr{U} \) is well-defined, represents the ranking \( \succsim \), and is linear in mixtures of contingent menus satisfying \usename{def:ii}.
+\end{proof}
+
+I now prove that \usename{axn:order}, \usename{axn:continuity}, \usename{axn:independence}, \usename{axn:degeneracy} are equivalent to the following expected utility representation.
+
+\begin{prop}\label{prop:liang}
+	The ranking \(\succsim\) satisfies \usename{axn:order}, \usename{axn:continuity}, \usename{axn:independence}, \usename{axn:degeneracy} if and only if it can be represented by
+
+	\begin{equation}\label{eq:contmenu}
+		\mathscr{U}(F)=\sum_{M} \sum_{s} p \left( s \right) F_{s} \left( M \right) \mathcal{U} \left(M ; \ell_{M, F} \right)
+	\end{equation}
+
+	for all contingent menus \( F \), where \(\mathcal{U} : \mathcal{M} \times \Delta \left( \mathcal{S} \right) \rightarrow \mathbb{R} \) is continuous and bounded on both \(\mathcal{M}\) and \( \Delta \left( \mathcal{S} \right) \) and \( p \in \Delta \left( \mathcal{S} \right) \).
+\end{prop}
+
+\begin{proof}
+	Since preferences over contingent menus \( \succsim \) satisfy \usename{axn:order}, \usename{axn:independence}, \usename{axn:continuity}, and \usename{axn:degeneracy}, by Lemmas \ref{lem:pre1}, \ref{lem:pre2} and Theorem 1 in \cite{liangInformationdependentExpectedUtility2017}, the necessity and sufficiency of the representation in Equation \eqref{eq:contmenu} holds.
+
+	I now prove the continuity of \( \mathcal{U} \) by contrapositive, I show that if it is not continuous, then \usename{axn:continuity} does not hold. Suppose that \( \mathcal{U} \) is not continuous at some point \( (M_{0}, \ell_{0}) \) in \( \mathcal{M} \times \Delta( \mathcal{S} ) \). Then, there exists \( \varepsilon > 0 \) such that for every \( \delta > 0 \), there is a point \( (M, \ell) \) satisfying:
+
+	\[
+		d \left( M, M_{0} \right) < \delta, \quad \| \ell - \ell_{0} \| < \delta, \quad \text{and} \quad \left| \ \mathcal{U}(M; \ell) - \mathcal{U}(M_{0}; \ell_{0}) \ \right| \geq \varepsilon,
+	\]
+
+	where \( d \) is the Hausdorff metric. Consider a sequence \( (M_{n}, \ell_{n}) \rightarrow (M_{0}, \ell_{0}) \). Construct a sequence of contingent menus \( F_{n} \) such that for each \( n \), the menu \( M_{n} \) has \( \sum_{s} p \left( s \right) F_{s,n} \left( M_{n} \right) > 0 \), and the likelihood \( \ell_{M_{n}, F_{n}} \). Since the mapping from \( F_n \) to 
+	
+	\[ \left( \sum_{s} p \left( s \right) F_{s,n} \left( M_{n} \right) , \ell_{M_n,F_n} \right) \]
+	
+	is continuous, and \( \mathscr{U}(F_n) \) depends on \( \mathcal{U}(M; \ell_{M_n,F_n}) \), the discontinuity in \( \mathcal{U} \) at \( (M_{0}, \ell_{0}) \) leads to a discontinuity in \( \mathscr{U}(F_n) \) at the corresponding \( F_{0} \). This contradicts \usename{axn:continuity}, which requires \( \mathscr{U} \) to be continuous in \( F \) \citep[ Theorem 3.5 p. 36]{fishburnUtilityTheoryDecision1970}. Therefore, \( \mathcal{U} \) must be continuous on \( \mathcal{M} \times \Delta \left( \mathcal{S} \right) \). Since \( \mathcal{U} \) is continuous on a compact space, it is bounded.
+\end{proof}
+
+I now study the shape of \( \mathcal{U} \). Because \( \succsim \) satisfies \usename{axn:betweenness}, each \( \succsim_{\ell} \) inherits the property
+
+\begin{equation}\label{eq:sbetweenness0}
+	M \succsim_{\ell} M^{\prime} \implies M \succsim_{\ell} M \cup M^{\prime} \succsim_{\ell} M^{\prime} ,
+\end{equation}
+
+for all menus \( M, M^{\prime} \). By \usename{axn:order} and \usename{axn:continuity}, all \( \succsim_{\ell} \) satisfy analogous properties. Since each ranking \(\succsim_{\ell}\) satisfies Order, Continuity, Independence, and Set-Betweenness as expressed in Equation \eqref{eq:sbetweenness0}, by Theorem 1 in \cite{kopylovTemptationsGeneralSettings2009} it can be represented by
+
+\begin{equation}\label{eq:tempt}
+	\mathcal{U} \left(M ; \ell \right) = \max_{f \in M}\left\{ U  \left(f ; \ell \right) + V \left( f ; \ell \right) - \max _{f^{\prime} \in M} V\left(f^{\prime} ; \ell \right)  \right\}
+\end{equation}
+
+for all menus \( M \) and likelihoods \( \ell \), where the functions \( U \left( \cdot ; \ell \right) \) and \( V \left( \cdot ; \ell \right) \) are continuous, bounded and linear in convex combinations of acts. Moreover, for all likelihoods \( \ell \), the functions \( U \left( \cdot ; \ell \right) \) and \( V \left( \cdot ; \ell \right) \) satisfy the mixture space axioms.
+
+The state dependent version of AA theorem and their continuity imply that these have the following functional forms
+
+\begin{equation}\label{eq:act}
+	U \left(f ; \ell \right) = \sum_{s} u \left(f_{s} ; \ell, s \right) \: , \: V \left( f ; \ell \right) = \sum_{s} v \left(f_{s} ; \ell, s \right)
+\end{equation}
+
+for all acts \( f : \mathcal{S} \rightarrow \Delta \left( X \right) \). Each \( u \left( \cdot ; \ell, s \right) \) and \( v \left( \cdot ; \ell, s \right) \) is continuous, bounded, and linear in mixtures of lotteries over \( X \).
+
+The next step is to obtain the stronger state-independent subjective expected utility representation. Recall that \( L \subseteq \Delta \left( X \right) \) denotes a menu of outcome lotteries and, for each state \( s \) and menus \( M, M^{\prime} \), the definition of the menu \( M s M^{\prime} := \left\{ f s f^{\prime} \: \middle\vert  \: f \in M, f^{\prime} \in M^{\prime} \right\} \).
+
+\begin{lemma}\label{lem:sindep}
+	Assume \( \succsim \) satisfies \usename{axn:order}, \usename{axn:sindependence}, and \usename{axn:degeneracy}. Then, for all menus \( L, L^{\prime}, M \), likelihoods \( \ell \) and states \( s, s^{\prime} \) the ranking \( \succsim_{\ell} \) satisfies
+
+	\begin{equation}\label{eq:lem2}
+		LsM \succsim_{\ell} L^{\prime} s M \: \Rightarrow \: L {s^{\prime}} M \succsim_{\ell} L^{\prime} {s^{\prime}} M .
+	\end{equation}
+
+	Moreover, for all  menus \( M \), likelihoods \( \ell \) and states \( s \), if \( LsM \sim_{\ell} L^{\prime} s M \) for all menus \( L \) and \( L^{\prime} \), then \( \ell \left( s \right) = 0 \).
+\end{lemma}
+
+\begin{proof}
+	By definition of \( \succsim_{\ell} \), the antecedent of condition \eqref{eq:lem2} holds if \( F \succsim F_{LsM \rightarrow L^{\prime}sM} \) for some contingent menu \( F \) such that \( \ell_{LsM, F} = \ell \). By \usename{axn:sindependence}, for each state \( s^{\prime} \) and \( F \), it holds that \( F \succsim F_{Ls^{\prime}M \rightarrow L^{\prime}s^{\prime}M} \), which implies  \( L {s^{\prime}} M \succsim_{\ell} L^{\prime} {s^{\prime}} M \).
+
+	If \( \ell \left( s \right) \neq 0 \) under the hypothesis of the second part of the Lemma, then \usename{axn:order} and \usename{axn:sindependence} would imply that \( L \sim_{\ell} L^{\prime} \) for all \( L, L^{\prime} \), contradicting \usename{axn:degeneracy}.
+\end{proof}
+
+I now consider again preferences over contingent menus in \( \mathcal{C}_{\widehat{\ell}} \). By Proposition \ref{prop:liang}, these are represented by the following expected utility function
+
+\begin{equation}\label{eq:singacts}
+	\mathscr{U} \left( F \right) = \sum_{\left\{ f \right\}} \sum_s p \left( s \right) F_s \left( \left\{ f \right\} \right) U \left( f ; \widehat{\ell}_{\left\{ f \right\}} \right) .
+\end{equation}
+
+By the first part of Lemma \ref{lem:sindep} and \usename{axn:degeneracy}, each function \( u \) in the first part of Equation \eqref{eq:act} has the subjective expected utility form \citep[Theorem 13.2 pag. 177]{fishburnUtilityTheoryDecision1970}, and therefore Equation \eqref{eq:singacts} can be rewritten as
+
+\[
+	\mathscr{U} \left( F \right) = \sum_{\left\{ f \right\}} \sum_{s} \left( \sum_{s^{\prime}} p \left( s^{\prime} \right) F_{s^{\prime}} \left( \left\{ f \right\} \right) \right) p_{\widehat{\ell}_{\left\{ f \right\}}} \left( s \right) u \left( f_s ; \widehat{\ell}_{\left\{ f \right\}} \right) .
+\]
+
+The probability a menu \( \left\{ f \right\} \) realises is \( \sum_{s^{\prime}} p \left( s^{\prime} \right) F_{s^{\prime}} \left( \left\{ f \right\} \right) \), while the probability state \( s \) and menu \(\left\{ f \right\} \) realise is \( p \left( s \right) F_{s} \left( \left\{ f \right\} \right) \) . By the chain rule, \( p_{\widehat{\ell}_{\left\{ f \right\}}} \) must be the Bayesian posterior of \( p \) and therefore for each menu \( \left\{ f \right\} \) and state \( s \)
+
+\[
+	p_{\widehat{\ell}_{\left\{ f \right\}}} \left( s \right) := \frac{\widehat{\ell}_{\left\{ f \right\}} \left( s \right) p \left( s \right)}{\sum_{s^{\prime}} \widehat{\ell}_{\left\{ f \right\}}\left( s^{\prime} \right)  p \left( s^{\prime} \right)} = \frac{F_{s} \left( \left\{ f \right\} \right) p \left( s \right)}{\sum_{s^{\prime}} F_{s^{\prime}} \left( \left\{ f \right\} \right) p \left( s^{\prime} \right)} .
+\]
+
+Without loss of generality, for each likelihood \( \ell \) and state \( s \)
+
+\begin{equation}\label{eq:posterior}
+	u \left( \cdot \: ; \ell , s \right) = p_{\ell} \left( s \right) u \left( \cdot \: ; \ell \right) ,
+\end{equation}
+
+where \( p_{\ell} \) is the Bayesian update of the prior \( p \) under the likelihood \( \ell \). By \usename{axn:support} the prior \( p \) has full support. By Equation \eqref{eq:posterior}, the first part of Equation \eqref{eq:act} can be rewritten as
+
+\begin{equation}\label{eq:subprob}
+	U \left(f ; \ell \right) = \sum_{s} p_{\ell} \left( s \right) u \left( f_{s} ; \ell \right).
+\end{equation}
+
+Lastly, I study the shape of \( V \). For this purpose, I need to construct a specific class of contingent menus. The following is the set of all contingent menus inducing likelihood \( \ell \) whenever menu \( M \) realises
+
+\[
+	\mathcal{C}^{M}_{\ell} : = \left\{ F \in \mathcal{C} \: \middle\vert \: \ell_{M,F} = \ell \right\} .
+\]
+
+Next, I define the set of preferred outcomes at likelihood \( \ell \)
+
+\[
+	X_{\ell} : = \left\{ x \in \Delta \left( X \right) \: \middle\vert  \: F \succsim F_{ \left\{ x  \right\} \rightarrow \left\{ x^{\prime} \right\} }  \: \text{for all} \: x^{\prime} \in \Delta \left( X \right) \: \text{and some} \: F \in \mathcal{C}^{\left\{ x \right\} }_{\ell} \right\} .
+\]
+
+A generic element of \( X_{\ell} \) is \( x_{\ell} \). Define contingent menu \( \overline{F} \) so that \( \overline{F}_s \left( \left\{ x_s \right\} \right) = 1 \) for all \( s \), with \( x_s \in \Delta \left( X \right) \). This is a contingent menu whose all menu realisations are singletons containing an outcome and revealing the state. Normalise \( \mathscr{U} \left( \overline{F} \right) = 0 \). For each event \( S \), for each likelihoods \( \ell \in \Delta \left( S \right) \), construct contingent menus \( \overline{F}^{\ell} \) as follows. First, \( \overline{F}^{\ell} \) coincides with \( \overline{F} \) outside \( S \), that is \( \overline{F}^{\ell}_s \left( M \right) = \overline{F}_s \left( M \right) \) for each state \( s \notin S \) and menu \( M \). For each \( s \in S \), two properties must hold:
+
+\begin{enumerate}
+	\item \( \overline{F}^{\ell}_s \left( \left\{ x_{\ell} \right\} \right) = 1 - \overline{F}^{\ell}_s \left( \left\{ x_s \right\} \right) \);
+	\item \( \ell_{\left\{ x_{\ell} \right\}, \overline{F}^{\ell}} = \ell \).
+\end{enumerate}
+
+The contingent menu \( \overline{F}^{\ell} \) always induces the likelihood \( \ell \) when the singleton menu \( \left\{ x_{\ell} \right\} \) realises. By Theorem 1 in \cite{liangInformationdependentExpectedUtility2017}, for any contingent menu \( \overline{F}^{\ell} \), there always exist a unique decomposition such that
+
+\[ \frac{1}{ \mid \mathcal{S} \mid } \overline{F}^{\ell} + \left( \frac{\mid \mathcal{S} \mid - 1}{\mid \mathcal{S} \mid} \right) \overline{F} = \lambda F^{\ell} + \left( 1 - \lambda \right) \overline{F} ,
+\]
+
+where the contingent menu \( F^{\ell} \) satisfies properties 1. and 2., plus \( F_s^{\ell} \left( \left\{ x_{\ell} \right\} \right) = \ell \left( s \right) \), and \( \lambda = \frac{1}{\mid \mathcal{S} \mid} \sum_{s} \overline{F}_s^{\ell} \left( \left\{ x_{\ell} \right\} \right) \).
+
+By Lemma \ref{lem:pre2} and because \( \mathscr{U} \left( \overline{F} \right) = 0 \), it follows that
+
+\begin{align*}
+	\frac{1}{\mid \mathcal{S} \mid} \mathscr{U} \left( \overline{F}^{\ell} \right) + \left( \frac{\mid \mathcal{S} \mid - 1}{\mid \mathcal{S} \mid} \right) \mathscr{U} \left( \overline{F} \right) & = \lambda \mathscr{U} \left( F_s^{\ell} \right) + \left( 1 - \lambda \right) \mathscr{U} \left( \overline{F} \right) \\
+	\mathscr{U} \left(  \overline{F}^{\ell} \right)                                                                                                                                                 & = \sum_{s} F_s^{\ell} \left( \left\{ x_{\ell} \right\} \right) \mathscr{U} \left(F_s^{\ell} \right) .
+\end{align*}
+
+In the construction of Proposition \ref{prop:liang}, the function \( \mathcal{U} \left( \left\{ x_{\ell} \right\}; \ell \right) \) is defined to be \( \mathscr{U} \left( F_s^{\ell} \right) \). Moreover, since \( \left\{ x_{\ell} \right\} \) is a singleton menu whose only element is an outcome, by Equations \eqref{eq:tempt} and \eqref{eq:subprob}, the function \( \mathcal{U} \left( \left\{ x_{\ell} \right\}; \ell \right) \) represents the same ordering as \( u \left( x_{\ell} ; \ell \right) \). Therefore, observing choices among menus constructed as \( F_s^{\ell} \) allows identifying the preferred likelihoods according to the ranking represented by \( u \).
+
+For each event \( S \), define the likelihoods
+
+\begin{equation}\label{eq:lik}
+	\ell^{*}_S \in \left\{ \ell \in \Delta \left( S \right) \: \middle\vert \: F^{\ell} \succsim F^{\ell^{\prime}} \: \text{for all} \: \ell^{\prime} \in \Delta \left( S \right)  \right\} .
+\end{equation}
+
+These are the likelihoods in the statement of \usename{axn:srbl}. Because \( \mathscr{U} \left( F^{\ell} \right) \) represents the same ordering as \( u \left( x_{\ell}; \ell \right) \), and because \( x_{\ell} \in X_{\ell} \) for each \( \ell \), likelihoods satisfying condition \eqref{eq:lik} also satisfy Equation \eqref{eq:argmax}, for each event \( S \)
+
+\begin{equation}
+	\ell^{*}_{S} \in \underset{\ell \in \Delta \left( S \right)}{\arg \max} \: \max_{x \in \Delta \left( X \right)} \: u \left( x ; \ell \right) .
+	\tag{\ref{eq:argmax}} % Reuse the same number
+\end{equation}
+
+The next step is to use \usename{axn:srbl} to show that for each event \( S \), for each likelihood \( \ell \in \Delta \left( S \right) \)
+
+\begin{equation}
+	\label{eq:affine}
+	V \left(\cdot ; \ell \right) = \alpha_{\ell} U \left( \cdot ; \ell^{*}_{S} \right) + \beta_{\ell}
+\end{equation}
+
+for some \( \ell^{*}_{S} \) satisfying condition \eqref{eq:lik}, with \( \alpha_{\ell} \geq 0 \) for each \( \ell \) and for some number \( \beta_{\ell} \). That is, the temptation ranking at event \( S \) coincides with the ranking \( U \) when one of the preferred likelihoods at that event realises. I prove the claim by contrapositive, i.e., if \( V \left( \cdot ; \ell \right) \) represents any other ranking, then \usename{axn:srbl} is violated.
+
+Assume that, for an event \( S \) and a likelihood \( \ell \in \Delta \left( S \right) \), the temptation ranking \( V \left( \cdot ; \ell \right) \) does not represent the same ranking as any \( U \left( \cdot ; \ell^{*}_{S} \right) \) over acts, for all \( \ell^{*}_{S} \) satisfying condition \eqref{eq:lik}. The implication is that there exist two acts \( f, f^{\prime} \) such that \( U \left( f; \ell^{*}_{S} \right) > U \left( f^{\prime}; \ell^{*}_{S} \right) \) and \( V \left( f^{\prime}; \ell \right) > V \left( f ; \ell \right) \). Consider the menus \( M = \left\{ f \right\} \) and \( M^{\prime} = \left\{ f^{\prime} \right\} \), and a likelihood \( \ell \) such that the antecedent of \usename{axn:srbl} holds, that is
+
+\begin{equation}\label{eq:antecedent}
+	\mathcal{F}_{M \cup M^{\prime}, \ell} \cap \mathcal{F}_{M \cup M^{\prime}, \ell^{*}_{S}} \neq \emptyset \: \text{for at least one} \: \ell_{S}^{*} ,
+\end{equation}
+
+where one such \( \ell \) always exists, since the set of likelihoods satisfying condition \eqref{eq:lik} is non-empty and taking \( \ell \) from that set suffices. By Equations \eqref{eq:contmenu} and \eqref{eq:antecedent}, there is a common maximal element of \( U \left( \cdot ; \ell \right) \) and \( U \left( \cdot ; \ell^{*}_{S} \right) \), for one \( \ell_S^{*} \), in \( M \cup M^{\prime} \), which by hypothesis must be \( f \). However, the maximal element of \( V \left( \cdot ; \ell \right) \) is \( f^{\prime} \), which, by Equation \eqref{eq:contmenu}, implies that \( F \succ F_{M \rightarrow M \cup M^{\prime}} \), in violation of \usename{axn:srbl}. Therefore, if Equation \eqref{eq:affine} is violated, then \usename{axn:srbl} is violated.
+
+By Equations \eqref{eq:tempt}, \eqref{eq:subprob} and \eqref{eq:affine} it follows that for each menu \( M \), event \( S \) and likelihood \( \ell \in \Delta \left( S \right) \)
+
+\begin{equation}\label{eq:finproof}
+	\begin{aligned}
+		\mathcal{U} \left(M ; \ell \right) = & \max _{f \in M}\left\{\sum_{s} p_{\ell} \left( s \right) u \left( f_{s} ; \ell \right) +\alpha_{\ell} \sum_{s} p_{\ell^{*}_{S}} \left( s \right) u \left( f_{s} ; \ell^{*}_{S} \right) \right\} \\
+		                                     & -\max_{f^{\prime} \in M} \alpha _{\ell} \sum_{s} p_{\ell^{*}_{S}} \left( s \right) u\left(f^{\prime}_{s} ; \ell^{*}_{S} \right) ,
+	\end{aligned}
+\end{equation}
+
+which, together with Equation \eqref{eq:contmenu} delivers the representation.
+
+\qed
+
+\begin{corproof} I omit the necessity part of the statement. Suppose that both \( \left( u, p, \alpha, \ell^{*} \right) \) and \( \left( u^{\prime}, p^{\prime}, \alpha^{\prime}, \ell^{\prime *} \right) \) represent \( \succsim \), where \( \ell^{*} = \left( \ell^{*}_{S} \right)_{S \in 2^{\mathcal{S}}} \) is a collection of likelihoods satisfying condition \eqref{eq:lik}, one for each event. I first show the uniqueness properties of \( u \) and \( p \). By AA subjective expected utility theorem, \( u^{\prime} \) represents the same ranking as \( u \) if and only if, for all likelihoods \( \ell \), there exists \( a_{\ell}, b_{\ell} \in \mathbb{R}_{++} \times \mathbb{R} \) such that
+
+	\begin{equation}\label{eq:uniqcor}
+		u^{\prime} \left( \cdot ; \ell \right) = a_{\ell} u \left( \cdot ; \ell \right) + b_{\ell} \: \text{and} \: p^{\prime}_{\ell} = p_{\ell} .
+	\end{equation}
+
+	For each likelihood \( \ell \in \Delta \left( S \right) \), either
+
+	\begin{equation}\label{eq:scontrol}
+		\alpha_{\ell} \neq 0 \: \text{and} \: \ell^{*}_S \neq \ell
+	\end{equation}
+
+	or not. The vector \( \left( u, p, \alpha, \ell^{*} \right) \) violates Equation \eqref{eq:scontrol} if and only if \( \left( u^{\prime}, p^{\prime}, \alpha^{\prime}, \ell^{\prime *} \right) \) also does. If this is the case, either \( \alpha_{\ell} = 0 \), from which also \( \alpha^{\prime}_{\ell} = 0 \), or \( \ell = \ell^{*}_{S} \), and then, by Equation \eqref{eq:finproof}, any couple of \( \alpha_{\ell}, \alpha^{\prime}_{\ell} \) preserves the ordinal ranking. If Equation \eqref{eq:scontrol} holds, Theorem 4 in \cite{gulTemptationSelfControl2001} implies that
+
+	\begin{align}\label{eq:uniqcor2}
+		V^{\prime} \left( \cdot ; \ell \right) & = A_{\ell} V \left( \cdot ; \ell \right) + B_{V,\ell} \\
+		U^{\prime} \left( \cdot ; \ell \right) & = A_{\ell} U \left( \cdot ; \ell \right) + B_{U,\ell}
+	\end{align}
+
+	where, by Theorem \ref{thm:rep}, for each event \( S \) and likelihood \( \ell \in \Delta \left( S \right) \)
+
+	\[
+		V \left( f ; \ell \right) = \alpha_{\ell} \sum_{s} p_{\ell^{*}_{S}} \left( s \right) u \left( f_{s} ; \ell^{*}_{S} \right)
+	\]
+
+	for all \( f \) and one \( \ell^{*}_S \) satisfying condition \eqref{eq:lik}. For each act \( f \), event \( S \) and likelihood \( \ell \in \Delta \left( S \right) \)
+
+	\begin{align*}
+		U^{\prime} \left( f ; \ell \right) & = \sum_{s} p_{\ell} \left( s \right) u^{\prime} \left( f_{s} ; \ell \right)                                               \\
+		                                   & = \sum_{s} p_{\ell} \left( s \right) \left(a_{\ell} u \left( f_{s} ; \ell \right) + b_{\ell} \right)                      \\
+		                                   & = a_{\ell} \sum_{s} p_{\ell} \left( s \right) u \left( f_{s} ; \ell \right) + \sum_{s} p_{\ell} \left( s \right) b_{\ell} \\
+		                                   & = a_{\ell} U \left( f; \ell \right) + B_{U,\ell},
+	\end{align*}
+
+	from which \( A_{\ell} = a_{\ell} \) for all likelihoods \( \ell \). By the uniqueness result in Theorem 1 of \cite{liangInformationdependentExpectedUtility2017}, the function \( \mathcal{U}^{\prime} \) represents the same ranking as \( \mathcal{U} \) if and only if there exist \( \left( a, b, c \right) \in \mathbb{R}_{++} \times \mathbb{R} \times \mathbb{R}^{S} \) such that for all likelihoods \( \ell \)
+
+	\[
+		\mathcal{U}^{\prime} \left(\cdot ; \ell \right) = a \mathcal{U} \left( \cdot ; \ell  \right) + b - \sum_{s} c \left( s \right) p_{\ell} \left( s \right) .
+	\]
+
+	Define the set of all contingent menus only containing singleton menus in their support
+
+	\[
+		\overline{\mathcal{C}} := \left\{ F \in \mathcal{C} \: \middle\vert  \: M = \left\{ f \right\} \: \text{for some} \: f \in \Delta \left( X \right)^\mathcal{S} \text{for all} \: M \in \mathcal{M}_F \: \right\} .
+	\]
+
+	By Theorem \ref{thm:rep}, preferences over \( \overline{\mathcal{C}} \) are represented by
+
+	\[
+		\mathscr{U} \left( F \right) = \sum_{\left\{ f \right\} } \sum_{s} p \left( s \right) F_s \left( \left\{ f \right\} \right) U \left( f ; \ell_{\left\{ f \right\},F} \right)
+	\]
+
+	for all \( F \in \overline{\mathcal{C}} \). Therefore, \( U \) is defined as \( \mathcal{U} \) for singleton menus, and it inherits its uniqueness properties \citep{kopylovTemptationsGeneralSettings2009}. In the present setting
+
+	\begin{align*}
+		\mathcal{U}^{\prime} \left( \left\{ f \right\} ; \ell \right) & = a_{\ell} U \left( f ; \ell \right) + B_{U, \ell}                              \\
+		                                                              & = a_{\ell} \mathcal{U} \left( \left\{ f \right\} ; \ell \right) + B_{U, \ell} ,
+	\end{align*}
+
+	from which \( a_{\ell} = a \) and \( B_{U,\ell} = b - \sum_{s} c \left( s \right) p_{\ell} \left( s \right) \) for all \( \ell \). Because of the functional form of \( \mathcal{U} \), the function \( \mathcal{U}^{\prime} \) only represents the same ranking if \( c \) = 0. In fact, for each event \( S \) and likelihood \( \ell \in \Delta \left( S \right) \), substitution into the representation delivers
+
+	\begin{align*}
+		\mathcal{U}^{\prime} \left( M ; \ell \right) & = \max _{f \in M}\left\{U^{\prime} \left( f ; \ell \right) + V^{\prime} \left(f ; \ell \right) - \max _{f \in M} V^{\prime} \left(f ; \ell \right) \right\}                              \\
+		                                             & = \max _{f^{\prime} \in M}\left\{a U \left( f ; \ell \right) + b - \sum_{s} c \left( s \right) p_{\ell} \left( s \right) \right.                                                         \\
+		                                             & \left. + \alpha_{\ell} \left( a U \left(f ; \ell^{*}_{S} \right) + b - \sum_{s} c \left( s \right) p_{\ell^{*}_{S}} \left( s \right) \right)\right.                                      \\
+		                                             & \left. - \max _{f^{\prime} \in M} \alpha_{\ell} \left( a U \left(f^{\prime} ; \ell^{*}_{S} \right) + b - \sum_{s} c \left( s \right) p_{\ell^{*}_{S}} \left( s \right) \right) \right\}.
+	\end{align*}
+
+	When taking expectations of \( \mathcal{U} \), averaging the term \( \sum_{s} c \left( s \right) p_{\ell} \left( s \right) \) makes it constant and equal to the prior for any likelihood, allowing to preserve the ranking.\footnote{Consider the representation in Theorem \ref{thm:rep}. The algebra is as follows:
+
+		\begin{align*}
+			\sum_{M } \sum_{s } p \left( s \right) F_s \left( M \right) \sum_{s^{\prime} } c \left( s^{\prime} \right) p_{\ell_{M,F}} \left( s^{\prime} \right) & = \sum_{M } \sum_{s } p \left( s \right) F_s \left( M \right) \sum_{s^{\prime} } c \left( s^{\prime} \right) \frac{F_{s^{\prime}} \left( M \right) p \left( s^{\prime} \right)}{\sum_{s^{\prime \prime} } F_{s^{\prime \prime}} \left( M \right) p \left( s^{\prime \prime} \right)} \\
+			                                                                                                                                                    & = \sum_{M } \sum_{s } c \left( s \right) F_s \left( M \right) p \left( s \right)                                                                                                                                                                                                     \\
+			                                                                                                                                                    & = c       \: .                                                                                                                                                                                                                                                                       \\
+		\end{align*}
+
+	} However, the same does not hold for \( \sum_{s} c \left( s \right) p_{\ell^{*}_{S}} \left( s \right) \). Therefore, to preserve ordinal equivalence, \( c \) must be null, otherwise the expression \( \sum_{s} c \left( s \right) p_{\ell^{*}_{S}} \left( s \right) \) does not average to the prior and \( U^{\prime} \) does not represent the same ranking as \( U \). Moreover, by Equation \eqref{eq:uniqcor} it follows that \( b_{\ell} = b \) for each \( \ell \).
+
+	Next, I derive the uniqueness of \( \alpha_{\ell} \) for each likelihood \( \ell \). For each event \( S \) and likelihood \( \ell \in \Delta \left( S \right) \), substitution of \( u \) in the expression of \( V \) delivers
+
+	\begin{align*}
+		V^{\prime} \left( f, \ell \right) & = \alpha^{\prime}_{\ell} \sum_{s} p_{\ell^{*}_{S}} \left( s \right) \left( a u \left( f_{s} ; \ell^{*}_{S} \right) + b \right) \\
+		                                  & = a \alpha_{\ell} \sum_{s} p_{\ell^{*}_{S}} \left( s \right) u \left( f_{s} ; \ell^{*}_{S} \right) + B_{V,\ell}                \\
+		                                  & = a V \left( f, \ell \right) + B_{V,\ell}
+	\end{align*}
+
+	for all \( f \), where the last equality follows from Equation \eqref{eq:uniqcor2} and the fact that \( A_{\ell} = a \) for all \( \ell \). Therefore, \( \alpha_{\ell} = \alpha^{\prime}_{\ell} \) for each \( \ell \) to preserve the ordinal ranking.
+
+	Lastly, I show that, for each event \( S \), if the likelihood \( \ell^{\prime *}_S \) part of \( \ell^{\prime *} \) represents the same preferences over contingent menus as \( \ell^{*}_S \), then \( \ell_{S}^{\prime *} \left( s \right) = \ell_{S}^{*} \left( s \right) \) for all states \( s \in S \). I prove it by contrapositive, if this is not the case, then \usename{axn:srbl} is violated.
+
+	First, I show that any two \( \ell_{S}^{*} \) and \( \ell_{S}^{\prime *} \) must induce the same posterior beliefs. Fix an event \( S \) and assume that both \( \ell^{\prime *}_S \) and \( \ell^{*}_S \) satisfy Equation \eqref{eq:lik} and that \( p_{\ell_{S}^{\prime *}}  \left( s \right) \neq p_{\ell_{S}^{*}}  \left( s \right) \) for some \( s \). Then, \( U \left( \cdot, \ell_{S}^{\prime *} \right) \) does not represent the same ordering over acts of \( U \left( \cdot, \ell^{*}_S \right) \). Assume this is not the case and these represent the same ordering over acts. Then, the representation of the ranking over constant acts \( u \left( \cdot; \ell_{S}^{\prime *} \right) \) must be an affine transformation of \( u \left( \cdot; \ell^{*}_S \right) \). However, since by hypothesis \( p_{\ell_{S}^{\prime *}} \left( s \right) \neq p_{\ell_{S}^{*}} \left( s \right) \) for some \( s \), and by Equation \eqref{eq:subprob}, \( U \left( \cdot; \ell_{S}^{\prime *} \right) \) does not represent the same ordering over acts of \( U \left( \cdot; \ell^{*}_S \right) \), which is absurd.
+
+	By Theorem \ref{thm:rep}, preferences over menus at \( \ell_S^{ *} \) can be represented by the following
+
+	\[
+		\mathcal{U} \left( M ; \ell_{S}^{*} \right) = \max _{f \in M}\left\{U \left( f ; \ell_S^{ *} \right) + \alpha_{\ell_S^{ *}} U \left(f ; \ell_S^{\prime *} \right) - \max _{f^{\prime} \in M} \alpha_{\ell_S^{ *}} U \left(f^{\prime} ; \ell_S^{\prime *} \right) \right\} ,
+	\]
+
+	for each menu \( M \), since \( \ell_S^{\prime *} \) satisfies condition \eqref{eq:lik}. For any menu \( M \), the antecedent of \usename{axn:srbl} holds, as \( \ell_{S}^{ *} \) satisfies Equation \eqref{eq:lik} and therefore trivially
+
+	\[ \mathcal{F}_{M \cup M^{\prime}, \ell_S^{*}} \cap \mathcal{F}_{M \cup M^{\prime}, \ell^{ \prime \prime *}_{S}} \neq \emptyset \: \text{for at least one} \: \ell_{S}^{\prime \prime *} \: \text{satisfying Equation \eqref{eq:lik}} .
+	\]
+
+	However, if \( U \left( \cdot; \ell_{S}^{\prime *} \right) \) and \( U \left( \cdot; \ell^{*}_S \right) \) do not represent the same ordering over acts, its consequent will not hold in general. Consider two acts \( f, f^{\prime} \) such that \( U \left( f ; \ell_{S}^{\prime *} \right) > U \left( f^{\prime} ; \ell_{S}^{\prime *} \right) \) and \( U \left(f^{\prime} ; \ell_S^{\prime *} \right) > U \left(f ; \ell_S^{\prime *} \right) \) and construct menus \( M = \left\{ f \right\} \) and \( M^{\prime} = \left\{ f^{\prime} \right\} \). By Equation \eqref{eq:contmenu}, \( F \succ F_{M \rightarrow M \cup M^{\prime}} \) for any \( F \) such that \( \ell_{M,F} = \ell_{S}^{*} \), in violation of \usename{axn:srbl}. Therefore, if \( p_{\ell_{S}^{\prime *}} \left( s \right) \neq p_{\ell_{S}^{*}} \left( s \right) \) for some \( s \), then \usename{axn:srbl} is violated.
+
+	Fixing a prior \( p \), there is a one to one relationship between likelihood and posterior. For each likelihood \( \ell \) and state \( s \)
+
+	\[
+		\ell \left( s \right) = \frac{\frac{p_{\ell} \left( s \right) }{p \left( s \right)}}{ \sum_{s^{\prime}} \frac{p_{\ell} \left( s^{\prime} \right) }{p \left( s^{\prime} \right)}} .
+	\]
+
+	By Equation \eqref{eq:uniqcor}, the prior \( p \) representing preferences is unique. Therefore, since the posteriors satisfy \( p_{\ell_{S}^{\prime *}} \left( s \right) = p_{\ell_{S}^{*}} \left( s \right) \) for each \( s \), it follows that \( \ell_{S}^{ \prime*} \left( s \right) = \ell_{S}^{*} \left( s \right) \) for each \( s \).
+
+\end{corproof}
+
+%\newpage
+
+\section{Construction of Best Likelihoods}\label{app:bestl}
+
+I here provide an example of the construction of contingent menus that allows to identify the preferred likelihoods in Theorem \ref{thm:rep}. I start from these two contingent menus, \( F \) and \( \overline{F} \), where the utility of the second is normalised to \( 0 \):
+
+\[
+	\text{\large \( F \)} \hspace{4cm} \text{\large \( \overline{F} \)}
+\]
+\[
+	\begin{bmatrix}
+		\left\{ x_{\ell} \right\} & \left( 0.1, 0.4 \right) \\
+		\left\{ y \right\}        & \left( 0.9, 0 \right)   \\
+		\left\{ z \right\}        & \left( 0, 0.6 \right)
+	\end{bmatrix}
+	\hspace{1cm}
+	\begin{bmatrix}
+		\left\{ x_{s_1} \right\} & \left( 1, 0 \right) \\
+		\left\{ x_{s_2} \right\} & \left( 0, 1 \right)
+	\end{bmatrix} .
+\]
+
+The aim is to represent a combination of these two contingent menus as a combination of three contingent menus, one for each menu in the support of \( F \). The combination will be such that a part of it averages to give \( 0 \) utility and the rest gives the utility of each menu in the support of \( F \) at the likelihood it induces in that menu, preserving their realisation probability. Each of the three contingent menus is then defined as the utility of choosing from their corresponding menu in \( F \) at their likelihood.
+
+Each of these contingent menus must contain one menu realisation from \( F \) at the same likelihood. So, for each menu in the support of \( F \), I change the probability of its realisation in each state until it coincides with its normalised likelihood. Then , I fill the rest of the contingent menu with elements from \( \overline{F} \). As an example, for \( \left\{ x_{\ell} \right\} \)
+
+\[
+	\begin{bmatrix}
+		\left\{ x_{\ell} \right\} & \left( 0.2, 0.8 \right) \\
+		\left\{ x_{s_1} \right\}  & \left( 0.8, 0 \right)   \\
+		\left\{ x_{s_2} \right\}  & \left( 0, 0.2 \right)
+	\end{bmatrix} .
+\]
+
+All three of them are as follows:
+
+\[
+	\begin{bmatrix}
+		\left\{ x_{\ell} \right\} & \left( 0.2, 0.8 \right) \\
+		\left\{ x_{s_1} \right\}  & \left( 0.8, 0 \right)   \\
+		\left\{ x_{s_2} \right\}  & \left( 0, 0.2 \right)
+	\end{bmatrix}
+	\hspace{1cm}
+	\begin{bmatrix}
+		\left\{ y \right\}       & \left( 1, 0 \right) \\
+		\left\{ x_{s_2} \right\} & \left( 0, 1 \right)
+	\end{bmatrix}
+	\hspace{1cm}
+	\begin{bmatrix}
+		\left\{ z \right\}       & \left( 0, 1 \right) \\
+		\left\{ x_{s_1} \right\} & \left( 1, 0 \right)
+	\end{bmatrix} .
+\]
+
+I must construct a linear combination of these that coincides with a linear combination of the original contingent menus \( F \) and \( \overline{F} \). In \( F \), conditional on a state, a menu \( M \) realises with probability \( F_s \left( M \right) \). In the three new contingent menus, conditional on a state, the probability that a menu \( M \) in the support of \( F \) realises is its normalised likelihood, namely \( \frac{F_s \left( M \right)}{\sum_{s^{\prime}} F_{s^{\prime}} \left( M \right)} \). Therefore, to make the conditional probability of realisation coincides, the weight on each new contingent menu must be \( \sum_{s^{\prime}} F_{s^{\prime}} \left( M \right) \), to cancel the denominator. However, summing for each menu yields
+
+\[
+	\sum_{M \in \mathcal{M}_F} \sum_{s^{\prime}} F_{s^{\prime}} \left( M \right) = \mid \mathcal{S} \mid,
+\]
+
+which is greater than \( 1 \). Therefore, the weight on each new contingent menu should be \( \frac{\sum_{s^{\prime}} F_s^{\prime} \left( M \right)}{ \mid \mathcal{S} \mid} \), which results in the following linear combination:
+
+\[
+	0.25 \begin{bmatrix}
+		\left\{ x_{\ell} \right\} & \left( 0.2, 0.8 \right) \\
+		\left\{ x_{s_1} \right\}  & \left( 0.8, 0 \right)   \\
+		\left\{ x_{s_2} \right\}  & \left( 0, 0.2 \right)
+	\end{bmatrix}
+	+ 0.45
+	\begin{bmatrix}
+		\left\{ y \right\}       & \left( 1, 0 \right) \\
+		\left\{ x_{s_2} \right\} & \left( 0, 1 \right)
+	\end{bmatrix}
+	+ 0.3
+	\begin{bmatrix}
+		\left\{ z \right\}       & \left( 0, 1 \right) \\
+		\left\{ x_{s_1} \right\} & \left( 1, 0 \right)
+	\end{bmatrix} .
+\]
+
+Since the conditional probability of each menu has been divided by the number of states, the probability of realisation of \( F \) in combination with \( \overline{F} \) should be \( \frac{1}{\mid \mathcal{S} \mid} \), to make conditional probabilities coincide
+
+\[
+	\frac{1}{2}
+	\begin{bmatrix}
+		\left\{ x_{\ell} \right\} & \left( 0.1, 0.4 \right) \\
+		\left\{ y \right\}        & \left( 0.9, 0 \right)   \\
+		\left\{ z \right\}        & \left( 0, 0.6 \right)
+	\end{bmatrix}
+	+ \frac{1}{2}
+	\begin{bmatrix}
+		\left\{ x_{s_1} \right\} & \left( 1, 0 \right) \\
+		\left\{ x_{s_2} \right\} & \left( 0, 1 \right)
+	\end{bmatrix}
+\]
+\[
+	= 0.25 \begin{bmatrix}
+		\left\{ x_{\ell} \right\} & \left( 0.2, 0.8 \right) \\
+		\left\{ x_{s_1} \right\}  & \left( 0.8, 0 \right)   \\
+		\left\{ x_{s_2} \right\}  & \left( 0, 0.2 \right)
+	\end{bmatrix}
+	+ 0.45
+	\begin{bmatrix}
+		\left\{ y \right\}       & \left( 1, 0 \right) \\
+		\left\{ x_{s_2} \right\} & \left( 0, 1 \right)
+	\end{bmatrix}
+	+ 0.3
+	\begin{bmatrix}
+		\left\{ z \right\}       & \left( 0, 1 \right) \\
+		\left\{ x_{s_1} \right\} & \left( 1, 0 \right)
+	\end{bmatrix} .
+\]
+
+The conditional probability any menu in \( \overline{F} \) realising also coincides in both linear combination, as it is
+
+\begin{align*}
+	\sum_{M \in \mathcal{M}_F} \frac{\sum_{s^{\prime}} F_{s^{\prime}} \left( M \right)}{ \mid \mathcal{S} \mid} \left( 1 - \frac{F_s \left( M \right)}{ \sum_{s^{\prime \prime}} F_{s^{\prime \prime}} \left( M \right)} \right) & = \frac{1}{\mid \mathcal{S} \mid} \sum_{M \in \mathcal{M}_F} \left( \sum_{s^{\prime \prime}} F_{s^{\prime \prime}} \left( M \right) - F_s \left( M \right) \right)                            \\
+	                                                                                                                                                                                                                             & = \frac{1}{\mid \mathcal{S} \mid} \left( \sum_{M \in \mathcal{M}_F} \sum_{s^{\prime \prime}} F_{s^{\prime \prime}} \left( M \right) - \sum_{M \in \mathcal{M}_F} F_s \left( M \right) \right) \\
+	                                                                                                                                                                                                                             & = \frac{1}{\mid \mathcal{S} \mid} \left( \mid \mathcal{S} \mid - 1 \right)                                                                                                                    \\
+	                                                                                                                                                                                                                             & = \frac{\mid \mathcal{S} \mid - 1}{\mid \mathcal{S} \mid} .
+\end{align*}
+
+\section{Computation for Section \ref{sec:application}}\label{app:application}
+
+I here provide the computations for the application in Section \ref{sec:application}. The sender chooses a vector of \( q_i, r_i \) for all \( i \), i.e., an experiment as follows:
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{c c | c c}
+		                       & \( E_s \left( a \right) \) & \( 0 \)       & \( 1 \)     \\
+		\hline
+		\( \nicefrac{7}{10} \) & \( 0 \)                    & \( q_i \)     & \( 1-q_i \) \\
+		\( \nicefrac{3}{10} \) & \( 1 \)                    & \( 1 - r_i \) & \( r_i \)   \\
+	\end{tabular}
+	\caption{Experiment for individual \( i \).}
+	\label{tab:experiment3}
+\end{table}
+
+He must be sure that each \( i \) follows the action recommendation. As long as \(q_i\) and \( r_i \) are in the interior of the unit interval, the programme is :
+
+\begin{align*}
+	\max_{q_i, r_i}       & \: r_i \left( \frac{3}{10} \right) + \left( 1 - q_i \right)\left( \frac{7}{10} \right)                                                                                                                                                                                                                                                                                                              \\                                                                               s.t. &  \\                                                                                                                                                                                                              \\
+	IC_{0 \rightarrow 1}: &                                                                                                                                                                                                                                                                                                                                                                                                     \\
+	                      & \hspace{-1cm} - \frac{7}{10}             \left( \frac{q_i}{\frac{3}{10} \left( 1 - r_i \right) + \frac{7}{10} q_i} \right)                                              \cdot 0 -            \frac{3}{10}             \left( \frac{1 - r_i}{\frac{3}{10} \left( 1 - r_i \right) + \frac{7}{10} q_i } \right)         \cdot 1     - \alpha \left[ \left( 1 - i \right) \cdot 0 + i \cdot 1 \right]   \\
+	                      & \hspace{-1cm} > - \frac{7}{10}             \left( \frac{q_i}{\frac{3}{10} \left( 1 - r_i \right) + \frac{7}{10} q_i} \right)                                              \cdot 1 -            \frac{3}{10}             \left( \frac{1 - r_i}{\frac{3}{10} \left( 1 - r_i \right) + \frac{7}{10} q_i } \right)         \cdot 0     - \alpha \left[ \left( 1 - i \right) \cdot 1 + i \cdot 0 \right] \\
+	IC_{1 \rightarrow 0}: &                                                                                                                                                                                                                                                                                                                                                                                                     \\
+	                      & \hspace{-1cm} - \frac{7}{10}             \left( \frac{1 - q_i}{\frac{3}{10} r_i + \frac{7}{10} \left( 1 - q_i \right)} \right)                                              \cdot 1 -            \frac{3}{10}             \left( \frac{r_i}{\frac{3}{10} r_i + \frac{7}{10} \left( 1 - q_i \right)} \right)         \cdot 0      - \alpha \left[ \left( 1 - i \right) \cdot 1 + i \cdot 0 \right]   \\
+	                      & \hspace{-1cm} > - \frac{7}{10}             \left( \frac{1 - q_i}{\frac{3}{10} r_i + \frac{7}{10} \left( 1 - q_i \right)} \right)                                              \cdot 0 -            \frac{3}{10}             \left( \frac{r_i}{\frac{3}{10} r_i + \frac{7}{10} \left( 1 - q_i \right) } \right)         \cdot 1     - \alpha \left[ \left( 1 - i \right) \cdot 0 + i \cdot 1 \right]
+\end{align*}
+
+The terms \( \left( p_{\ell} - i \right)^{2} \) and \( \alpha \left[ \left( i - i \right) \right] \) appear in both sides of all inequalities and are therefore omitted. If \( r_i = 1 \), then when the individual observes the recommendation to choose \( a = 0 \) the state is revealed and \( IC_{0 \rightarrow 1} \) reduces to \( 0 < 1 \), that is always satisfied. The constraint \( IC_{1 \rightarrow 0} \) becomes:
+
+\begin{align*}
+	IC_{1 \rightarrow 0}: & \:  \frac{7}{10}             \left( \frac{1 - q_i}{\frac{3}{10} + \frac{7}{10} \left( 1 - q_i \right)} \right)                       + \alpha \left( 1 - i \right) \\
+	<                     & \: \frac{3}{10}             \left( \frac{1}{\frac{3}{10} + \frac{7}{10} \left( 1 - q_i \right) } \right)        + \alpha i,
+\end{align*}
+
+from which
+
+\[
+	q_i = \frac{4 - 10 \alpha \left( 2i - 1\right)}{7 \left( 1 - \alpha \left( 2i  - 1 \right) \right)} .
+\]
+
+When \( \alpha = 0 \) or \( i = \nicefrac{1}{2} \), \( q_i \) coincides with the solution of the Bayesian Persuasion problem with standard preferences. The derivatives of \( q_i \) with respect to \( \alpha \) and \( i \) are both negative.
+
+\section{Notation}\label{app:notation}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ c l l }
+		\hline
+		\textbf{Symbol [elements]}                         & \textbf{Name}               & \textbf{Mathematical object}                                                                  \\ \hline
+		\( X \)                                            & outcomes                    & compact metric set                                                                            \\ \hline
+		\(\Delta \left( X \right) \ \left[ x, y \right] \) & (lotteries over) outcomes   & compact metric set                                                                            \\ \hline
+		\( \mathcal{S} \ \left[ s, s^{\prime} \right] \)   & states                      & finite set                                                                                    \\ \hline
+		\( S \subseteq \mathcal{S} \)                      & events                      & finite set                                                                                    \\ \hline
+		\( f, f^{\prime} \)                                & acts                        & functions \( \mathcal{S} \rightarrow \Delta \left( X \right) \)                               \\ \hline
+		\( \mathcal{M} \ \left[ M, M^{\prime} \right] \)   & menus                       & compact metric set                                                                            \\ \hline
+		\(\Delta^{\circ} \left( \mathcal{M} \right) \)     & finite lotteries over menus & compact metric set                                                                            \\ \hline
+		\( \mathcal{C} \ \left[ F, F^{\prime} \right] \)   & contingent menus            & functions  \( \mathcal{S} \rightarrow \Delta^{\circ} \left( \mathcal{M} \right) \)            \\ \hline
+		\( \succsim \)                                     & preference                  & subset of \( \mathcal{C} \times \mathcal{C} \)                                                \\ \hline
+		\( \ell \)                                         & likelihoods                 & probability distribution over \( \mathcal{S} \)                                               \\ \hline
+		\( p \)                                            & prior beliefs               & probability distribution over \( \mathcal{S} \)                                               \\ \hline
+		\(p_{\ell}\)                                       & posterior beliefs           & probability distribution over \( \mathcal{S} \)                                               \\ \hline
+		\( u \)                                            & utility functions           & functions \(\Delta \left( X \right) \times \Delta \left( \mathcal{S} \right) \to \mathbb{R}\) \\ \hline
+		\(\mathcal{U} \)                                   & utility functions           & functions \(\mathcal{M} \times \Delta \left( \mathcal{S} \right) \to \mathbb{R}\)             \\ \hline
+		\(\mathscr{U} \)                                   & utility functions           & functions \(\mathcal{C} \to \mathbb{R}\)                                                      \\ \hline
+	\end{tabular}
+	\caption{Symbols, their names, and corresponding mathematical objects.}
+\end{table}
+
+\bibliographystyle{apacite}  % or another  style
+\bibliography{references} % .bib file goes in ./bib/

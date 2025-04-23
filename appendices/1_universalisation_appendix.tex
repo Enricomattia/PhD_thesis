@@ -1,0 +1,142 @@
+\chapter{Appendix for Chapter \ref{ch:univ}}
+\label{app:univ}
+
+\section{Equal Sacrifice in Games}\label{sec:es}
+
+I map normal-form games to claim problems.\footnote{I redirect the interested reader to \cite{thomsonHowDivideWhen2019} for a general treatment. Notice that the model in this section is not related to game-theoretic analyses of claim problems surveyed by \cite{thomsonGametheoreticAnalysisBankruptcy2013}. The only purpose is to determine players' universalisation functions, not to distribute a given endowment.} This exercise allows defining equal sacrifice universalisation for any sacrifice rule. I restrict attention to two-player games. Here \( \mathbb{R}_{+} \) and \( \mathbb{R}_{++} \) denote the non-negative and positive real numbers, respectively.
+
+A \textbf{claim problem} is an ordered list \( \left( \{1, 2 \} , ( x_i )_{i \in I} \right) \) where \( \{1, 2 \} \) is the set of players and \( x_i \in \mathbb{R}_{++} \) is the claim of individual \( i \). An \textbf{award} is \( y_i \in \mathbb{R}_{+}\) satisfying \( 0 \leq y_i \leq x_i \) for all \( i \). In my formulation, the claim of each player in a game is the maximal expected utility for consequences he can obtain, which I denote with \( \overline{V_i} \).\footnote{In this appendix, I employ the utility representation for simplicity, but everything could be defined only using ordinal preferences \( \succsim_i \).} Therefore, \( x_i = \overline{V_i} \) for all \( i \). An \textbf{allocation rule} maps claims to awards \( \pi : \mathbb{R}_{++}^2 \rightarrow \mathbb{R}_{+}^2 \). An \textbf{equal sacrifice function} is a continuous, strictly increasing and hence invertible function \( R: \mathbb{R}_{++} \rightarrow \mathbb{R}\). The equal sacrifice allocation rule relative to the function \( R \) and sacrifice \( s \in \mathbb{R_{+}} \) is
+
+\[
+	\pi_{R} \left( x_i, x_{-i} \right) := \left( R^{-1} \left( R \left( \overline{V_i} \right) - s \right) \right)_{i \in I} .
+\]
+
+As an example, the equal loss rule \( \pi_R \left( x_i, x_{-i} \right) = \left( x_i - s \right)_{i \in I} \) in the main text has \( R\left(x_i \right) = x_i \) for all \( x_i \). In a game, utilities depend on actions, so denote
+
+\[  U^{c}_i \left( \alpha_i, \alpha_{-i} \right) = \sum_{a_i, a_{-i}} \alpha_{i} (a_i) \alpha_{-i}(a_{-i}) u_i(\rho_{a_i, a_{-i}})
+\]
+
+for each \( \left( \alpha_i, \alpha_{-i} \right) \). An action profile inducing the maximal expected utility for \( i \) is \( \left( \alpha^{*}_i, \alpha^{*}_{-i} \right) \) so that \( U^{c}_i \left( \alpha^{*}_i, \alpha^{*}_{-i} \right) = \overline{V_i} \). Then, action \( \alpha_i^{Rs} \) induces sacrifice \( s \) relative to the function \( R \) if
+
+\[
+	R^{-1} \left( R \left( U^{c}_i \left( \alpha^{*}_i, \alpha^{*}_{-i} \right) \right) - s \right) = U^{c}_i \left( \alpha^{Rs}_i, \alpha^{*}_{-i} \right) .
+\]
+
+A player exhibits equal sacrifice universalisation with respect to \( R \) if his universalisation function is \( T_{\alpha^{*}_i, \alpha^{*}_{-i}} \left[ \alpha^{Rs}_i \right] = \alpha_{-i}^{Rs} \).
+
+\section{Proofs}\label{sec:proofs}\label{app:proofsuniv}
+
+\begin{linproof}
+	I omit necessity and focus on sufficiency. First, for each \( \alpha_{-i} \), consider the set of actions
+
+	\[ \Delta^{\alpha_{-i}} \left(A_i \right) = \left\{ \alpha_i \in \Delta \left(A_i\right) \mid T_{\alpha^{*}_i, \alpha^{*}_{-i}} \left( \alpha_i \right) = \alpha_{-i} \right\} \: .\]
+
+	This is the set of all actions that are universalised to \( \alpha_{-i} \). Since the game is reduced, all actions in \( \Delta^{\alpha_{-i}} \left(A_i \right) \) that induce the same act are the same action. Moreover, preferences \( \succsim_i \) satisfies independence when restricted to \( \Delta^{\alpha_{-i}} \left(A_i \right) \) by \usename{axn:uind}. By \usename{axn:wo}, \usename{axn:nond} and Theorem 4 in \cite{battigalliMixedExtensionsDecision2017}, preferences \( \succsim_i \) are represented by
+
+	\begin{equation}\label{eq:univ}
+		U^{\alpha_{-i}}_i \left( \alpha_i \right) = \sum_{a_i, a_{-i}} \alpha_i(a_i) \mu_{i}(a_{-i}) u^{\prime}_i(\rho_{a_i, a_{-i}}, \alpha_{-i}),
+	\end{equation}
+
+	for each \( \alpha_i \in \Delta^{\alpha_{-i}} \left(A_i \right) \), for some function \( u^{\prime}_i \) unique up to affine transformations and unique beliefs \( \mu_i \).
+
+	Now consider the set of actions inducing constant acts
+
+	\[ \Delta^{c} \left(A_i \right) = \left\{ \alpha_i \in \Delta \left(A_i\right) \mid \rho_{\alpha_i,a_{i}} (x) = \rho_{\alpha_i,a^{\prime}_{i}} (x) \: \text{for each pair} \: a_{-i},a_{-i}^{\prime} \: \text{and} \: x \right\}. \]
+
+	The game restricted to action inducing constant acts is also reduced, and by \usename{axn:lindep}, preferences \( \succsim_i \) restricted to constant acts are a continuous weak order satisfying independence. With a slight abuse of notation, I denote the probability consequence \( x \) realises under the constant act induced by action \( \alpha_i \in \Delta^{c} \left(A_i \right) \) with \( \rho_{\alpha_i} (x) \). Again by Theorem 4 in \cite{battigalliMixedExtensionsDecision2017} preferences \( \succsim_i \) over actions inducing constant acts can be represented by
+
+	\begin{equation}\label{eq:const}
+		U^c_i \left( \alpha_i \right) = \sum_{x} \rho_{\alpha_i}\left( x\right) u_i \left(x\right),
+	\end{equation}
+
+	for each \( \alpha_i \in \Delta^{c} \left(A_i \right) \), for some \( u_i \) unique up to affine transformations. Equations \eqref{eq:univ} and \eqref{eq:const} imply that \( u^{\prime}_i(x, \alpha_{-i}) \) should represent the same ordering as \( u (x) \) for each \( \alpha_{-i} \), and therefore that preferences over actions in \( \Delta^{\alpha_{-i}} \) are represented by
+
+	\begin{equation}\label{eq:seu}
+		U^{s}_i \left( \alpha_i \right) = \sum_{a_i, a_{-i}} \alpha_i(a_i) \mu_{i}(a_{-i}) u_i(\rho_{a_i, a_{-i}}),
+	\end{equation}
+
+	for each \( \alpha_{-i} \).
+
+	Now consider the set of actions inducing the same act
+	\[ \Delta^{f} \left(A_i \right) = \left\{ \alpha_i \in \Delta \left( A_i \right) \mid \rho_{\alpha_i} = f \right\} \: . \]
+
+	By \usename{axn:ceval}, preferences \( \succsim_i \) over \( \Delta^{f} \left( A_i \right) \) must be consistent with preferences with constant acts. By Equation \eqref{eq:const} and by \usename{axn:ceval}, these are represented by
+
+	\begin{equation}\label{eq:const2}
+		U^{c}_i \left( \alpha_i \right) = \sum_{a_i, a_{-i}} \alpha_i(a_i) T_{\alpha^{*}_i, \alpha^{*}_{-i}}[ \alpha_i ](a_{-i}) u_i(\rho_{a_i, a_{-i}}) ,
+	\end{equation}
+
+	for each \( \alpha_i \in \Delta^{f} \left( A_i \right) \).
+
+	In the next step, I will \textquote{patch} the functions \( U_i^{s} \) in Equation \eqref{eq:seu} and \( U_i^{c} \) in Equation \eqref{eq:const2} into a unique function which is a convex combination of the two. In particular, I exploit the fact that the two functions are mixture linear on overlapping subdomains. Each mixed action \( \alpha_i \) induces a pair of acts \( \left(\rho_{\alpha_i}, \rho_{\alpha_i, T_{\alpha^{*}_i, \alpha^{*}_{-i}} [ \alpha_i ]} \right) \), where the second is a constant act. Pairs of acts lie in a connected convex domain with a product structure. By Theorem 2.2 in \cite{chateauneufLocalGlobalAdditive1993}, preferences \( \succsim_i \) on the whole domain of mixed actions can thus be represented by
+
+	\[
+		U_i \left( \alpha_i \right) = \left(1 - \kappa \right) U^s_{i} \left( \alpha_i \right) + \kappa U^{c}_{i} \left( \alpha_{i} \right)
+	\]
+
+	for each \( \alpha_i \), and the result follows.
+
+\end{linproof}
+
+\begin{skeproof}
+	For the profile \((\alpha,\alpha)\) to be a \textit{SKE}, it must be the case that, for each mixed action \(\alpha'\) and player \( i \)
+
+	\begin{equation}\label{eq:skecond}
+		\sum_{a_i, a_{-i}} \alpha (a_i) \alpha (a_{-i}) u_i(\rho_{a_i, a_{-i}}) \geq  \sum_{a_i, a_{-i}} \alpha^{\prime} (a_i) \alpha^{\prime} (a_{-i}) u_i(\rho_{a_i, a_{-i}}).
+	\end{equation}
+
+	Under \textit{HK} preferences, player \(i\) evaluates action \(\alpha\) by\footnote{Preferences in games are usually represented by utility functions over action profiles. Since \textit{HK} payoff only depends on his action, I can stick with my notation without loss.}
+
+	\[
+		U_i(\alpha) = \sum_{a_i, a_{-i}} \alpha (a_i) \alpha (a_{-i}) u_i(\rho_{a_i, a_{-i}}).
+	\]
+
+	For \((\alpha,\alpha)\) to be a Nash Equilibrium in a game between two \textit{HK}, it must be the case that, for each \( \alpha^{\prime} \) and \( i \)
+
+	\begin{equation}\label{eq:nehk}
+		U_i(\alpha) = \sum_{a_i, a_{-i}} \alpha (a_i) \alpha (a_{-i}) u_i(\rho_{a_i, a_{-i}}) \geq \sum_{a_i, a_{-i}} \alpha^{\prime} (a_i) \alpha^{\prime} (a_{-i}) u_i(\rho_{a_i, a_{-i}}) = U_i (\alpha^{\prime})
+	\end{equation}
+
+	Equation \eqref{eq:skecond} and \eqref{eq:nehk} are equivalent, one is satisfied only when the other is too, which concludes the proof.
+\end{skeproof}
+
+\begin{mkeproof}
+	For the profile \((\alpha_i,\alpha_{-i})\) to be a \textit{MKE}, it must be the case that, for all players \( i \) and real numbers \( r \geq 0 \)
+
+	\begin{equation}\label{eq:mkecond}
+		\sum_{a_i, a_{-i}} \alpha_{i} (a_i) \alpha_{-i} (a_{-i}) u_i(\rho_{a_i, a_{-i}}) \geq \sum_{a_i, a_{-i}} r \cdot \alpha_{i} (a_i) r \cdot \alpha_{-i} (a_{-i}) u_i(\rho_{a_i, a_{-i}}).
+	\end{equation}
+
+	Under \textit{MHK} preferences relative to the profile \((\alpha_i,\alpha_{-i})\), player \(i\) evaluates action \(\alpha_i\) by\footnote{The same point of the previous footnote holds. Since \textit{MHK} payoff only depends on his action, I can stick with my notation without loss.}
+
+	\[
+		U_i \left( r \cdot \alpha_{i} \right) = \sum_{a_i, a_{-i}} r \cdot \alpha_{i} (a_i) r \cdot \alpha_{-i} (a_{-i}) u_i(\rho_{a_i, a_{-i}}).
+	\]
+
+	For \((\alpha_i,\alpha_{-i})\) to be a Nash Equilibrium in a game between two \textit{MHK}, it must be the case that, for all players \( i \) and real numbers \( r \geq 0 \)
+
+	\begin{equation}\label{eq:nemhk}
+		U_i(\alpha_i) = \sum_{a_i, a_{-i}} \alpha_i (a_i) \alpha_{-i} (a_{-i}) u_i(\rho_{a_i, a_{-i}}) \geq \sum_{a_i, a_{-i}} r \cdot \alpha_{i} (a_i) r \cdot \alpha_{-i} (a_{-i}) u_i(\rho_{a_i, a_{-i}}) = U_i (r \cdot \alpha_i)
+	\end{equation}
+
+	Equation \eqref{eq:mkecond} and \eqref{eq:nemhk} are equivalent, one is satisfied only when the other is too, which concludes the proof.
+\end{mkeproof}
+
+I here prove a version of Proposition \ref{prop:equivalent} that holds for all equal sacrifice rules.
+
+\begin{prop}\label{prop:equivalentapp}
+	Assume the game is symmetric. Then, if an action is optimal under \textit{ESU} with respect to any \( R \), it is also optimal under \textit{HM}.
+\end{prop}
+
+\begin{eqproof}
+	I employ the notation of Appendix \ref{sec:es}. Pick a profile implementing the maximal expected utility for material consequences for player \(i\), denoted \(\left(\alpha^{*}_i, \alpha^{*}_{-i} \right)\). An action \(\alpha^{Rk}_i\) inducing sacrifice \(k\) for rule \(R\) satisfies the following:
+
+	\[
+		R^{-1} \left( R \left( U^{\rho}_i \left( \alpha^{*}_i, \alpha^{*}_{-i} \right) \right) - k \right) = U^{\rho}_i \left( \alpha^{Rk}_i, \alpha^{*}_{-i} \right) .
+	\]
+
+	Since the game is symmetric, the profile \(\left( \alpha^{*}_i, \alpha^{*}_{-i} \right)\) also induces a maximal consequence for player \(-i\) as \(U^{\rho}_i \left( \alpha^{*}_i, \alpha^{*}_{-i} \right) = U^{\rho}_{-i} \left( \alpha^{*}_{-i}, \alpha^{*}_{i} \right)\). Then, the condition for equal sacrifice of \(-i\) is equivalent to the one of \(i\), that implies \(\alpha^{Rk}_{i} = \alpha^{Rk}_{-i}\) for every \(k\). The counterfactual consequence function of player \(i\), if he has \textit{ESU} preferences, is thus \(\phi_{\alpha_i^{Rk}, a_{-i}} = \rho_{\alpha_i^{Rk}, \alpha_i^{Rk}} \), which is the same as the one of \textit{HK}. Therefore, if an action is optimal under \textit{ESU}, it is also optimal under \textit{HK}.
+\end{eqproof}
+
+\bibliographystyle{apacite}  % or another  style
+\bibliography{references} % .bib file goes in ./bib/

@@ -1,0 +1,105 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Battigalli%
+, {Cerreia-Vioglio}%
+, Maccheroni%
+\BCBL {}\ \BBA {} Marinacci%
+}{%
+Battigalli%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+battigalliMixedExtensionsDecision2017}
+\APACinsertmetastar {%
+battigalliMixedExtensionsDecision2017}%
+\begin{APACrefauthors}%
+Battigalli, P.%
+, {Cerreia-Vioglio}, S.%
+, Maccheroni, F.%
+\BCBL {}\ \BBA {} Marinacci, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Mixed Extensions of Decision Problems under Uncertainty}
+  {Mixed extensions of decision problems under uncertainty}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Economic Theory}{63}{4}{827--866}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Chateauneuf%
+\ \BBA {} Wakker%
+}{%
+Chateauneuf%
+\ \BBA {} Wakker%
+}{%
+{\protect \APACyear {1993}}%
+}]{%
+chateauneufLocalGlobalAdditive1993}
+\APACinsertmetastar {%
+chateauneufLocalGlobalAdditive1993}%
+\begin{APACrefauthors}%
+Chateauneuf, A.%
+\BCBT {}\ \BBA {} Wakker, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1993}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {From Local to Global Additive Representation} {From
+  local to global additive representation}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Mathematical Economics}{22}{6}{523--545}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Thomson%
+}{%
+Thomson%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+thomsonGametheoreticAnalysisBankruptcy2013}
+\APACinsertmetastar {%
+thomsonGametheoreticAnalysisBankruptcy2013}%
+\begin{APACrefauthors}%
+Thomson, W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Game-Theoretic Analysis of Bankruptcy and Taxation
+  Problems: {{Recent}} Advances} {Game-theoretic analysis of bankruptcy and
+  taxation problems: {{Recent}} advances}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Game Theory Review}{15}{03}{1340018}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Thomson%
+}{%
+Thomson%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+thomsonHowDivideWhen2019}
+\APACinsertmetastar {%
+thomsonHowDivideWhen2019}%
+\begin{APACrefauthors}%
+Thomson, W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2019}.
+\newblock
+\APACrefbtitle {How to Divide When There Isn't Enough} {How to divide when
+  there isn't enough}.
+\newblock
+\APACaddressPublisher{}{Cambridge University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
