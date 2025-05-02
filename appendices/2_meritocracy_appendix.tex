@@ -4,91 +4,91 @@
 \section{Proofs}\label{sec:proofsmeritocracy}
 
 \begin{implproof}
-	First, I show that if a mechanism implements a meritocratic social choice function, it is meritocratic with respect to merit criteria \( \geq_i \) which agree with \( \geq_{\mathcal{R}} \) for each \( i \). Assume that \( M \) implements a meritocratic \( f \), that is, for each preference profile \( R \) and for every Nash equilibrium strategy profile \( a^{*} ( R ) \) it holds that
+	First, I show that if a mechanism implements a meritocratic social choice function, it is meritocratic with respect to merit criteria \( A_i \) which agree with \( M \) for each \( i \). Assume that \( \mu \) implements a meritocratic \( f \), that is, for each preference profile \( \succsim \) and for every Nash equilibrium strategy profile \( a^{*} ( \succsim ) \) it holds that
 
 	\[
-		g ( a^{*} ( R ) ) = f ( R ).
+		g ( a^{*} ( \succsim ) ) = f ( \succsim ).
 	\]
 
-	Since \( f \) is meritocratic, for each individual \( i \) and profile \( R_{-i} \), for all preferences \( R_i, R'_i \), it holds that
+	Since \( f \) is meritocratic, for each individual \( i \) and profile \( \succsim_{-i} \), for all preferences \( \succsim_i, \succsim'_i \), it holds that
 
 	\[
-		R_i \geq_{\mathcal{R}} R'_i \implies f (R_i, R_{-i}) \geq_i f (R'_i, R_{-i} ).
+		\succsim_i M \succsim'_i \implies f (\succsim_i, \succsim_{-i}) R_i f (\succsim'_i, \succsim_{-i} ).
 	\]
 
 	Equivalently,
 
 	\[
-		R_i \geq_{\mathcal{R}} R'_i \implies g ( a_i^*(R_i, R_{-i}), a_{-i}^*(R) ) \geq_i g ( a_i^*(R_i', R_{-i}), a_{-i}^*(R) ),
+		\succsim_i M \succsim'_i \implies g ( a_i^*(\succsim_i, \succsim_{-i}), a_{-i}^*(\succsim) ) R_i g ( a_i^*(\succsim_i^{\prime}, \succsim_{-i}), a_{-i}^*(\succsim) ),
 	\]
 
 	and therefore the mechanism is meritocratic with respect to some merit criteria such that
 
-	\[ ( a_i^*(R_i, R_{-i}), a_{-i}^*(R_i, R_{-i}) ) \geq_{A_i} ( a_i^*(R_i', R_{-i}), a_{-i}^*(R_i', R_{-i}) ) .\]
+	\[ ( a_i^*(\succsim_i, \succsim_{-i}), a_{-i}^*(\succsim_i, \succsim_{-i}) ) A_i ( a_i^*(\succsim_i^{\prime}, \succsim_{-i}), a_{-i}^*(\succsim_i^{\prime}, \succsim_{-i}) ) .\]
 
-	I show that each merit criterion \( \geq_{A_i} \) must agree with \( \geq_{\mathcal{R}} \). Suppose, for the sake of contradiction, that for some individual \( i \) and some fixed \( a_{-i} \) the criteria \( \geq_{A_i} \) and \( \geq_{\mathcal{R}} \) do not agree. Then there exist two actions \( a_i, a'_i \) and corresponding preferences \( R_i, R'_i \) such that
+	I show that each merit criterion \( A_i \) must agree with \( M \). Suppose, for the sake of contradiction, that for some individual \( i \) and some fixed \( a_{-i} \) the criteria \( A_i \) and \( M \) do not agree. Then there exist two actions \( a_i, a'_i \) and corresponding preferences \( \succsim_i, \succsim'_i \) such that
 
 	\[
-		R_i \geq_{\mathcal{R}} R'_i
+		\succsim_i M \succsim'_i
 		\quad \text{but} \quad
-		( a_i^*(R_i', R_{-i}), a_{-i}^*(R_i', R_{-i}) ) \geq_{A_i} ( a_i^*(R_i, R_{-i}), a_{-i}^*(R_i, R_{-i}) ) .
+		( a_i^*(\succsim_i^{\prime}, \succsim_{-i}), a_{-i}^*(\succsim_i^{\prime}, \succsim_{-i}) ) A_i ( a_i^*(\succsim_i, \succsim_{-i}), a_{-i}^*(\succsim_i, \succsim_{-i}) ) .
 	\]
 
 	Then, the mechanism would not be implementing the meritocratic \( f \), as for the mechanism to be meritocratic it must be the case that
 
 	\[
-		g (a_i^*(R_i', R_{-i}), a_{-i}^*(R_i', R_{-i})) \geq_i g (a_i^*(R_i, R_{-i}), a_{-i}^*(R_i, R_{-i}) ) ,
+		g (a_i^*(\succsim_i^{\prime}, \succsim_{-i}), a_{-i}^*(\succsim_i^{\prime}, \succsim_{-i})) R_i g (a_i^*(\succsim_i, \succsim_{-i}), a_{-i}^*(\succsim_i, \succsim_{-i}) ) ,
 	\]
 
 	but
 
-	\[ f (R_i, R_{-i}) \geq_i f (R'_i, R_{-i} ) . \]
+	\[ f (\succsim_i, \succsim_{-i}) R_i f (\succsim'_i, \succsim_{-i} ) . \]
 
-	Conversely, assume that \( M \) is meritocratic with respect to some criteria \( \geq_{A_i} \). Then, for each individual \( i \) and profile \( R_{-i} \), for all preferences \( R_i, R'_i \), for each Nash equilibrium profile \( a^{*} ( R ) \), it holds that
+	Conversely, assume that \( \mu \) is meritocratic with respect to some criteria \( A_i \). Then, for each individual \( i \) and profile \( \succsim_{-i} \), for all preferences \( \succsim_i, \succsim'_i \), for each Nash equilibrium profile \( a^{*} ( \succsim ) \), it holds that
 
 	\[
-		( a_i^*(R_i, R_{-i}), a_{-i}^*(R_i, R_{-i}) ) \geq_{A_i} ( a_i^*(R_i', R_{-i}), a_{-i}^*(R_i', R_{-i}) )
+		( a_i^*(\succsim_i, \succsim_{-i}), a_{-i}^*(\succsim_i, \succsim_{-i}) ) A_i ( a_i^*(\succsim_i^{\prime}, \succsim_{-i}), a_{-i}^*(\succsim_i^{\prime}, \succsim_{-i}) )
 	\]
 
 	\[ \implies \]
 
 	\[
-		g ( a_i^*(R_i, R_{-i}), a_{-i}^*(R_i, R_{-i}) ) \geq_i g ( a_i^*(R_i', R_{-i}), a_{-i}^*(R_i', R_{-i}) ) .
+		g ( a_i^*(\succsim_i, \succsim_{-i}), a_{-i}^*(\succsim_i, \succsim_{-i}) ) R_i g ( a_i^*(\succsim_i^{\prime}, \succsim_{-i}), a_{-i}^*(\succsim_i^{\prime}, \succsim_{-i}) ) .
 	\]
 
-	Then, such mechanism implements a meritocratic social choice function \( f \) with respect to some criterion \( \geq_{\mathcal{R}} \). By an argument similar to the one of the previous paragraph, it follows that each \( \geq_{A_i} \) and \( \geq_{\mathcal{R}} \) agree.
+	Then, such mechanism implements a meritocratic social choice function \( f \) with respect to some criterion \( M \). By an argument similar to the one of the previous paragraph, it follows that each \( A_i \) and \( M \) agree.
 \end{implproof}
 
 \begin{paretoproof}
-	Fix an individual \( i \) and consider two preference relations \( R_i \) and \( R'_i \), each having a unique maximal element \( x^{*}(R_i) \) and \( x^{*}(R'_i) \), respectively. Fix any profile \( a_{-i} \) and consider actions \( a_i, a'_i \) such that
+	Fix an individual \( i \) and consider two preference relations \( \succsim_i \) and \( \succsim'_i \), each having a unique maximal element \( x^{*}(\succsim_i) \) and \( x^{*}(\succsim'_i) \) in \( X \), respectively. Fix any profile \( a_{-i} \) and consider actions \( a_i, a'_i \) such that
 
 	\[
-		g(a_i,a_{-i}) = x^{*}(R_i) \quad \text{and} \quad g(a'_i,a_{-i}) = x^{*}(R'_i).
+		g(a_i,a_{-i}) = x^{*}(\succsim_i) \quad \text{and} \quad g(a'_i,a_{-i}) = x^{*}(\succsim'_i).
 	\]
 
-	By the agreement condition between the merit criteria \( \geq_{A_i} \) and \( \geq_{\mathcal{R}} \), it must hold that
+	By the agreement condition between the merit criteria \( A_i \) and \( M \), it must hold that
 
 	\[
-		(a_i,a_{-i}) \geq_{A_i} (a'_i,a_{-i}) \iff R_i \geq_{\mathcal{R}} R'_i.
+		(a_i,a_{-i}) A_i (a'_i,a_{-i}) \iff \succsim_i M \succsim'_i.
 	\]
 
-	Since \( \geq_{A_i} \) satisfies \usename{axn:pareto}, substituting \( x^{*}(R_i) \) and \( x^{*}(R'_i) \) delivers
+	Since \( A_i \) satisfies \usename{axn:pareto}, substituting \( x^{*}(\succsim_i) \) and \( x^{*}(\succsim'_i) \) delivers
 
 	\[
-		(a_i,a_{-i}) \geq_{A_i} (a'_i,a_{-i}) \iff \Bigl[ x^{*}(R_i) \, R_j \, x^{*}(R'_i) \text{ for all } j \text{ and } x^{*}(R_i) \, P_j \, x^{*}(R'_i) \text{ for some } j \Bigr]\,.
+		(a_i,a_{-i}) A_i (a'_i,a_{-i}) \iff \Bigl[ x^{*}(\succsim_i) \, R_j \, x^{*}(\succsim'_i) \text{ for all } j \text{ and } x^{*}(\succsim_i) \, P_j \, x^{*}(\succsim'_i) \text{ for some } j \Bigr]\,.
 	\]
 
 	By the agreement condition, it follows that
 
 	\[
-		R_i \geq_{\mathcal{R}} R'_i \iff \Bigl[ x^{*}(R_i) \, R_j \, x^{*}(R'_i) \text{ for all } j \text{ and } x^{*}(R_i) \, P_j \, x^{*}(R'_i) \text{ for some } j \Bigr]\,.
+		\succsim_i M \succsim'_i \iff \Bigl[ x^{*}(\succsim_i) \, R_j \, x^{*}(\succsim'_i) \text{ for all } j \text{ and } x^{*}(\succsim_i) \, P_j \, x^{*}(\succsim'_i) \text{ for some } j \Bigr]\,.
 	\]
 \end{paretoproof}
 
 \begin{propproof}
 	I start with item 1. I first show the necessity of assumptions. Suppose the mechanism is a \usename{def:prop}.
 
-	\emph{Meritocracy.} Define the merit criterion so that \((\ell_i,\ell_{-i}) \ge_{A_i} (\ell_i',\ell_{-i})\) means \(\ell_i\ge\ell_i'\). Then by the monotonicity of \(\alpha_i\), it holds that \(\alpha_i(\ell_i,\ell_{-i}) \ge \alpha_i(\ell_i',\ell_{-i})\) whenever \(\ell_i\ge\ell_i'\). Hence
+	\emph{Meritocracy.} Define the merit criterion so that \((\ell_i,\ell_{-i}) A_i (\ell_i',\ell_{-i})\) means \(\ell_i\ge\ell_i'\). Then by the monotonicity of \(\alpha_i\), it holds that \(\alpha_i(\ell_i,\ell_{-i}) \ge \alpha_i(\ell_i',\ell_{-i})\) whenever \(\ell_i\ge\ell_i'\). Hence
 
 	\[
 		g_i(\ell_i,\ell_{-i})
@@ -108,14 +108,14 @@
 	Since each individual preferences are increasing in consumption, \usename{axn:welfrew} is satisfied.
 
 	\emph{\usename{axn:mono}.}
-	Since \(\alpha_i\) is monotonic in \(\ell_i\), if \(\ell_i\ge\ell_i'\), holding \(\ell_{-i}\) fixed,  then \(\alpha_i(\ell_i,\ell_{-i}) \ge \alpha_i(\ell_i',\ell_{-i})\). Thus \((\ell_i,\ell_{-i}) \ge_{A_i} (\ell_i',\ell_{-i})\).
+	Since \(\alpha_i\) is monotonic in \(\ell_i\), if \(\ell_i\ge\ell_i'\), holding \(\ell_{-i}\) fixed,  then \(\alpha_i(\ell_i,\ell_{-i}) \ge \alpha_i(\ell_i',\ell_{-i})\). Thus \((\ell_i,\ell_{-i}) A_i (\ell_i',\ell_{-i})\).
 
 	\emph{\usename{axn:scale}.}
-	Since \(\alpha_i\) is homogeneous of degree zero, scaling \(\ell \) to \( \lambda \ell \) does not change the values of \(\alpha_i(\cdot)\). Hence if \((\ell_i,\ell_{-i}) \ge_{A_i} (\ell_i',\ell_{-i})\),	the same ordering persists after multiplying all labour inputs by any \(\lambda>0\).
+	Since \(\alpha_i\) is homogeneous of degree zero, scaling \(\ell \) to \( \lambda \ell \) does not change the values of \(\alpha_i(\cdot)\). Hence if \((\ell_i,\ell_{-i}) A_i (\ell_i',\ell_{-i})\),	the same ordering persists after multiplying all labour inputs by any \(\lambda>0\).
 
 	I now show that the assumptions imply the mechanism is a \usename{def:prop}.
 
-	\emph{Total Feasibility.}
+	\emph{Feasibility.}
 	Maximal total consumption is
 
 	\[ c^{-1} \left( \sum_j \ell_j \right) .\]
@@ -136,11 +136,11 @@
 	Then 	\( \sum_i \alpha_i(\ell)=1\). I prove that \(\alpha_i(\ell)\) is monotonic in \(\ell_i\), holding \(\ell_{-i}\) fixed, and homogeneous of degree zero.
 
 	\emph{Monotonicity.}
-	By \usename{axn:mono'}, \(\ell_i\ge\ell_i'\) implies \((\ell_i,\ell_{-i}) \ge_{A_i} (\ell_i',\ell_{-i})\). Because \(M\) is meritocratic and \(\ge_i=R_i\), by \usename{axn:welfrew}, it follows that \(g_i(\ell_i,\ell_{-i})\) is strictly better, i.e., a larger consumption, than \(g_i(\ell_i',\ell_{-i})\). Hence
+	By \usename{axn:mono'}, \(\ell_i\ge\ell_i'\) implies \((\ell_i,\ell_{-i}) A_i (\ell_i',\ell_{-i})\). Because \(\mu\) is meritocratic and \(R_i=\succsim_i\), by \usename{axn:welfrew}, it follows that \(g_i(\ell_i,\ell_{-i})\) is strictly better, i.e., a larger consumption, than \(g_i(\ell_i',\ell_{-i})\). Hence
 	\(\alpha_i(\ell_i,\ell_{-i}) \ge \alpha_i(\ell_i',\ell_{-i})\). So \(\alpha_i\) is non-decreasing in \(\ell_i\).
 
 	\emph{Scale-Invariance.}
-	By \usename{axn:scale}, \((\ell_i,\ell_{-i}) \ge_{A_i} (\ell_i',\ell_{-i})\) implies \((\lambda\ell_i,\lambda\ell_{-i}) \ge_{A_i} (\lambda\ell_i',\lambda\ell_{-i})\). Since \(\ell_i\ge\ell_i'\iff(\ell_i,\ell_{-i})\ge_{A_i}(\ell_i',\ell_{-i})\), this ordering persists under scaling, and hence \(\alpha_i(\lambda\ell)=\alpha_i(\ell)\). Thus \(\alpha_i\) is homogeneous of degree zero.
+	The ordering \((\ell_i,\ell_{-i}) A_i (\ell_i',\ell_{-i})\) implies \((\lambda\ell_i,\lambda\ell_{-i}) A_i (\lambda\ell_i',\lambda\ell_{-i})\) by \usename{axn:scale}. Since \(\ell_i\ge\ell_i'\iff(\ell_i,\ell_{-i})A_i(\ell_i',\ell_{-i})\), this ordering persists under scaling, and hence \(\alpha_i(\lambda\ell)=\alpha_i(\ell)\). Thus \(\alpha_i\) is homogeneous of degree zero.
 
 	Together, these conditions imply the mechanism
 
@@ -160,7 +160,7 @@
 		\frac{\ell_i}{\sum_j \ell_j}\;c^{-1} \left(\sum_j \ell_j \right),
 	\]
 
-	then \usename{axn:mono'} holds. As before, one checks that \(\sum_i \alpha_i(\ell)=1\), \(\alpha_i(\ell)\) is strictly increasing in \(\ell_i\), and \(\alpha_i(\lambda\ell)=\alpha_i(\ell)\). Defining \((\ell_i,\ell_{-i}) \ge_{A_i} (\ell_i',\ell_{-i})\) to mean \(\ell_i\ge \ell_i'\) satisfies \usename{axn:mono'}, because
+	then \usename{axn:mono'} holds. As before, one checks that \(\sum_i \alpha_i(\ell)=1\), \(\alpha_i(\ell)\) is strictly increasing in \(\ell_i\), and \(\alpha_i(\lambda\ell)=\alpha_i(\ell)\). Defining \((\ell_i,\ell_{-i}) A_i (\ell_i',\ell_{-i})\) to mean \(\ell_i\ge \ell_i'\) satisfies \usename{axn:mono'}, because
 
 	\[
 		\ell_i\;\ge\;\ell_i'
@@ -179,7 +179,7 @@
 	\[
 		\ell_i\;\ge\;\ell_i'
 		\quad\Longleftrightarrow\quad
-		(\ell_i,\ell_{-i}) \;\ge_{A_i}\; (\ell_i',\ell_{-i}),
+		(\ell_i,\ell_{-i}) \;A_i\; (\ell_i',\ell_{-i}),
 	\]
 
 	meritocracy plus \usename{axn:welfrew} implies \(\ell_i\ge\ell_i'\iff\alpha_i(\ell)\ge\alpha_i(\ell')\). Also, \usename{axn:scale} forces \(\alpha_i(\lambda\ell)=\alpha_i(\ell)\). Hence \(\alpha_i(\ell)\) depends only on the ratio \(\ell_i/\sum_j\ell_j\). That is,
@@ -198,9 +198,9 @@
 		\frac{\ell_i}{\sum_j\ell_j}.
 	\]
 
-	Lastly, I show agreement with the merit criterion \( \geq_{\mathcal{R}} \). The argument proceeds by contradiction: if \(\mathrm{MRS}_{R_i}\) is not uniformly smaller than \(\mathrm{MRS}_{R_i'}\), the agreement fails. Suppose there exist preferences \(R_i\) and \(R_i'\) such that \(\mathrm{MRS}_{R_i}(\ell_i,y_i)\le \mathrm{MRS}_{R_i'}(\ell_i,y_i)\) in some regions, but strictly greater in some other region of \((\ell_i,y_i)\). I show this violates agreement.
+	Lastly, I show agreement with the merit criterion \( M \). The argument proceeds by contradiction: if \(\mathrm{MRS}_{\succsim_i}\) is not uniformly smaller than \(\mathrm{MRS}_{\succsim_i^{\prime}}\), the agreement fails. Suppose there exist preferences \(\succsim_i\) and \(\succsim_i^{\prime}\) such that \(\mathrm{MRS}_{\succsim_i}(\ell_i,y_i) < \mathrm{MRS}_{\succsim_i^{\prime}}(\ell_i,y_i)\) in some regions, but \(\mathrm{MRS}_{\succsim_i}(\ell_i,y_i) \ge \mathrm{MRS}_{\succsim_i^{\prime}}(\ell_i,y_i)\) in others. I show this violates agreement.
 
-	In the region where \(R_i\) has \(\mathrm{MRS}_{R_i} < \mathrm{MRS}_{R_i'}\), it is easier to make \(R_i\) better off with fewer consumption units for the same labour.  One can select a labour level \(\ell_i\) at which
+	In the region where \(\succsim_i\) has \(\mathrm{MRS}_{\succsim_i} < \mathrm{MRS}_{\succsim_i^{\prime}}\), it is easier to make \(\succsim_i\) better off with fewer consumption units for the same labour.  One can select a labour level \(\ell_i\) at which
 
 	\[
 		g_i(\ell_i,\ell_{-i})
@@ -208,15 +208,15 @@
 		\frac{\ell_i}{\sum_j\ell_j}\,c^{-1} \left( \sum_j\ell_j \right)
 	\]
 
-	is strictly preferred by \(R_i\) to the outcome from a smaller labour \(\ell_i'\). In the region where \(R_i\) has \(\mathrm{MRS}_{R_i}\) greater than \(\mathrm{MRS}_{R_i'}\), one can choose a smaller labour \(\ell_i'\) that yields an outcome \(g_i(\ell_i',\ell_{-i})\) preferred by \(R_i'\) to the outcome of the bigger labour \(\ell_i\). Hence one obtains
+	is strictly preferred by \(\succsim_i\) to the outcome from a smaller labour \(\ell_i'\). In the region where \(\succsim_i\) has \(\mathrm{MRS}_{\succsim_i}\) greater than \(\mathrm{MRS}_{\succsim_i^{\prime}}\), one can choose a smaller labour \(\ell_i'\) that yields an outcome \(g_i(\ell_i',\ell_{-i})\) preferred by \(\succsim_i^{\prime}\) to the outcome of the bigger labour \(\ell_i\). Hence one obtains
 
 	\[
 		g(\ell_i,\ell_{-i})
-		\; R_i\;
+		\; \succsim_i\;
 		g(\ell_i',\ell_{-i})
 		\quad\text{and}\quad
 		g(\ell_i',\ell_{-i})
-		\; R_i'\;
+		\; \succsim_i^{\prime}\;
 		g(\ell_i,\ell_{-i}) .
 	\]
 
@@ -225,11 +225,11 @@
 	\[
 		\ell_i \;\ge\;\ell_i'
 		\quad\Longleftrightarrow\quad
-		R_i \;\ge_\mathcal{R}\; R_i'.
+		\succsim_i \;M\; \succsim_i^{\prime}.
 	\]
 
 	But also reversing the roles (\(\ell_i'\ge \ell_i\)) would force
-	\(R_i'\ge_\mathcal{R} R_i\), and thus I reached a contradiction.
+	\(\succsim_i^{\prime}M \succsim_i\), and thus I reached a contradiction.
 
 \end{propproof}
 
