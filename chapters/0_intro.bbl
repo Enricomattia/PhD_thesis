@@ -110,9 +110,9 @@ Fleurbaey%
 }{%
 {\protect \APACyear {2008}}%
 }]{%
-fleurbaeyFairnessResponsibilityWelfare2008}
+fleurbaey2008fairness}
 \APACinsertmetastar {%
-fleurbaeyFairnessResponsibilityWelfare2008}%
+fleurbaey2008fairness}%
 \begin{APACrefauthors}%
 Fleurbaey, M.%
 \end{APACrefauthors}%
@@ -123,7 +123,7 @@ Fleurbaey, M.%
 \APACrefbtitle {Fairness, Responsibility, and Welfare} {Fairness,
   responsibility, and welfare}.
 \newblock
-\APACaddressPublisher{}{Oxford University Press}.
+\APACaddressPublisher{Oxford}{Oxford University Press}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -159,9 +159,9 @@ Roemer%
 }{%
 {\protect \APACyear {2019}}%
 }]{%
-roemer2019we}
+roemer2019cooperate}
 \APACinsertmetastar {%
-roemer2019we}%
+roemer2019cooperate}%
 \begin{APACrefauthors}%
 Roemer, J\BPBI E.%
 \end{APACrefauthors}%
@@ -169,9 +169,10 @@ Roemer, J\BPBI E.%
 \newblock
 \APACrefYear{2019}.
 \newblock
-\APACrefbtitle {How We Cooperate} {How we cooperate}.
+\APACrefbtitle {How We Cooperate: A Theory of Kantian Optimization} {How we
+  cooperate: A theory of kantian optimization}.
 \newblock
-\APACaddressPublisher{}{Yale University Press}.
+\APACaddressPublisher{New Haven, CT}{Yale University Press}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

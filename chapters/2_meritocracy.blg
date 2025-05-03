@@ -15,44 +15,46 @@ Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: references.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
+Warning--No address in moissonCooptationMeritocracyVs2024
 You've used 22 entries,
             6951 wiz_defined-function locations,
-            1415 strings with 14278 characters,
-and the built_in function-call counts, 33337 in all, are:
-= -- 4209
-> -- 292
-< -- 1233
-+ -- 1220
+            1425 strings with 14555 characters,
+and the built_in function-call counts, 35382 in all, are:
+= -- 4446
+> -- 294
+< -- 1425
++ -- 1433
 - -- 44
-* -- 1863
-:= -- 5389
-add.period$ -- 90
+* -- 2064
+:= -- 5972
+add.period$ -- 91
 call.type$ -- 22
 change.case$ -- 375
 chr.to.int$ -- 0
-cite$ -- 44
-duplicate$ -- 983
-empty$ -- 1602
-format.name$ -- 460
-if$ -- 6845
+cite$ -- 45
+duplicate$ -- 1015
+empty$ -- 1618
+format.name$ -- 468
+if$ -- 7104
 int.to.chr$ -- 0
 int.to.str$ -- 66
 missing$ -- 0
 newline$ -- 523
 num.names$ -- 178
-pop$ -- 722
+pop$ -- 746
 preamble$ -- 1
 purify$ -- 88
 quote$ -- 0
-skip$ -- 2519
+skip$ -- 2516
 stack$ -- 0
-substring$ -- 1376
-swap$ -- 540
-text.length$ -- 44
+substring$ -- 1607
+swap$ -- 575
+text.length$ -- 47
 text.prefix$ -- 0
 top$ -- 1
 type$ -- 1824
-warning$ -- 0
-while$ -- 164
+warning$ -- 1
+while$ -- 173
 width$ -- 0
 write$ -- 620
+(There was 1 warning)

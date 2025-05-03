@@ -407,12 +407,12 @@ Daniel, K.%
 \bibitem [\protect \citeauthoryear {%
 Derksen%
 , Kerwin%
-, Reynoso%
+, Ordaz~Reynoso%
 \BCBL {}\ \BBA {} Sterck%
 }{%
 Derksen%
 \ \protect \BOthers {.}}{%
-{\protect \APACyear {2024}}%
+{\protect \APACyear {2025}}%
 }]{%
 derksenHealthcareAppointmentsCommitment2024}
 \APACinsertmetastar {%
@@ -420,17 +420,17 @@ derksenHealthcareAppointmentsCommitment2024}%
 \begin{APACrefauthors}%
 Derksen, L.%
 , Kerwin, J\BPBI T.%
-, Reynoso, N\BPBI O.%
+, Ordaz~Reynoso, N.%
 \BCBL {}\ \BBA {} Sterck, O.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2024}{}{}.
+\APACrefYearMonthDay{2025}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {Healthcare Appointments as Commitment Devices}
+{\BBOQ}\APACrefatitle {Healthcare appointments as commitment devices}
   {Healthcare appointments as commitment devices}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{The Economic Journal}{}{}{ueae077}.
+\APACjournalVolNumPages{The Economic Journal}{135}{665}{81--118}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -453,10 +453,10 @@ Dillenberger, D.%
 \newblock
 \APACrefYearMonthDay{2020}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {Additive-Belief-Based Preferences}
-  {Additive-belief-based preferences}.{\BBCQ}
+\APACrefbtitle {Additive-Belief-Based Preferences} {Additive-belief-based
+  preferences}\ \APACbVolEdTR {}{PIER Working Paper\ \BNUM\ 20-020}.
 \newblock
-\APACjournalVolNumPages{PIER Working Paper}{}{}{}.
+\APACaddressInstitution{}{Penn Institute for Economic Research (PIER)}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1023,9 +1023,10 @@ Savage, L\BPBI J.%
 \newblock
 \APACrefYear{1972}.
 \newblock
-\APACrefbtitle {The Foundations of Statistics} {The foundations of statistics}.
+\APACrefbtitle {The Foundations of Statistics} {The foundations of statistics}\
+  (\PrintOrdinal{2nd rev.}\ \BEd).
 \newblock
-\APACaddressPublisher{}{Dover Publications}.
+\APACaddressPublisher{New York}{Dover Publications}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1153,10 +1154,10 @@ vanderweeleInconvenientTruthsDeterminants2014}%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-{von Neumann}%
+von Neumann%
 \ \BBA {} Morgenstern%
 }{%
-{von Neumann}%
+von Neumann%
 \ \BBA {} Morgenstern%
 }{%
 {\protect \APACyear {2007}}%
@@ -1165,7 +1166,7 @@ vonneumannTheoryGamesEconomic2007}
 \APACinsertmetastar {%
 vonneumannTheoryGamesEconomic2007}%
 \begin{APACrefauthors}%
-{von Neumann}, J.%
+von Neumann, J.%
 \BCBT {}\ \BBA {} Morgenstern, O.%
 \end{APACrefauthors}%
 \unskip\
@@ -1173,9 +1174,9 @@ vonneumannTheoryGamesEconomic2007}%
 \APACrefYear{2007}.
 \newblock
 \APACrefbtitle {Theory of Games and Economic Behavior} {Theory of games and
-  economic behavior}.
+  economic behavior}\ (\PrintOrdinal{60th Anniversary Commemorative}\ \BEd).
 \newblock
-\APACaddressPublisher{}{Princeton University Press}.
+\APACaddressPublisher{Princeton, NJ}{Princeton University Press}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

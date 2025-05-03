@@ -5,21 +5,21 @@ Andre%
 }{%
 Andre%
 }{%
-{\protect \APACyear {2024}}%
+{\protect \APACyear {2025}}%
 }]{%
-andreShallowMeritocracy2024}
+andreShallowMeritocracy2025}
 \APACinsertmetastar {%
-andreShallowMeritocracy2024}%
+andreShallowMeritocracy2025}%
 \begin{APACrefauthors}%
 Andre, P.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2024}{}{}.
+\APACrefYearMonthDay{2025}{}{}.
 \newblock
 {\BBOQ}\APACrefatitle {Shallow Meritocracy} {Shallow meritocracy}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Review of Economic Studies}{}{}{rdae040}.
+\APACjournalVolNumPages{Review of Economic Studies}{92}{2}{772--807}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -189,9 +189,9 @@ Fleurbaey%
 }{%
 {\protect \APACyear {2008}}%
 }]{%
-fleurbaeyFairnessResponsibilityWelfare2008}
+fleurbaey2008fairness}
 \APACinsertmetastar {%
-fleurbaeyFairnessResponsibilityWelfare2008}%
+fleurbaey2008fairness}%
 \begin{APACrefauthors}%
 Fleurbaey, M.%
 \end{APACrefauthors}%
@@ -202,7 +202,7 @@ Fleurbaey, M.%
 \APACrefbtitle {Fairness, Responsibility, and Welfare} {Fairness,
   responsibility, and welfare}.
 \newblock
-\APACaddressPublisher{}{Oxford University Press}.
+\APACaddressPublisher{Oxford}{Oxford University Press}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -224,7 +224,7 @@ Kagan, S.%
 \newblock
 \APACrefbtitle {The Geometry of Desert} {The geometry of desert}.
 \newblock
-\APACaddressPublisher{}{Oxford University Press}.
+\APACaddressPublisher{Oxford}{Oxford University Press}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -244,9 +244,12 @@ Markovits, D.%
 \newblock
 \APACrefYear{2019}.
 \newblock
-\APACrefbtitle {The Meritocracy Trap} {The meritocracy trap}.
+\APACrefbtitle {The Meritocracy Trap: How Our Modern Ideal Is Feeding
+  Inequality, Dismantling the Middle Class and Devouring the Elite} {The
+  meritocracy trap: How our modern ideal is feeding inequality, dismantling the
+  middle class and devouring the elite}.
 \newblock
-\APACaddressPublisher{}{Penguin UK}.
+\APACaddressPublisher{London}{Allen Lane}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -276,9 +279,36 @@ mas-colellMicroeconomicTheory1995}%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Moisson%
+P.~Moisson%
+\ \BBA {} Tirole%
 }{%
-Moisson%
+P.~Moisson%
+\ \BBA {} Tirole%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+moissonCooptationMeritocracyVs2024}
+\APACinsertmetastar {%
+moissonCooptationMeritocracyVs2024}%
+\begin{APACrefauthors}%
+Moisson, P.%
+\BCBT {}\ \BBA {} Tirole, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+\APACrefbtitle {Cooptation: Meritocracy vs.\ Homophily in Organizations}
+  {Cooptation: Meritocracy vs.\ homophily in organizations}\ \APACbVolEdTR
+  {}{TSE Working Paper}.
+\newblock
+\APACaddressInstitution{}{Toulouse School of Economics (TSE)}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+P\BHBI H.~Moisson%
+}{%
+P\BHBI H.~Moisson%
 }{%
 {\protect \APACyear {2024}}%
 }]{%
@@ -296,33 +326,6 @@ Moisson, P\BHBI H.%
   inequality}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{TSE Working Paper}{24}{1518}{}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Moisson%
-\ \BBA {} Tirole%
-}{%
-Moisson%
-\ \BBA {} Tirole%
-}{%
-{\protect \APACyear {2024}}%
-}]{%
-moissonCooptationMeritocracyVs2024}
-\APACinsertmetastar {%
-moissonCooptationMeritocracyVs2024}%
-\begin{APACrefauthors}%
-Moisson, P\BHBI H.%
-\BCBT {}\ \BBA {} Tirole, J.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2024}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Cooptation: {{Meritocracy}} vs. {{Homophily}} in
-  {{Organizations}}} {Cooptation: {{Meritocracy}} vs. {{Homophily}} in
-  {{Organizations}}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{University of Toulouse}{}{}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -372,7 +375,7 @@ Moulin, H.%
 \APACrefbtitle {Fair Division and Collective Welfare} {Fair division and
   collective welfare}.
 \newblock
-\APACaddressPublisher{}{MIT press}.
+\APACaddressPublisher{Cambridge, MA}{MIT Press}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -395,7 +398,7 @@ Mulligan, T.%
 \APACrefbtitle {Justice and the Meritocratic State} {Justice and the
   meritocratic state}.
 \newblock
-\APACaddressPublisher{}{Taylor \& Francis}.
+\APACaddressPublisher{London ; New York}{Routledge}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -467,10 +470,10 @@ Sandel, M\BPBI J.%
 \newblock
 \APACrefYear{2020}.
 \newblock
-\APACrefbtitle {The Tyranny of Merit: {{What}}'s Become of the Common Good?}
-  {The tyranny of merit: {{What}}'s become of the common good?}
+\APACrefbtitle {The Tyranny of Merit: What's Become of the Common Good?} {The
+  tyranny of merit: What's become of the common good?}
 \newblock
-\APACaddressPublisher{}{Penguin UK}.
+\APACaddressPublisher{London}{Allen Lane}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -512,10 +515,12 @@ Thomson, W.%
 \newblock
 \APACrefYear{2019}.
 \newblock
-\APACrefbtitle {How to Divide When There Isn't Enough} {How to divide when
-  there isn't enough}.
+\APACrefbtitle {How to Divide When There Isn’t Enough: From Aristotle, the
+  Talmud, and Maimonides to the Axiomatics of Resource Allocation} {How to
+  divide when there isn’t enough: From aristotle, the talmud, and maimonides
+  to the axiomatics of resource allocation}\ (\BNUM~62).
 \newblock
-\APACaddressPublisher{}{Cambridge University Press}.
+\APACaddressPublisher{Cambridge}{Cambridge University Press}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

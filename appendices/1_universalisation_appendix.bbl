@@ -96,10 +96,12 @@ Thomson, W.%
 \newblock
 \APACrefYear{2019}.
 \newblock
-\APACrefbtitle {How to Divide When There Isn't Enough} {How to divide when
-  there isn't enough}.
+\APACrefbtitle {How to Divide When There Isn’t Enough: From Aristotle, the
+  Talmud, and Maimonides to the Axiomatics of Resource Allocation} {How to
+  divide when there isn’t enough: From aristotle, the talmud, and maimonides
+  to the axiomatics of resource allocation}\ (\BNUM~62).
 \newblock
-\APACaddressPublisher{}{Cambridge University Press}.
+\APACaddressPublisher{Cambridge}{Cambridge University Press}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

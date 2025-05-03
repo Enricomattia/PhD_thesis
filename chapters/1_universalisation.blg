@@ -14,48 +14,45 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: references.bib
-Warning--I'm ignoring battigalliGameTheoryAnalysis2023's extra "type" field
---line 619 of file references.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
 You've used 60 entries,
             6951 wiz_defined-function locations,
-            1652 strings with 21299 characters,
-and the built_in function-call counts, 97807 in all, are:
-= -- 12168
-> -- 810
-< -- 4206
-+ -- 4086
-- -- 122
-* -- 5961
-:= -- 17002
-add.period$ -- 241
+            1661 strings with 21256 characters,
+and the built_in function-call counts, 99065 in all, are:
+= -- 12323
+> -- 822
+< -- 4293
++ -- 4164
+- -- 123
+* -- 6115
+:= -- 17282
+add.period$ -- 243
 call.type$ -- 60
-change.case$ -- 1037
+change.case$ -- 1061
 chr.to.int$ -- 0
 cite$ -- 120
-duplicate$ -- 2679
-empty$ -- 4312
+duplicate$ -- 2694
+empty$ -- 4342
 format.name$ -- 1290
-if$ -- 19391
+if$ -- 19607
 int.to.chr$ -- 0
-int.to.str$ -- 184
+int.to.str$ -- 188
 missing$ -- 0
 newline$ -- 1437
 num.names$ -- 480
-pop$ -- 1660
+pop$ -- 1694
 preamble$ -- 1
-purify$ -- 240
+purify$ -- 248
 quote$ -- 0
-skip$ -- 7092
+skip$ -- 7050
 stack$ -- 0
-substring$ -- 4502
-swap$ -- 1581
-text.length$ -- 128
+substring$ -- 4609
+swap$ -- 1643
+text.length$ -- 149
 text.prefix$ -- 0
 top$ -- 1
 type$ -- 4864
 warning$ -- 0
-while$ -- 431
+while$ -- 441
 width$ -- 0
 write$ -- 1721
-(There was 1 warning)

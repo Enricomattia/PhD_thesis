@@ -141,24 +141,24 @@ Baccelli%
 Baccelli%
 \ \BBA {} Mongin%
 }{%
-{\protect \APACyear {2021}}%
+{\protect \APACyear {2022}}%
 }]{%
-baccelliCanRedescriptionsOutcomes2021}
+baccelliCanRedescriptionsOutcomes2022}
 \APACinsertmetastar {%
-baccelliCanRedescriptionsOutcomes2021}%
+baccelliCanRedescriptionsOutcomes2022}%
 \begin{APACrefauthors}%
 Baccelli, J.%
 \BCBT {}\ \BBA {} Mongin, P.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2021}{}{}.
+\APACrefYearMonthDay{2022}{}{}.
 \newblock
 {\BBOQ}\APACrefatitle {Can Redescriptions of Outcomes Salvage the Axioms of
   Decision Theory?} {Can redescriptions of outcomes salvage the axioms of
   decision theory?}{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Philosophical Studies}{}{}{1--28}.
+\APACjournalVolNumPages{Philosophical Studies}{179}{5}{1621--1648}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -245,9 +245,9 @@ Bonanno%
 }{%
 {\protect \APACyear {2018}}%
 }]{%
-bonannoGameTheory2018}
+bonanno2018gametheory}
 \APACinsertmetastar {%
-bonannoGameTheory2018}%
+bonanno2018gametheory}%
 \begin{APACrefauthors}%
 Bonanno, G.%
 \end{APACrefauthors}%
@@ -255,9 +255,10 @@ Bonanno, G.%
 \newblock
 \APACrefYear{2018}.
 \newblock
-\APACrefbtitle {Game Theory} {Game theory}\ (\PrintOrdinal{2nd}\ \BEd).
+\APACrefbtitle {Game Theory} {Game theory}\ (\PrintOrdinal{2}\ \BEd).
 \newblock
-\APACaddressPublisher{}{Kindle Direct Publishing}.
+\APACaddressPublisher{North Charleston, SC}{CreateSpace Independent Publishing
+  Platform}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -401,31 +402,31 @@ De~Donder%
 , Llavador%
 , Penczynski%
 , Roemer%
-\BCBL {}\ \BBA {} V{\'e}lez%
+\BCBL {}\ \BBA {} {V{\'e}lez-Grajales}%
 }{%
 De~Donder%
 \ \protect \BOthers {.}}{%
-{\protect \APACyear {2023}}%
+{\protect \APACyear {2025}}%
 }]{%
-dedonderGametheoreticAnalysisChildhood2023}
+dedonderNashKantGametheoretic2025}
 \APACinsertmetastar {%
-dedonderGametheoreticAnalysisChildhood2023}%
+dedonderNashKantGametheoretic2025}%
 \begin{APACrefauthors}%
 De~Donder, P.%
 , Llavador, H.%
-, Penczynski, S.%
+, Penczynski, S\BPBI P.%
 , Roemer, J\BPBI E.%
-\BCBL {}\ \BBA {} V{\'e}lez, R.%
+\BCBL {}\ \BBA {} {V{\'e}lez-Grajales}, R.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2023}{}{}.
+\APACrefYearMonthDay{2025}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {A Game-Theoretic Analysis of Childhood Vaccination
-  Behavior: {{Nash}} versus {{Kant}}} {A game-theoretic analysis of childhood
-  vaccination behavior: {{Nash}} versus {{Kant}}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {Nash versus {{Kant}}: A Game-Theoretic Analysis of
+  Childhood Vaccination Behavior} {Nash versus {{Kant}}: A game-theoretic
+  analysis of childhood vaccination behavior}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Working Paper}{}{}{}.
+\APACjournalVolNumPages{Journal of Economics}{}{}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -475,12 +476,12 @@ Dewatripont, M.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2024}{}{}.
+\APACrefYearMonthDay{2024}{{\APACmonth{08}}}{}.
 \newblock
 {\BBOQ}\APACrefatitle {The {{Morality}} of {{Markets}}} {The {{Morality}} of
   {{Markets}}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Journal of Political Economy}{}{}{000--000}.
+\APACjournalVolNumPages{Journal of Political Economy}{132}{8}{2655--2694}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -596,9 +597,9 @@ Fleurbaey%
 }{%
 {\protect \APACyear {2008}}%
 }]{%
-fleurbaeyFairnessResponsibilityWelfare2008}
+fleurbaey2008fairness}
 \APACinsertmetastar {%
-fleurbaeyFairnessResponsibilityWelfare2008}%
+fleurbaey2008fairness}%
 \begin{APACrefauthors}%
 Fleurbaey, M.%
 \end{APACrefauthors}%
@@ -609,7 +610,7 @@ Fleurbaey, M.%
 \APACrefbtitle {Fairness, Responsibility, and Welfare} {Fairness,
   responsibility, and welfare}.
 \newblock
-\APACaddressPublisher{}{Oxford University Press}.
+\APACaddressPublisher{Oxford}{Oxford University Press}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -642,11 +643,11 @@ Fleurbaey%
 }{%
 Fleurbaey%
 \ \protect \BOthers {.}}{%
-{\protect \APACyear {2024}}%
+{\protect \APACyear {2023}}%
 }]{%
-fleurbaeyAnalysisMoralMotives2024}
+fleurbaey2023moralmotives}
 \APACinsertmetastar {%
-fleurbaeyAnalysisMoralMotives2024}%
+fleurbaey2023moralmotives}%
 \begin{APACrefauthors}%
 Fleurbaey, M.%
 , Kanbur, R.%
@@ -654,13 +655,13 @@ Fleurbaey, M.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2024}{}{}.
+\APACrefYearMonthDay{2023}{{\APACmonth{12}}}{}.
 \newblock
-{\BBOQ}\APACrefatitle {An {{Analysis}} of {{Moral Motives}} in {{Economic}} and
-  {{Social Decisions}}} {An {{Analysis}} of {{Moral Motives}} in {{Economic}}
-  and {{Social Decisions}}}.{\BBCQ}
+\APACrefbtitle {An Analysis of Moral Motives in Economic and Social Decisions}
+  {An analysis of moral motives in economic and social decisions}\
+  \APACbVolEdTR {}{{{CEPR Discussion Paper}}\ \BNUM\ DP18682}.
 \newblock
-\APACjournalVolNumPages{Working Paper}{}{}{}.
+\APACaddressInstitution{London}{Centre for Economic Policy Research (CEPR)}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -856,8 +857,7 @@ Kalai, E.%
 {\BBOQ}\APACrefatitle {Other Solutions to {{Nash}}'s Bargaining Problem} {Other
   solutions to {{Nash}}'s bargaining problem}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Econometrica: Journal of the Econometric
-  Society}{}{}{513--518}.
+\APACjournalVolNumPages{Econometrica}{}{}{513--518}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -978,9 +978,9 @@ Luce%
 }{%
 {\protect \APACyear {1957}}%
 }]{%
-luceGamesDecisionsIntroduction1957}
+luce1957games}
 \APACinsertmetastar {%
-luceGamesDecisionsIntroduction1957}%
+luce1957games}%
 \begin{APACrefauthors}%
 Luce, R\BPBI D.%
 \BCBT {}\ \BBA {} Raiffa, H.%
@@ -992,7 +992,7 @@ Luce, R\BPBI D.%
 \APACrefbtitle {Games and Decisions: {{Introduction}} and Critical Survey}
   {Games and decisions: {{Introduction}} and critical survey}.
 \newblock
-\APACaddressPublisher{New York}{Wiley}.
+\APACaddressPublisher{New York}{John Wiley \& Sons}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1034,9 +1034,9 @@ Mill%
 }{%
 {\protect \APACyear {1885}}%
 }]{%
-millPrinciplesPoliticalEconomy1885}
+mill1885principles}
 \APACinsertmetastar {%
-millPrinciplesPoliticalEconomy1885}%
+mill1885principles}%
 \begin{APACrefauthors}%
 Mill, J\BPBI S.%
 \end{APACrefauthors}%
@@ -1047,7 +1047,7 @@ Mill, J\BPBI S.%
 \APACrefbtitle {Principles of Political Economy} {Principles of political
   economy}.
 \newblock
-\APACaddressPublisher{}{D. Appleton}.
+\APACaddressPublisher{New York}{{D. Appleton and Company}}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1057,9 +1057,9 @@ Perea%
 }{%
 {\protect \APACyear {2012}}%
 }]{%
-pereaEpistemicGameTheory2012}
+perea2012epistemic}
 \APACinsertmetastar {%
-pereaEpistemicGameTheory2012}%
+perea2012epistemic}%
 \begin{APACrefauthors}%
 Perea, A.%
 \end{APACrefauthors}%
@@ -1067,33 +1067,10 @@ Perea, A.%
 \newblock
 \APACrefYear{2012}.
 \newblock
-\APACrefbtitle {Epistemic Game Theory: Reasoning and Choice} {Epistemic game
-  theory: Reasoning and choice}.
+\APACrefbtitle {Epistemic Game Theory: {{Reasoning}} and Choice} {Epistemic
+  game theory: {{Reasoning}} and choice}.
 \newblock
-\APACaddressPublisher{}{Cambridge University Press}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Ponthiere%
-}{%
-Ponthiere%
-}{%
-{\protect \APACyear {2023}}%
-}]{%
-ponthiereEpictetusianRationality2023}
-\APACinsertmetastar {%
-ponthiereEpictetusianRationality2023}%
-\begin{APACrefauthors}%
-Ponthiere, G.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2023}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Epictetusian Rationality} {Epictetusian
-  rationality}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Economic Theory}{}{}{1--44}.
+\APACaddressPublisher{Cambridge}{Cambridge University Press}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1102,21 +1079,45 @@ Ponthiere%
 Ponthiere%
 }{%
 {\protect \APACyear {2024}}%
-}]{%
-ponthiereStoicismTragedyCommons2024}
+{\protect \APACexlab {{\protect \BCnt {1}}}}}]{%
+ponthiereEpictetusianRationality2024}
 \APACinsertmetastar {%
-ponthiereStoicismTragedyCommons2024}%
+ponthiereEpictetusianRationality2024}%
 \begin{APACrefauthors}%
 Ponthiere, G.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2024}{}{}.
+\APACrefYearMonthDay{2024{\protect \BCnt {1}}}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {Stoicism and the {{Tragedy}} of the {{Commons}}}
-  {Stoicism and the {{Tragedy}} of the {{Commons}}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {Epictetusian Rationality} {Epictetusian
+  rationality}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{GLO Discussion Paper}{}{}{}.
+\APACjournalVolNumPages{Economic Theory}{78}{1}{219--262}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ponthiere%
+}{%
+Ponthiere%
+}{%
+{\protect \APACyear {2024}}%
+{\protect \APACexlab {{\protect \BCnt {2}}}}}]{%
+ponthiere2024stoicism}
+\APACinsertmetastar {%
+ponthiere2024stoicism}%
+\begin{APACrefauthors}%
+Ponthiere, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024{\protect \BCnt {2}}}{{\APACmonth{03}}}{}.
+\newblock
+\APACrefbtitle {Stoicism and the Tragedy of the Commons} {Stoicism and the
+  tragedy of the commons}\ \APACbVolEdTR {}{{{GLO Discussion Paper}}\ \BNUM\
+  1405}.
+\newblock
+\APACaddressInstitution{Essen}{Global Labor Organization (GLO)}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1126,9 +1127,9 @@ Rawls%
 }{%
 {\protect \APACyear {1971}}%
 }]{%
-rawlsTheoryJustice1971}
+rawls1971theory}
 \APACinsertmetastar {%
-rawlsTheoryJustice1971}%
+rawls1971theory}%
 \begin{APACrefauthors}%
 Rawls, J.%
 \end{APACrefauthors}%
@@ -1138,7 +1139,8 @@ Rawls, J.%
 \newblock
 \APACrefbtitle {A Theory of Justice} {A theory of justice}.
 \newblock
-\APACaddressPublisher{}{Harvard university press}.
+\APACaddressPublisher{Cambridge, MA}{The Belknap Press of Harvard University
+  Press}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1194,9 +1196,9 @@ Roemer%
 }{%
 {\protect \APACyear {2019}}%
 }]{%
-roemer2019we}
+roemer2019cooperate}
 \APACinsertmetastar {%
-roemer2019we}%
+roemer2019cooperate}%
 \begin{APACrefauthors}%
 Roemer, J\BPBI E.%
 \end{APACrefauthors}%
@@ -1204,9 +1206,10 @@ Roemer, J\BPBI E.%
 \newblock
 \APACrefYear{2019}.
 \newblock
-\APACrefbtitle {How We Cooperate} {How we cooperate}.
+\APACrefbtitle {How We Cooperate: A Theory of Kantian Optimization} {How we
+  cooperate: A theory of kantian optimization}.
 \newblock
-\APACaddressPublisher{}{Yale University Press}.
+\APACaddressPublisher{New Haven, CT}{Yale University Press}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1323,9 +1326,10 @@ Savage, L\BPBI J.%
 \newblock
 \APACrefYear{1972}.
 \newblock
-\APACrefbtitle {The Foundations of Statistics} {The foundations of statistics}.
+\APACrefbtitle {The Foundations of Statistics} {The foundations of statistics}\
+  (\PrintOrdinal{2nd rev.}\ \BEd).
 \newblock
-\APACaddressPublisher{}{Dover Publications}.
+\APACaddressPublisher{New York}{Dover Publications}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1358,9 +1362,9 @@ Sen%
 }{%
 {\protect \APACyear {2017}}%
 }]{%
-senCollectiveChoiceSocial2017}
+sen2017collective}
 \APACinsertmetastar {%
-senCollectiveChoiceSocial2017}%
+sen2017collective}%
 \begin{APACrefauthors}%
 Sen, A.%
 \end{APACrefauthors}%
@@ -1368,10 +1372,11 @@ Sen, A.%
 \newblock
 \APACrefYear{2017}.
 \newblock
-\APACrefbtitle {Collective Choice and Social Welfare} {Collective choice and
-  social welfare}.
+\APACrefbtitle {Collective Choice and Social Welfare: {{An}} Expanded Edition}
+  {Collective choice and social welfare: {{An}} expanded edition}\
+  (\PrintOrdinal{Expanded}\ \BEd).
 \newblock
-\APACaddressPublisher{}{Harvard University Press}.
+\APACaddressPublisher{Cambridge, MA}{Harvard University Press}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1467,10 +1472,10 @@ Stovall, J\BPBI E.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-{van Leeuwen}%
+Van~Leeuwen%
 \ \BBA {} Alger%
 }{%
-{van Leeuwen}%
+Van~Leeuwen%
 \ \BBA {} Alger%
 }{%
 {\protect \APACyear {2024}}%
@@ -1479,18 +1484,19 @@ vanleeuwenEstimatingSocialPreferences2024}
 \APACinsertmetastar {%
 vanleeuwenEstimatingSocialPreferences2024}%
 \begin{APACrefauthors}%
-{van Leeuwen}, B.%
+Van~Leeuwen, B.%
 \BCBT {}\ \BBA {} Alger, I.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2024}{}{}.
+\APACrefYearMonthDay{2024}{{\APACmonth{11}}}{}.
 \newblock
-{\BBOQ}\APACrefatitle {Estimating Social Preferences and {{Kantian}} Morality
-  in Strategic Interactions} {Estimating social preferences and {{Kantian}}
-  morality in strategic interactions}.{\BBCQ}
+{\BBOQ}\APACrefatitle {Estimating {{Social Preferences}} and {{Kantian
+  Morality}} in {{Strategic Interactions}}} {Estimating {{Social Preferences}}
+  and {{Kantian Morality}} in {{Strategic Interactions}}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Journal of Political Economy Microeconomics}{}{}{}.
+\APACjournalVolNumPages{Journal of Political Economy
+  Microeconomics}{2}{4}{665--706}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

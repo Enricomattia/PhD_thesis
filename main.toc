@@ -1,62 +1,65 @@
 \babel@toc {english}{}\relax 
 \gdef \the@ipfilectr {@-1}
-\contentsline {chapter}{Introduction}{1}{chapter*.2}%
+\contentsline {chapter}{Acknowledgements}{1}{chapter*.2}%
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-2}
-\contentsline {chapter}{\numberline {1}A Foundation for Universalisation in Games}{4}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Introduction}{4}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Illustrative Example}{8}{subsection.1.1.1}%
-\contentsline {section}{\numberline {1.2}Model}{9}{section.1.2}%
-\contentsline {paragraph}{Primitives.}{9}{paragraph*.4}%
-\contentsline {paragraph}{Axioms.}{11}{paragraph*.5}%
-\contentsline {section}{\numberline {1.3}Functional Representation}{12}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Preferences for Universalisation}{13}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Homo Kantiensis and Simple Kantian equilibrium}{13}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}Homo Moralis}{16}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}Multiplicative Kantian equilibrium}{17}{subsection.1.4.3}%
-\contentsline {section}{\numberline {1.5}Equal Sacrifice Universalisation}{18}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Conclusion}{23}{section.1.6}%
+\contentsline {chapter}{Introduction}{2}{chapter*.3}%
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-3}
-\contentsline {chapter}{\numberline {2}Meritocracy as an End and as a Means}{28}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Introduction}{28}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Framework}{33}{section.2.2}%
-\contentsline {section}{\numberline {2.3}When Means and End Coincide}{35}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Two Versions of Meritocracy}{37}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Pareto Meritocracy}{37}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Proportional Meritocracy}{38}{subsection.2.4.2}%
-\contentsline {section}{\numberline {2.5}Meritocracy and Equality of Opportunity}{42}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Conclusion}{44}{section.2.6}%
+\contentsline {chapter}{\numberline {1}A Foundation for Universalisation in Games}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{5}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Illustrative Example}{9}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}Model}{11}{section.1.2}%
+\contentsline {paragraph}{Primitives.}{11}{paragraph*.5}%
+\contentsline {paragraph}{Axioms.}{12}{paragraph*.6}%
+\contentsline {section}{\numberline {1.3}Functional Representation}{14}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Preferences for Universalisation}{14}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Homo Kantiensis and Simple Kantian equilibrium}{15}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Homo Moralis}{17}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Multiplicative Kantian equilibrium}{18}{subsection.1.4.3}%
+\contentsline {section}{\numberline {1.5}Equal Sacrifice Universalisation}{20}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Conclusion}{24}{section.1.6}%
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
-\contentsline {chapter}{\numberline {3}Identifying Belief-Dependent Preferences}{47}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Introduction}{47}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Illustrative Examples}{52}{section.3.2}%
-\contentsline {paragraph}{Information distortion to reduce donations.}{52}{paragraph*.15}%
-\contentsline {paragraph}{Ostrich effect and excessive trading.}{53}{paragraph*.16}%
-\contentsline {section}{\numberline {3.3}Model}{56}{section.3.3}%
-\contentsline {paragraph}{Representation.}{57}{paragraph*.17}%
-\contentsline {subsection}{\numberline {3.3.1}Axioms}{58}{subsection.3.3.1}%
-\contentsline {section}{\numberline {3.4}Results}{63}{section.3.4}%
-\contentsline {paragraph}{Representation.}{63}{paragraph*.20}%
-\contentsline {paragraph}{Uniqueness.}{64}{paragraph*.21}%
-\contentsline {section}{\numberline {3.5}Discussion}{66}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Application: Polarisation}{68}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Conclusion}{70}{section.3.7}%
+\contentsline {chapter}{\numberline {2}Meritocracy as an End and as a Means}{30}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{30}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Framework}{35}{section.2.2}%
+\contentsline {section}{\numberline {2.3}When Means and End Coincide}{37}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Two Versions of Meritocracy}{39}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Pareto Meritocracy}{40}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Proportional Meritocracy}{41}{subsection.2.4.2}%
+\contentsline {section}{\numberline {2.5}Meritocracy and Equality of Opportunity}{44}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Conclusion}{46}{section.2.6}%
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
-\contentsline {chapter}{\numberline {A}Appendix for Chapter \ref {ch:univ}}{75}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Equal Sacrifice in Games}{75}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Proofs}{76}{section.A.2}%
+\contentsline {chapter}{\numberline {3}Identifying Belief-Dependent Preferences}{49}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{49}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Illustrative Examples}{54}{section.3.2}%
+\contentsline {paragraph}{Information distortion to reduce donations.}{54}{paragraph*.16}%
+\contentsline {paragraph}{Ostrich effect and excessive trading.}{55}{paragraph*.17}%
+\contentsline {section}{\numberline {3.3}Model}{58}{section.3.3}%
+\contentsline {paragraph}{Representation.}{59}{paragraph*.18}%
+\contentsline {subsection}{\numberline {3.3.1}Axioms}{61}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.4}Results}{66}{section.3.4}%
+\contentsline {paragraph}{Representation.}{66}{paragraph*.21}%
+\contentsline {paragraph}{Uniqueness.}{66}{paragraph*.22}%
+\contentsline {section}{\numberline {3.5}Discussion}{68}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Application: Polarisation}{70}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Conclusion}{72}{section.3.7}%
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-6}
-\contentsline {chapter}{\numberline {B}Appendix for Chapter \ref {ch:meritocracy}}{80}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Proofs}{80}{section.B.1}%
+\contentsline {chapter}{\numberline {A}Appendix for Chapter \ref {ch:univ}}{77}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Equal Sacrifice in Games}{77}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Proofs}{78}{section.A.2}%
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-7}
-\contentsline {chapter}{\numberline {C}Appendix for Chapter \ref {ch:bdp}}{85}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Proofs}{85}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Construction of Best Likelihoods}{94}{section.C.2}%
-\contentsline {section}{\numberline {C.3}Computation for Section \ref {sec:application}}{96}{section.C.3}%
-\contentsline {section}{\numberline {C.4}Notation}{98}{section.C.4}%
+\contentsline {chapter}{\numberline {B}Appendix for Chapter \ref {ch:meritocracy}}{82}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Proofs}{82}{section.B.1}%
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-8}
+\contentsline {chapter}{\numberline {C}Appendix for Chapter \ref {ch:bdp}}{87}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Proofs}{87}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Construction of Best Likelihoods}{96}{section.C.2}%
+\contentsline {section}{\numberline {C.3}Computation for Section \ref {sec:application}}{98}{section.C.3}%
+\contentsline {section}{\numberline {C.4}Notation}{100}{section.C.4}%
 \gdef \the@ipfilectr {}

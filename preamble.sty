@@ -142,7 +142,12 @@
    \begin{quotation}\normalfont}%
   {\end{quotation}\bigskip}
 
-
+  \newcommand{\chapthanks}[1]{%  #1 = text of the footnote
+  \renewcommand{\thefootnote}{\fnsymbol{footnote}}% use *, †, …
+  \footnotetext{#1}%                print the footnote
+  \setcounter{footnote}{0}%         reset for the next chapter (optional)
+  \renewcommand{\thefootnote}{\arabic{footnote}}% back to normal
+}
 
 %\usepackage{fancyhdr}
 %\pagestyle{fancy}
