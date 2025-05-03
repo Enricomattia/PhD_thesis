@@ -3,7 +3,7 @@
 
 \section{Equal Sacrifice in Games}\label{sec:es}
 
-I map normal-form games to claim problems.\footnote{I redirect the interested reader to \cite{thomsonHowDivideWhen2019} for a general treatment. Notice that the model in this section is not related to game-theoretic analyses of claim problems surveyed by \cite{thomsonGametheoreticAnalysisBankruptcy2013}. The only purpose is to determine players' universalisation functions, not to distribute a given endowment.} This exercise allows defining equal sacrifice universalisation for any sacrifice rule. I restrict attention to two-player games. Here \( \mathbb{R}_{+} \) and \( \mathbb{R}_{++} \) denote the non-negative and positive real numbers, respectively.
+I map normal-form games to claim problems.\footnote{I redirect the interested reader to \cite{thomsonHowDivideWhen2019} for a general treatment of claim problems. Notice that the model in this section is not related to game-theoretic analyses of claim problems surveyed by \cite{thomsonGametheoreticAnalysisBankruptcy2013}. The only purpose is to determine players' universalisation functions, not to distribute a given endowment.} This exercise allows defining equal sacrifice universalisation for any sacrifice rule. I restrict attention to two-player games. Here \( \mathbb{R}_{+} \) and \( \mathbb{R}_{++} \) denote the non-negative and positive real numbers, respectively.
 
 A \textbf{claim problem} is an ordered list \( \left( \{1, 2 \} , ( x_i )_{i \in I} \right) \) where \( \{1, 2 \} \) is the set of players and \( x_i \in \mathbb{R}_{++} \) is the claim of individual \( i \). An \textbf{award} is \( y_i \in \mathbb{R}_{+}\) satisfying \( 0 \leq y_i \leq x_i \) for all \( i \). In my formulation, the claim of each player in a game is the maximal expected utility for consequences he can obtain, which I denote with \( \overline{V_i} \).\footnote{In this appendix, I employ the utility representation for simplicity, but everything could be defined only using ordinal preferences \( \succsim_i \).} Therefore, \( x_i = \overline{V_i} \) for all \( i \). An \textbf{allocation rule} maps claims to awards \( \pi : \mathbb{R}_{++}^2 \rightarrow \mathbb{R}_{+}^2 \). An \textbf{equal sacrifice function} is a continuous, strictly increasing and hence invertible function \( R: \mathbb{R}_{++} \rightarrow \mathbb{R}\). The equal sacrifice allocation rule relative to the function \( R \) and sacrifice \( s \in \mathbb{R_{+}} \) is
 
@@ -125,17 +125,17 @@ A player exhibits equal sacrifice universalisation with respect to \( R \) if hi
 I here prove a version of Proposition \ref{prop:equivalent} that holds for all equal sacrifice rules.
 
 \begin{prop}\label{prop:equivalentapp}
-	Assume the game is symmetric. Then, if an action is optimal under \textit{ESU} with respect to any \( R \), it is also optimal under \textit{HM}.
+	Assume the game is symmetric. Then, if an action is optimal under \textit{ESU} with \( \kappa = 1 \) with respect to any \( R \), it is also optimal under \textit{HK}.
 \end{prop}
 
 \begin{eqproof}
-	I employ the notation of Appendix \ref{sec:es}. Pick a profile implementing the maximal expected utility for material consequences for player \(i\), denoted \(\left(\alpha^{*}_i, \alpha^{*}_{-i} \right)\). An action \(\alpha^{Rk}_i\) inducing sacrifice \(k\) for rule \(R\) satisfies the following:
+	I employ the notation of Appendix \ref{sec:es}. Pick a profile implementing the maximal expected utility for material consequences for player \(i\), denoted \(\left(\alpha^{*}_i, \alpha^{*}_{-i} \right)\). An action \(\alpha^{Rs}_i\) inducing sacrifice \(s\) for rule \(R\) satisfies the following:
 
 	\[
-		R^{-1} \left( R \left( U^{\rho}_i \left( \alpha^{*}_i, \alpha^{*}_{-i} \right) \right) - k \right) = U^{\rho}_i \left( \alpha^{Rk}_i, \alpha^{*}_{-i} \right) .
+		R^{-1} \left( R \left( U^{c}_i \left( \alpha^{*}_i, \alpha^{*}_{-i} \right) \right) - s \right) = U^{c}_i \left( \alpha^{Rs}_i, \alpha^{*}_{-i} \right) .
 	\]
 
-	Since the game is symmetric, the profile \(\left( \alpha^{*}_i, \alpha^{*}_{-i} \right)\) also induces a maximal consequence for player \(-i\) as \(U^{\rho}_i \left( \alpha^{*}_i, \alpha^{*}_{-i} \right) = U^{\rho}_{-i} \left( \alpha^{*}_{-i}, \alpha^{*}_{i} \right)\). Then, the condition for equal sacrifice of \(-i\) is equivalent to the one of \(i\), that implies \(\alpha^{Rk}_{i} = \alpha^{Rk}_{-i}\) for every \(k\). The counterfactual consequence function of player \(i\), if he has \textit{ESU} preferences, is thus \(\phi_{\alpha_i^{Rk}, a_{-i}} = \rho_{\alpha_i^{Rk}, \alpha_i^{Rk}} \), which is the same as the one of \textit{HK}. Therefore, if an action is optimal under \textit{ESU}, it is also optimal under \textit{HK}.
+	Since the game is symmetric, the profile \(\left( \alpha^{*}_i, \alpha^{*}_{-i} \right)\) also induces a maximal consequence for player \(-i\) as \(U^{c}_i \left( \alpha^{*}_i, \alpha^{*}_{-i} \right) = U^{c}_{-i} \left( \alpha^{*}_{-i}, \alpha^{*}_{i} \right)\). Then, the condition for equal sacrifice of \(-i\) is equivalent to the one of \(i\), that implies \(\alpha^{Rs}_{i} = \alpha^{Rs}_{-i}\) for every \(s\). The universalisation function of player \(i\), if he has \textit{ESU} preferences, is thus \( T_{\alpha^{*}_i, \alpha^{*}_{-i}} \left[ \alpha^{Rs}_i \right] = \alpha_{i}^{Rs} \), which is the same as the one of \textit{HK}. Therefore, if an action is optimal under \textit{ESU} with \( \kappa = 1 \), it is also optimal under \textit{HK}.
 \end{eqproof}
 
 \bibliographystyle{apacite}  % or another  style

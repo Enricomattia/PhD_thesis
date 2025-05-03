@@ -182,8 +182,8 @@ Battigalli, P.%
 \newblock
 \APACrefYearMonthDay{2023}{}{}.
 \newblock
-\APACrefbtitle {Game Theory: {{Analysis}} of Strategic Thinking.} {Game theory:
-  {{Analysis}} of strategic thinking.}
+\APACrefbtitle {Game Theory: {{Analysis}} of Strategic Thinking} {Game theory:
+  {{Analysis}} of strategic thinking}\ [Lecture {{Notes}}].
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -235,7 +235,7 @@ Binmore, K.%
 \APACrefbtitle {Game {{Theory}} and the {{Social Contract}}: {{Playing}} Fair}
   {Game {{Theory}} and the {{Social Contract}}: {{Playing}} fair}.
 \newblock
-\APACaddressPublisher{}{MIT Press}.
+\APACaddressPublisher{Cambridge, MA}{MIT Press}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

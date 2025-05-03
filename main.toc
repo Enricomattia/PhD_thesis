@@ -1,48 +1,48 @@
 \babel@toc {english}{}\relax 
 \gdef \the@ipfilectr {@-1}
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {chapter}{Introduction}{1}{chapter*.2}%
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-2}
-\contentsline {chapter}{\numberline {2}A Foundation for Universalisation in Games}{4}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Introduction}{4}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Illustrative Example}{8}{subsection.2.1.1}%
-\contentsline {section}{\numberline {2.2}Model}{9}{section.2.2}%
-\contentsline {paragraph}{Primitives.}{9}{paragraph*.3}%
-\contentsline {paragraph}{Axioms.}{11}{paragraph*.4}%
-\contentsline {section}{\numberline {2.3}Functional Representation}{12}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Preferences for Universalisation}{13}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Homo Kantiensis and Simple Kantian equilibrium}{13}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Homo Moralis}{16}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Multiplicative Kantian equilibrium}{17}{subsection.2.4.3}%
-\contentsline {section}{\numberline {2.5}Equal Sacrifice Universalisation}{18}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Conclusion}{23}{section.2.6}%
+\contentsline {chapter}{\numberline {1}A Foundation for Universalisation in Games}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{4}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Illustrative Example}{8}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}Model}{9}{section.1.2}%
+\contentsline {paragraph}{Primitives.}{9}{paragraph*.4}%
+\contentsline {paragraph}{Axioms.}{11}{paragraph*.5}%
+\contentsline {section}{\numberline {1.3}Functional Representation}{12}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Preferences for Universalisation}{13}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Homo Kantiensis and Simple Kantian equilibrium}{13}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Homo Moralis}{16}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Multiplicative Kantian equilibrium}{17}{subsection.1.4.3}%
+\contentsline {section}{\numberline {1.5}Equal Sacrifice Universalisation}{18}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Conclusion}{23}{section.1.6}%
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-3}
-\contentsline {chapter}{\numberline {3}Meritocracy as an End and as a Means}{28}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Introduction}{28}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Framework}{33}{section.3.2}%
-\contentsline {section}{\numberline {3.3}When Means and End Coincide}{35}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Two Versions of Meritocracy}{37}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Pareto Meritocracy}{37}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Proportional Meritocracy}{38}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}Meritocracy and Equality of Opportunity}{42}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Conclusion}{44}{section.3.6}%
+\contentsline {chapter}{\numberline {2}Meritocracy as an End and as a Means}{28}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{28}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Framework}{33}{section.2.2}%
+\contentsline {section}{\numberline {2.3}When Means and End Coincide}{35}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Two Versions of Meritocracy}{37}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Pareto Meritocracy}{37}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Proportional Meritocracy}{38}{subsection.2.4.2}%
+\contentsline {section}{\numberline {2.5}Meritocracy and Equality of Opportunity}{42}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Conclusion}{44}{section.2.6}%
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
-\contentsline {chapter}{\numberline {4}Identifying Belief-Dependent Preferences}{47}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduction}{47}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Illustrative Examples}{52}{section.4.2}%
-\contentsline {paragraph}{Information distortion to reduce donations.}{52}{paragraph*.14}%
-\contentsline {paragraph}{Ostrich effect and excessive trading.}{53}{paragraph*.15}%
-\contentsline {section}{\numberline {4.3}Model}{56}{section.4.3}%
-\contentsline {paragraph}{Representation.}{57}{paragraph*.16}%
-\contentsline {subsection}{\numberline {4.3.1}Axioms}{58}{subsection.4.3.1}%
-\contentsline {section}{\numberline {4.4}Results}{63}{section.4.4}%
-\contentsline {paragraph}{Representation.}{63}{paragraph*.19}%
-\contentsline {paragraph}{Uniqueness.}{64}{paragraph*.20}%
-\contentsline {section}{\numberline {4.5}Discussion}{66}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Application: Polarisation}{68}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Conclusion}{70}{section.4.7}%
+\contentsline {chapter}{\numberline {3}Identifying Belief-Dependent Preferences}{47}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{47}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Illustrative Examples}{52}{section.3.2}%
+\contentsline {paragraph}{Information distortion to reduce donations.}{52}{paragraph*.15}%
+\contentsline {paragraph}{Ostrich effect and excessive trading.}{53}{paragraph*.16}%
+\contentsline {section}{\numberline {3.3}Model}{56}{section.3.3}%
+\contentsline {paragraph}{Representation.}{57}{paragraph*.17}%
+\contentsline {subsection}{\numberline {3.3.1}Axioms}{58}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.4}Results}{63}{section.3.4}%
+\contentsline {paragraph}{Representation.}{63}{paragraph*.20}%
+\contentsline {paragraph}{Uniqueness.}{64}{paragraph*.21}%
+\contentsline {section}{\numberline {3.5}Discussion}{66}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Application: Polarisation}{68}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Conclusion}{70}{section.3.7}%
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
 \contentsline {chapter}{\numberline {A}Appendix for Chapter \ref {ch:univ}}{75}{appendix.A}%
