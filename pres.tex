@@ -1,0 +1,194 @@
+\documentclass[usenames,dvipsnames,aspectratio=169,11pt,handout]{beamer}
+%handout,
+%aspectratio=43
+
+\usepackage{prespreamble}
+\usepackage{natbib}
+\usepackage[normalem]{ulem}
+\usepackage{colortbl, xcolor}
+\definecolor{RoyalBlue}{rgb}{0.19, 0.55, 0.91}
+\linespread{1}
+\usepackage{mathrsfs}
+
+\let\oldthebibliography=\thebibliography
+\renewcommand{\thebibliography}[1]{
+    \oldthebibliography{#1}
+    \setlength{\itemsep}{2pt}
+    \tiny
+}
+
+
+\usefonttheme{serif}
+\usefonttheme{professionalfonts}
+\usepackage{lmodern}
+\usepackage{csquotes}
+
+\begin{document}
+
+\begin{frame}[noframenumbering,plain]
+	\maketitle
+
+\end{frame}
+
+\begin{frame}\frametitle{Introduction}
+
+	I study individual behaviour, information processing, and resource allocation. \pause
+
+	\vfill
+
+	\begin{wideenumerate}
+
+		\item \textbf{Universalisation}: what would happen were everyone to behave like me?
+
+		\citep{algerHomoMoralisPreference2013,laffontMacroeconomicConstraintsEconomic1975,kant1785grundlegung,roemer2019cooperate}
+		\vfill \pause
+
+		\item \textbf{Meritocracy}: allocation rule rewarding more meritorious individuals.
+
+		\citep{cappelenFairUnfairIncome2020,fleurbaey2008fairness,kaganGeometryDesert2014,senMeritJustice2000} \pause
+		\vfill
+
+		\item \textbf{Belief-dependent tastes}: tastes over beliefs.
+
+		\citep{benabou2016mindful,brunnermeierOptimalExpectations2005,golmanInformationAvoidance2017}
+	\end{wideenumerate}
+
+
+\end{frame}
+
+\begin{frame}{1. A Foundation for Universalisation in Games}
+	An individual \( i \) in a game:
+
+	\vfill
+
+	\begin{wideitemize}
+		\item chooses a mixed action \( \alpha_i \);
+		\item has a belief about opponent's actions \( p_i \);
+		\item \textquote{universalises} his action to an opponent action with the function \( T \).
+	\end{wideitemize}
+
+	\vfill
+
+	A \textbf{universalisation preference} is
+
+	\vfill
+
+	\[
+		\begin{aligned}
+			U_i(\alpha_i) = (1-\kappa) \underbrace{\sum_{a_i, a_{-i}} \alpha_i(a_i) p_{i}(a_{-i}) u_i(a_i, a_{-i})}_{\text{Subjective Expected Utility}} + \kappa \underbrace{\sum_{a_i, a_{-i}} \alpha_i(a_i) T [ \alpha_i ](a_{-i}) u_i(a_i, a_{-i})}_{\text{Universalisation}} .
+		\end{aligned}
+	\]
+
+\end{frame}
+
+\begin{frame}{1. Universalisation - Discussion}
+	I axiomatise universalisation preferences studying preferences over mixed actions.
+
+	\vfill
+
+	Independence is only satisfied only between actions universalised \textquote{equivalently}.
+
+	\vfill
+
+	Specifying the function \( T \) allows to study different types of universalisation.
+
+	\vfill
+
+	I introduce \textbf{Equal sacrifice universalisation}.
+
+\end{frame}
+
+\begin{frame}{2. Meritocracy as an End and as a Means}
+	Individual \( i \) has preference over outcomes \( \succsim_i \).
+
+	\vfill
+
+	A preference \( \succsim_i \) is more \textquote{meritorious} than \( \succsim_i^{\prime} \) if \( \succsim_i M \succsim_i^{\prime} \).
+
+	\vfill
+
+	An outcome \( x \) is more \textquote{rewarding} than \( x^{\prime} \) to individual \( i \) if \( x R_i x^{\prime} \).
+
+	\vfill
+
+	A social choice function \( f \) maps preference profiles to outcomes.
+
+	\vfill
+
+	The function \( f \) is \textbf{meritocratic} if more meritorious preferences are rewarded more.
+
+\end{frame}
+
+\begin{frame}{Chapter 2. Meritocracy - Discussion}
+	A meritocratic social choice function represents \textit{meritocracy as an end}.
+
+	\vfill
+
+	When individuals are in a game their preferences dictate their actions.
+
+	\vfill
+
+	One could then define meritocracy based on behaviour in a game.
+
+	\vfill
+
+	The latter is \textit{meritocracy as a means}.
+
+	\vfill
+
+	I show that meritocracy as an end and as a means are equivalent.
+	\vfill
+
+	I discuss \textbf{Pareto Meritocracy} and \textbf{Proportional Meritocracy}.
+
+\end{frame}
+
+\begin{frame}{3. Identifying Belief-dependent Preferences}
+
+	An individual in a decision problem:
+
+	\vfill
+
+	\begin{wideitemize}
+		\item has a prior belief \( p \) over uncertain states in \( \mathcal{S} \);
+		\item observes a likelihood function \( \ell_S \) putting weight only on states in \( S \subseteq \mathcal{S} \);
+		\item the bayesian update of \( p \) given \( \ell_S \) is \( p_{\ell_S} \);
+		\item chooses an act \( f \) mapping states to outcomes.
+	\end{wideitemize}
+
+	\vfill
+
+	A preference with \textbf{belief-dependent tastes} is
+	\vfill
+
+	\[
+		\mathcal{U}(f ; \ell_S)= \underbrace{\sum_s p_{\ell_S}(s) u\left(f_s ; \ell_S \right)}_{\text{Belief-dependent utility}} + \: \alpha_{\ell_S} \underbrace{\sum_s p_{\ell^{*}_{S}} (s) u\left(f_s ; \ell^{*}_{S} \right)}_{\text{Utility with distorted likelihood}}.
+	\]
+
+
+\end{frame}
+
+\begin{frame}{Chapter 3. Belief-dependent tastes - Discussion}
+	Belief-dependent tastes constitute a significant departure from \cite{savageFoundationsStatistics1972}.
+
+	\vfill
+
+	I show how to identify belief-dependent tastes from choices of \textbf{contingent menus}.
+\end{frame}
+
+\begin{frame}{A methodological takeaway}
+	Novel concepts require \textbf{conceptual} understanding.
+\end{frame}
+
+\begin{frame}[noframenumbering,plain]
+
+	\frametitle{References}
+
+	%\nocite{*}
+	\bibliography{chapters/references}
+	\bibliographystyle{apacite}
+
+
+\end{frame}
+
+\end{document}
