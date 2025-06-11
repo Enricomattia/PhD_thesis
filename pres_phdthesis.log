@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.22)  6 JUN 2025 17:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.22)  11 JUN 2025 23:21
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/enric/OneDrive/Desktop/PhD_Thesis/pres.tex
-(c:/Users/enric/OneDrive/Desktop/PhD_Thesis/pres.tex
+**c:/Users/enric/OneDrive/Desktop/PhD_Thesis/pres_phdthesis.tex
+(c:/Users/enric/OneDrive/Desktop/PhD_Thesis/pres_phdthesis.tex
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer.cls
@@ -1111,12 +1111,12 @@ Package csquotes Info: ... configuration file loaded successfully.
 File: csquotes.cfg 
 ))
 LaTeX Font Info:    Trying to load font information for T1+zplTLF on input line
- 26.
+ 28.
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/newpx\t1zpltlf.fd
 File: t1zpltlf.fd 2021/05/25 v1.0 font definition file for T1/zpl/TLF
 )
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 26.
+(Font)              scaled to size 10.95pt on input line 28.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
 
@@ -1125,27 +1125,27 @@ tex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count368
 \l__pdf_internal_box=\box86
-) (pres.aux)
-\openout1 = `pres.aux'.
+) (pres_phdthesis.aux)
+\openout1 = `pres_phdthesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1207,10 +1207,10 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 26.
- (pres.out) (pres.out)
+Package hyperref Info: Link coloring ON on input line 28.
+ (pres_phdthesis.out) (pres_phdthesis.out)
 \@outlinefile=\write6
-\openout6 = `pres.out'.
+\openout6 = `pres_phdthesis.out'.
 
 
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-b
@@ -1249,78 +1249,78 @@ LaTeX Info: Redefining \BHBI on input line 130.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
-(pres.nav)
+(pres_phdthesis.nav)
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 26.
+(Font)              scaled to size 6.0pt on input line 28.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 26.
+(Font)              scaled to size 9.0pt on input line 28.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 31.
+(Font)              scaled to size 17.28pt on input line 33.
 LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 31.
+(Font)              scaled to size 17.28pt on input line 33.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 31.
+(Font)              scaled to size 8.0pt on input line 33.
  [1
 
 {C:/Users/enric/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/enri
 c/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}]
 LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 57.
+(Font)              scaled to size 10.95pt on input line 62.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 57.
+(Font)              scaled to size 12.0pt on input line 62.
 LaTeX Font Info:    Font shape `T1/zplTLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 57.
+(Font)              scaled to size 12.0pt on input line 62.
 LaTeX Font Info:    Font shape `T1/zplTLF/b/sc' will be
-(Font)              scaled to size 12.0pt on input line 57.
+(Font)              scaled to size 12.0pt on input line 62.
 LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
-(Font)              scaled to size 4.0pt on input line 57.
+(Font)              scaled to size 4.0pt on input line 62.
  [2
 
 {C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ec-tlf-
 pc.enc}]
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 8
-2.
+7.
 
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 8
-2.
+7.
 
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-82.
+87.
 
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-82.
+87.
 
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 82.
+(Font)              <10.95> on input line 87.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 82.
+(Font)              <8> on input line 87.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 82.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 82.
+(Font)              <6> on input line 87.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 87.
 
 
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 82.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 87.
 
 
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 82
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 87
 .
 
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
@@ -1338,7 +1338,7 @@ Users/enric/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
 
 ]
 LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 144.
+(Font)              scaled to size 10.95pt on input line 156.
  [6
 
 ] [7
@@ -1347,37 +1347,46 @@ LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
 
 ] [9
 
-] (pres.bbl
+] [10
+
+] [11
+
+] [12
+
+] [13
+
+] (pres_phdthesis.bbl
 LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
 (Font)              scaled to size 6.0pt on input line 28.
-) [10
+) [14
 
 ]
 \tf@nav=\write7
-\openout7 = `pres.nav'.
+\openout7 = `pres_phdthesis.nav'.
 
 \tf@toc=\write8
-\openout8 = `pres.toc'.
+\openout8 = `pres_phdthesis.toc'.
 
 \tf@snm=\write9
-\openout9 = `pres.snm'.
+\openout9 = `pres_phdthesis.snm'.
 
- (pres.aux)
+
+(pres_phdthesis.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
  ***********
-Package rerunfilecheck Info: File `pres.out' has not changed.
+Package rerunfilecheck Info: File `pres_phdthesis.out' has not changed.
 (rerunfilecheck)             Checksum: AEA4B6A8AE45636C75679C2F0DFA4493;93.
  ) 
 Here is how much of TeX's memory you used:
- 29537 strings out of 475551
- 581538 string characters out of 5762554
- 1929238 words of memory out of 5000000
- 50069 multiletter control sequences out of 15000+600000
+ 29567 strings out of 475551
+ 582495 string characters out of 5762554
+ 1932238 words of memory out of 5000000
+ 50088 multiletter control sequences out of 15000+600000
  611847 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,16n,131p,422b,588s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,16n,131p,444b,588s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pf
 b><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pf
 b><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb
@@ -1391,9 +1400,9 @@ msam10.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/new
 px/zplb.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/ne
 wpx/zplr.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/n
 ewpx/zplri.pfb>
-Output written on pres.pdf (10 pages, 208356 bytes).
+Output written on pres_phdthesis.pdf (14 pages, 221651 bytes).
 PDF statistics:
- 172 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
+ 203 PDF objects out of 1000 (max. 8388607)
+ 45 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

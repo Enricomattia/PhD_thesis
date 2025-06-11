@@ -56,31 +56,6 @@ B{\'e}nabou, R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Brunnermeier%
-\ \BBA {} Parker%
-}{%
-Brunnermeier%
-\ \BBA {} Parker%
-}{%
-{\protect \APACyear {2005}}%
-}]{%
-brunnermeierOptimalExpectations2005}
-\APACinsertmetastar {%
-brunnermeierOptimalExpectations2005}%
-\begin{APACrefauthors}%
-Brunnermeier, M\BPBI K.%
-\BCBT {}\ \BBA {} Parker, J\BPBI A.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2005}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Optimal Expectations} {Optimal expectations}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{American Economic Review}{95}{4}{1092--1118}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Cappelen%
 , Falch%
 \BCBL {}\ \BBA {} Tungodden%
@@ -129,6 +104,33 @@ Fleurbaey, M.%
   responsibility, and welfare}.
 \newblock
 \APACaddressPublisher{Oxford}{Oxford University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Geanakoplos%
+, Pearce%
+\BCBL {}\ \BBA {} Stacchetti%
+}{%
+Geanakoplos%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1989}}%
+}]{%
+geanakoplosPsychologicalGamesSequential1989}
+\APACinsertmetastar {%
+geanakoplosPsychologicalGamesSequential1989}%
+\begin{APACrefauthors}%
+Geanakoplos, J.%
+, Pearce, D.%
+\BCBL {}\ \BBA {} Stacchetti, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1989}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Psychological Games and Sequential Rationality}
+  {Psychological games and sequential rationality}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Games and economic Behavior}{1}{1}{60--79}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -196,11 +198,8 @@ Kant, I.%
 \newblock
 \APACrefYear{1785}.
 \newblock
-\APACrefbtitle {Grundlegung zur Metaphysik der Sitten} {Grundlegung zur
+\APACrefbtitle {Grundlegung Zur Metaphysik Der Sitten} {Grundlegung zur
   metaphysik der sitten}.
-\newblock
-\APACrefnote{[in English: Groundwork of the Metaphysics of Morals (1964). New
-  York: Harper Torch Books].}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -229,6 +228,35 @@ Laffont, J\BHBI J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Legg%
+\ \BBA {} Hookway%
+}{%
+Legg%
+\ \BBA {} Hookway%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+leggPragmatism2024}
+\APACinsertmetastar {%
+leggPragmatism2024}%
+\begin{APACrefauthors}%
+Legg, C.%
+\BCBT {}\ \BBA {} Hookway, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Pragmatism} {Pragmatism}.{\BBCQ}
+\newblock
+\BIn{} E\BPBI N.~Zalta\ \BBA {} U.~Nodelman\ (\BEDS), \APACrefbtitle {The
+  {{Stanford Encyclopedia}} of {{Philosophy}}} {The {{Stanford Encyclopedia}}
+  of {{Philosophy}}}\ (\PrintOrdinal{Winter 2024}\ \BEd).
+\newblock
+\APACaddressPublisher{}{Metaphysics Research Lab, Stanford University}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Roemer%
 }{%
 Roemer%
@@ -249,6 +277,29 @@ Roemer, J\BPBI E.%
   cooperate: A theory of kantian optimization}.
 \newblock
 \APACaddressPublisher{New Haven, CT}{Yale University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sandel%
+}{%
+Sandel%
+}{%
+{\protect \APACyear {2020}}%
+}]{%
+sandelTyrannyMeritWhat2020}
+\APACinsertmetastar {%
+sandelTyrannyMeritWhat2020}%
+\begin{APACrefauthors}%
+Sandel, M\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2020}.
+\newblock
+\APACrefbtitle {The Tyranny of Merit: {{What}}'s Become of the Common Good?}
+  {The tyranny of merit: {{What}}'s become of the common good?}
+\newblock
+\APACaddressPublisher{London}{Allen Lane}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -294,6 +345,34 @@ Sen, A.%
 {\BBOQ}\APACrefatitle {Merit and Justice} {Merit and justice}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Meritocracy and economic inequality}{}{}{5--16}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Van~Leeuwen%
+\ \BBA {} Alger%
+}{%
+Van~Leeuwen%
+\ \BBA {} Alger%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+vanleeuwenEstimatingSocialPreferences2024}
+\APACinsertmetastar {%
+vanleeuwenEstimatingSocialPreferences2024}%
+\begin{APACrefauthors}%
+Van~Leeuwen, B.%
+\BCBT {}\ \BBA {} Alger, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{{\APACmonth{11}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Estimating {{Social Preferences}} and {{Kantian
+  Morality}} in {{Strategic Interactions}}} {Estimating {{Social Preferences}}
+  and {{Kantian Morality}} in {{Strategic Interactions}}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Political Economy
+  Microeconomics}{2}{4}{665--706}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
