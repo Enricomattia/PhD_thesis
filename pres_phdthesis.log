@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.22)  11 JUN 2025 23:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.7.22)  14 JUN 2025 20:41
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1277,7 +1277,13 @@ LaTeX Font Info:    Font shape `T1/zplTLF/m/n' will be
  [2
 
 {C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ec-tlf-
-pc.enc}]
+pc.enc}] [3
+
+] [4
+
+] [5
+
+]
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 8
 7.
 
@@ -1326,28 +1332,22 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 87
 (C:\Users\enric\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-[3
+[6
 
 {C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}
 {C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}
 {C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/
 Users/enric/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
-[4
-
-] [5
-
-]
-LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 156.
- [6
-
-] [7
+[7
 
 ] [8
 
 ] [9
 
-] [10
+]
+LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
+(Font)              scaled to size 10.95pt on input line 156.
+ [10
 
 ] [11
 
@@ -1355,10 +1355,56 @@ LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
 
 ] [13
 
-] (pres_phdthesis.bbl
+] [14
+
+] [15
+
+] [16
+
+] [17
+
+] [18
+
+] [19
+
+] [20
+
+] [21
+
+]
+[22
+
+] [23
+
+] [24
+
+] [25
+
+] [26
+
+] [27
+
+] [28
+
+] [29
+
+] [30
+
+] [31
+
+] [32
+
+] [33
+
+] [34
+
+] [35
+
+]
+(pres_phdthesis.bbl
 LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
 (Font)              scaled to size 6.0pt on input line 28.
-) [14
+) [36
 
 ]
 \tf@nav=\write7
@@ -1370,8 +1416,7 @@ LaTeX Font Info:    Font shape `T1/zplTLF/m/it' will be
 \tf@snm=\write9
 \openout9 = `pres_phdthesis.snm'.
 
-
-(pres_phdthesis.aux)
+ (pres_phdthesis.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
@@ -1380,13 +1425,13 @@ Package rerunfilecheck Info: File `pres_phdthesis.out' has not changed.
 (rerunfilecheck)             Checksum: AEA4B6A8AE45636C75679C2F0DFA4493;93.
  ) 
 Here is how much of TeX's memory you used:
- 29567 strings out of 475551
- 582495 string characters out of 5762554
+ 29612 strings out of 475551
+ 582928 string characters out of 5762554
  1932238 words of memory out of 5000000
- 50088 multiletter control sequences out of 15000+600000
+ 50089 multiletter control sequences out of 15000+600000
  611847 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,16n,131p,444b,588s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,16n,131p,443b,588s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pf
 b><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pf
 b><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb
@@ -1400,9 +1445,9 @@ msam10.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/new
 px/zplb.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/ne
 wpx/zplr.pfb><C:/Users/enric/AppData/Local/Programs/MiKTeX/fonts/type1/public/n
 ewpx/zplri.pfb>
-Output written on pres_phdthesis.pdf (14 pages, 221651 bytes).
+Output written on pres_phdthesis.pdf (36 pages, 267774 bytes).
 PDF statistics:
- 203 PDF objects out of 1000 (max. 8388607)
- 45 named destinations out of 1000 (max. 500000)
+ 369 PDF objects out of 1000 (max. 8388607)
+ 89 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

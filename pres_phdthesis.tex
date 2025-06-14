@@ -1,4 +1,4 @@
-\documentclass[usenames,dvipsnames,aspectratio=169,11pt,handout]{beamer}
+\documentclass[usenames,dvipsnames,aspectratio=169,11pt]{beamer}
 %handout,
 %aspectratio=43
 
@@ -62,14 +62,14 @@
 \end{frame}
 
 \begin{frame}{1. A Foundation for Universalisation in Games}
-	An individual \( i \) in a game:
+	An individual \( i \) in a two-player game:
 
 	\vfill
 
 	\begin{wideitemize}
 		\item chooses a mixed action \( \alpha_i \);
 		\item has a belief about opponent's actions \( p_i \);
-		\item \textquote{universalises} his action \( \alpha_i \) to an opponent action \( T [\alpha_{i} ] = \alpha_{-i} \).
+		\item \textquote{universalises} his action \( \alpha_i \) to an opponent action \( T [\alpha_{i} ] = \alpha_{-i} \). \pause
 	\end{wideitemize}
 
 	\vfill
@@ -87,7 +87,7 @@
 \end{frame}
 
 \begin{frame}[noframenumbering]{1. A Foundation for Universalisation in Games}
-	An individual \( i \) in a game:
+	An individual \( i \) in a two-player game:
 
 	\vfill
 
@@ -112,7 +112,7 @@
 \end{frame}
 
 \begin{frame}[noframenumbering]{1. A Foundation for Universalisation in Games}
-	An individual \( i \) in a game:
+	An individual \( i \) in a two-player game:
 
 	\vfill
 
@@ -139,15 +139,15 @@
 \begin{frame}{1. Universalisation - Discussion and Results}
 	\underline{\textit{Main Result:}}
 
-	I axiomatise universalisation studying preferences over mixed actions.
+	I axiomatise universalisation studying preferences over mixed actions. \pause
 
 	\vfill
 
-	Independence is only satisfied between actions universalised \textquote{equivalently}.
+	Independence is only satisfied between actions universalised \( T \)-\textquote{equivalently}. \pause
 
 	\vfill
 
-	Specifying the function \( T \) allows to study different types of universalisation.
+	Specifying the function \( T \) allows to study different types of universalisation. \pause
 
 	\vfill
 
@@ -156,13 +156,13 @@
 \end{frame}
 
 \begin{frame}{2. Meritocracy as an End and as a Means}
-	Individuals \( i \) in an economy have preferences over outcomes \( \succsim_i \). \pause
+	Individuals in an economy have preferences over outcomes \( \succsim \). \pause
 
 	\vfill
 
-	A preference \( \succsim_i \) is more \textquote{meritorious} than \( \succsim_i^{\prime} \) if
+	A preference \( \succsim \) is more \textquote{meritorious} than \( \succsim^{\prime} \) if
 
-	\[ \succsim_i M \succsim_i^{\prime} . \] \pause
+	\[ \succsim M \succsim^{\prime} . \] \pause
 
 	An outcome \( x \) is more \textquote{rewarding} than \( x^{\prime} \) to individual \( i \) if
 
@@ -177,7 +177,7 @@
 \end{frame}
 
 \begin{frame}{2. Meritocracy - Discussion and Results}
-	A meritocratic social choice function represents \textbf{meritocracy as an end}.
+	A meritocratic social choice function represents \textbf{meritocracy as an end}. \pause
 
 	\vfill
 
@@ -185,11 +185,11 @@
 
 	\vfill
 
-	I then define meritocracy based on behaviour in a game: \textbf{meritocracy as a means}.
+	I then define meritocracy based on behaviour in a game: \textbf{meritocracy as a means}. \pause
 
 	\vfill
 
-	I show that meritocracy as an end and as a means are equivalent.
+	I show that meritocracy as an end and as a means are equivalent. \pause
 	\vfill
 
 	\underline{\textit{Main Result:}}
@@ -205,7 +205,7 @@
 	\vfill
 
 	\begin{itemize}
-		\item has a prior belief \( p \) over uncertain states in \( \mathcal{S} \); \pause
+		\item has a belief \( p \) over uncertain states in \( \mathcal{S} \); \pause
 		\item observes a likelihood function \( \ell_S \) putting weight only on states in \( S \subseteq \mathcal{S} \); \pause
 		\item the Bayesian update of \( p \) given \( \ell_S \) is \( p_{\ell_S} \); \pause
 		\item chooses an act \( f \) mapping states to outcomes. \pause
@@ -217,7 +217,7 @@
 	\vfill
 
 	\[
-		U (f ; \ell_S)= \underbrace{\sum_s p_{\textcolor{red}{\ell_S}} (s) u\left(f_s ; \textcolor{red}{\ell_S} \right)}_{\text{\textcolor{red}{Belief-dependent utility}}} \invisible{+ \: \: \: \alpha_{\ell_S} \underbrace{\sum_s p_{\textcolor{blue}{\ell^{*}_{S}}} (s) u\left(f_s ; \textcolor{blue}{\ell^{*}_{S}} \right)}_{\text{\textcolor{blue}{Utility with distorted likelihood}}}.}
+		U (f ; \ell_S)= \underbrace{\sum_s p_{\textcolor{red}{\ell_S}} (s) u\left(f_s ; \textcolor{red}{\ell_S} \right)}_{\text{\textcolor{red}{Belief-dependent utility}}} \invisible{+ \: \: \: \alpha_{\ell_S} \underbrace{\sum_s p_{\textcolor{blue}{\ell^{*}_{S}}} (s) u\left(f_s ; \textcolor{blue}{\ell^{*}_{S}} \right)}_{\text{\textcolor{blue}{Utility with distorted likelihood}}}}
 	\]
 
 
@@ -230,10 +230,10 @@
 	\vfill
 
 	\begin{itemize}
-		\item has a prior belief \( p \) over uncertain states in \( \mathcal{S} \); \pause
-		\item observes a likelihood function \( \ell_S \) putting weight only on states in \( S \subseteq \mathcal{S} \); \pause
-		\item the Bayesian update of \( p \) given \( \ell_S \) is \( p_{\ell_S} \); \pause
-		\item chooses an act \( f \) mapping states to outcomes. \pause
+		\item has a belief \( p \) over uncertain states in \( \mathcal{S} \);
+		\item observes a likelihood function \( \ell_S \) putting weight only on states in \( S \subseteq \mathcal{S} \);
+		\item the Bayesian update of \( p \) given \( \ell_S \) is \( p_{\ell_S} \);
+		\item chooses an act \( f \) mapping states to outcomes.
 	\end{itemize}
 
 	\vfill
@@ -242,7 +242,7 @@
 	\vfill
 
 	\[
-		U (f ; \ell_S)= \underbrace{\sum_s p_{\textcolor{red}{\ell_S}} (s) u\left(f_s ; \textcolor{red}{\ell_S} \right)}_{\text{\textcolor{red}{Belief-dependent utility}}} \: \: + \: \: \invisible{\alpha_{\ell_S}} \underbrace{\sum_s p_{\textcolor{blue}{\ell^{*}_{S}}} (s) u\left(f_s ; \textcolor{blue}{\ell^{*}_{S}} \right)}_{\text{\textcolor{blue}{Utility with distorted likelihood}}}.
+		U (f ; \ell_S)= \underbrace{\sum_s p_{\textcolor{red}{\ell_S}} (s) u\left(f_s ; \textcolor{red}{\ell_S} \right)}_{\text{\textcolor{red}{Belief-dependent utility}}} \: \: + \: \: \invisible{\alpha_{\ell_S}} \underbrace{\sum_s p_{\textcolor{blue}{\ell^{*}_{S}}} (s) u\left(f_s ; \textcolor{blue}{\ell^{*}_{S}} \right)}_{\text{\textcolor{blue}{Utility with distorted likelihood}}}
 	\]
 
 
@@ -255,10 +255,10 @@
 	\vfill
 
 	\begin{itemize}
-		\item has a prior belief \( p \) over uncertain states in \( \mathcal{S} \); \pause
-		\item observes a likelihood function \( \ell_S \) putting weight only on states in \( S \subseteq \mathcal{S} \); \pause
-		\item the Bayesian update of \( p \) given \( \ell_S \) is \( p_{\ell_S} \); \pause
-		\item chooses an act \( f \) mapping states to outcomes. \pause
+		\item has a belief \( p \) over uncertain states in \( \mathcal{S} \);
+		\item observes a likelihood function \( \ell_S \) putting weight only on states in \( S \subseteq \mathcal{S} \);
+		\item the Bayesian update of \( p \) given \( \ell_S \) is \( p_{\ell_S} \);
+		\item chooses an act \( f \) mapping states to outcomes.
 	\end{itemize}
 
 	\vfill
@@ -267,27 +267,27 @@
 	\vfill
 
 	\[
-		U (f ; \ell_S)= \underbrace{\sum_s p_{\textcolor{red}{\ell_S}} (s) u\left(f_s ; \textcolor{red}{\ell_S} \right)}_{\text{\textcolor{red}{Belief-dependent utility}}} \: \: + \: \: \alpha_{\ell_S} \underbrace{\sum_s p_{\textcolor{blue}{\ell^{*}_{S}}} (s) u\left(f_s ; \textcolor{blue}{\ell^{*}_{S}} \right)}_{\text{\textcolor{blue}{Utility with distorted likelihood}}}.
+		U (f ; \ell_S)= \underbrace{\sum_s p_{\textcolor{red}{\ell_S}} (s) u\left(f_s ; \textcolor{red}{\ell_S} \right)}_{\text{\textcolor{red}{Belief-dependent utility}}} \: \: + \: \: \alpha_{\ell_S} \underbrace{\sum_s p_{\textcolor{blue}{\ell^{*}_{S}}} (s) u\left(f_s ; \textcolor{blue}{\ell^{*}_{S}} \right)}_{\text{\textcolor{blue}{Utility with distorted likelihood}}}
 	\]
 
 	\vfill
 
-	Where \( \textcolor{blue}{\ell^{*}_{S}} \) maximises \( u \) under the best possible outcome.
+	where \( \textcolor{blue}{\ell^{*}_{S}} \) maximises \( u \) under the best possible outcome.
 
 \end{frame}
 
 \begin{frame}{3. Belief-dependent tastes - Discussion and Results}
-	Belief-dependent tastes constitute a significant departure from \cite{savageFoundationsStatistics1972}.
+	Belief-dependent tastes constitute a significant departure from \cite{savageFoundationsStatistics1972}. \pause
 
 	\vfill
 
-	I introduce a novel choice-theoretic primitive: \textbf{contingent menus}.
+	I introduce a novel choice-theoretic primitive: \textbf{contingent menus}. \pause
 
 	\vfill
 
 	\underline{\textit{Main Result:}}
 
-	I axiomatise belief-dependent tastes studying preferences over contingent menus.
+	I axiomatise belief-dependent tastes studying preferences over contingent menus. \pause
 
 	\vfill
 
@@ -300,15 +300,14 @@
 
 \begin{frame}{A methodological takeaway}
 
-	Concepts studied in this thesis explain behaviour in economically relevant settings.
+	The concepts under study explain behaviour in economically relevant settings, but:
 
 	\vfill
 
-	All of these constitute significant departures from theoretical benchmarks.
-
-	\vfill
-
-	Lack of focus on the logical relationships between novel concepts and benchmarks.
+	\begin{wideitemize}
+		\item constitute significant departures from theoretical benchmarks;
+		\item lack of focus on the logical relationships between these and benchmarks.
+	\end{wideitemize} \pause
 
 	\vfill
 
@@ -316,7 +315,7 @@
 
 	\vfill
 
-	I argue that generalisation to accommodate novel ideas opens new routes.
+	I argue that generalisation to accommodate novel ideas opens unforeseen routes.
 
 \end{frame}
 
